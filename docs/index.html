@@ -8,7 +8,7 @@
     /* ── Theme variables ─────────────────────────────────────────── */
     :root {
       --bg-header:      #1a4a32;
-      --border-accent:  #4ebe7a;
+      --border-accent:  #c9a227;
       --bg-page:        #f4f8f5;
       --bg-card:        #ffffff;
       --bg-card-alt:    #eef5f0;
@@ -243,6 +243,7 @@
       <input type="search" id="func-search" placeholder="Search by function code or name…" autocomplete="off">
     </div>
     <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="func-count-label"></div>
+    <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.75rem">Budget figures reflect general fund only. Functions used across construction, federal, and child nutrition funds will show no budget comparison.</p>
     <table class="data-table" id="functions-table">
       <thead><tr><th>Code</th><th>Function</th><th class="num">Actual Spend</th><th class="num">Budget</th><th class="num">Budget vs Actual</th></tr></thead>
       <tbody id="functions-body"></tbody>
@@ -503,10 +504,15 @@ function renderFunctions() {
     `${rows.length} function${rows.length !== 1 ? 's' : ''}${query ? ` matching "${query}"` : ''}`;
 
   document.getElementById('functions-body').innerHTML = rows.map(f => {
-    const variance = f.budget > 0 ? ((f.actual - f.budget) / f.budget * 100).toFixed(1) : null;
+    // Budget data covers general fund only; suppress comparison if variance is
+    // extreme (likely a cross-fund mismatch, not a real overage)
+    const rawVar = f.budget > 0 ? (f.actual - f.budget) / f.budget * 100 : null;
+    const showVar = rawVar != null && Math.abs(rawVar) < 500;
+    const variance = showVar ? rawVar.toFixed(1) : null;
     const varClass = variance == null ? '' : parseFloat(variance) > 10 ? 'change-up' : parseFloat(variance) < -10 ? 'change-down' : '';
+    const codeDisplay = f.function ? `<code>${f.function}</code>` : '<span style="color:var(--text-secondary);font-size:0.8rem">—</span>';
     return `<tr>
-      <td><code>${f.function}</code></td>
+      <td>${codeDisplay}</td>
       <td>${f.label}</td>
       <td class="num">${fmt(f.actual)}</td>
       <td class="num">${f.budget > 0 ? fmt(f.budget) : '—'}</td>

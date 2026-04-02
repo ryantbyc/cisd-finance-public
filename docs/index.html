@@ -7,37 +7,44 @@
   <style>
     /* ── Theme variables ─────────────────────────────────────────── */
     :root {
-      --bg-header:      #1a3a5c;
-      --border-accent:  #c8912a;
-      --bg-page:        #f5f6f8;
+      --bg-header:      #1a4a32;
+      --border-accent:  #4ebe7a;
+      --bg-page:        #f4f8f5;
       --bg-card:        #ffffff;
-      --bg-card-alt:    #f0f4f8;
-      --text-primary:   #1a1a2e;
-      --text-secondary: #5a6a7a;
+      --bg-card-alt:    #eef5f0;
+      --text-primary:   #0f1f16;
+      --text-secondary: #4a6a56;
       --text-header:    #ffffff;
-      --border-subtle:  #dde3ea;
-      --bg-disclaimer:  #fff8e8;
-      --text-disclaimer:#7a5a00;
-      --color-general:  #2563eb;
+      --border-subtle:  #d0e4d8;
+      --bg-disclaimer:  #f0faf3;
+      --text-disclaimer:#2a6a42;
+      --ctrl-bg:        rgba(255,255,255,0.15);
+      --ctrl-bg-hover:  rgba(255,255,255,0.28);
+      --ctrl-border:    rgba(255,255,255,0.3);
+      --ctrl-text:      #ffffff;
+      --color-general:  #1d7a40;
       --color-federal:  #7c3aed;
-      --color-food:     #059669;
+      --color-food:     #0e9f5a;
       --color-debt:     #dc2626;
       --color-construct:#d97706;
       --color-other:    #6b7280;
       --color-watchdog-medium: #d97706;
-      --color-watchdog-low:    #2563eb;
+      --color-watchdog-low:    #1d7a40;
       --color-watchdog-high:   #dc2626;
     }
     [data-theme="dark"] {
-      --bg-header:      #0a1929;
-      --bg-page:        #0f1923;
-      --bg-card:        #1a2535;
-      --bg-card-alt:    #111d2b;
-      --text-primary:   #e8edf2;
-      --text-secondary: #8a9bac;
-      --border-subtle:  #2a3a4a;
-      --bg-disclaimer:  #1e1a08;
-      --text-disclaimer:#c8a840;
+      --bg-header:      #0a1f12;
+      --bg-page:        #0c1810;
+      --bg-card:        #142010;
+      --bg-card-alt:    #0f1a0c;
+      --text-primary:   #e2ede6;
+      --text-secondary: #7aaa88;
+      --border-subtle:  #243a2c;
+      --bg-disclaimer:  #0a1f0f;
+      --text-disclaimer:#5ac87a;
+      --ctrl-bg:        rgba(255,255,255,0.1);
+      --ctrl-bg-hover:  rgba(255,255,255,0.2);
+      --ctrl-border:    rgba(255,255,255,0.2);
     }
 
     /* ── Base ────────────────────────────────────────────────────── */
@@ -52,10 +59,10 @@
     .header-brand p  { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
 
     /* ── Controls bar ────────────────────────────────────────────── */
-    .controls-bar { background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 1.5rem; display: flex; justify-content: flex-end; }
-    .controls-bar-inner { max-width: 1100px; width: 100%; margin: 0 auto; display: flex; justify-content: flex-end; gap: 0.4rem; }
-    .hctrl-btn { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; cursor: pointer; }
-    .hctrl-btn:hover { background: rgba(255,255,255,0.22); }
+    .controls-bar { background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 1.5rem; }
+    .controls-bar-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: flex-end; align-items: center; gap: 0.4rem; }
+    .hctrl-btn { background: var(--ctrl-bg); color: var(--ctrl-text); border: 1px solid var(--ctrl-border); border-radius: 5px; padding: 0.28rem 0.65rem; font-size: 0.82rem; font-weight: 700; cursor: pointer; transition: background 0.12s; line-height: 1; min-width: 2.4rem; text-align: center; }
+    .hctrl-btn:hover { background: var(--ctrl-bg-hover); }
 
     /* ── Disclaimer ──────────────────────────────────────────────── */
     .disclaimer { background: var(--bg-disclaimer); padding: 0.55rem 1.5rem; font-size: 0.82rem; color: var(--text-disclaimer); }
@@ -570,19 +577,33 @@ document.getElementById('vendor-search')?.addEventListener('input', () => {
 });
 
 // ── Theme & font controls ──────────────────────────────────────────────────
-let fontSize = 15;
-document.getElementById('font-down').addEventListener('click', () => {
-  fontSize = Math.max(11, fontSize - 1);
-  document.body.style.fontSize = fontSize + 'px';
-});
+const FONT_MIN = 13, FONT_MAX = 22, FONT_DEFAULT = 17;
+
+function applyFont(size) {
+  document.documentElement.style.fontSize = size + 'px';
+}
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  document.getElementById('theme-toggle').textContent = theme === 'dark' ? '☀' : '☾';
+}
+
+applyFont(parseInt(localStorage.getItem('cisd-font-size')) || FONT_DEFAULT);
+applyTheme(localStorage.getItem('cisd-theme') || 'light');
+
 document.getElementById('font-up').addEventListener('click', () => {
-  fontSize = Math.min(22, fontSize + 1);
-  document.body.style.fontSize = fontSize + 'px';
+  const next = Math.min((parseInt(localStorage.getItem('cisd-font-size')) || FONT_DEFAULT) + 1, FONT_MAX);
+  localStorage.setItem('cisd-font-size', next);
+  applyFont(next);
+});
+document.getElementById('font-down').addEventListener('click', () => {
+  const next = Math.max((parseInt(localStorage.getItem('cisd-font-size')) || FONT_DEFAULT) - 1, FONT_MIN);
+  localStorage.setItem('cisd-font-size', next);
+  applyFont(next);
 });
 document.getElementById('theme-toggle').addEventListener('click', () => {
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-  document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
-  document.getElementById('theme-toggle').textContent = isDark ? '☾' : '☀';
+  const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('cisd-theme', next);
+  applyTheme(next);
 });
 
 init();

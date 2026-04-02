@@ -243,9 +243,9 @@
       <input type="search" id="func-search" placeholder="Search by function code or name…" autocomplete="off">
     </div>
     <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="func-count-label"></div>
-    <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.75rem">Budget figures reflect general fund only. Functions used across construction, federal, and child nutrition funds will show no budget comparison.</p>
+    <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.75rem">Budget and "Budget vs Actual" use general fund figures only. Functions used primarily in bond construction, child nutrition, or federal grant funds show no budget comparison.</p>
     <table class="data-table" id="functions-table">
-      <thead><tr><th>Code</th><th>Function</th><th class="num">Actual Spend</th><th class="num">Budget</th><th class="num">Budget vs Actual</th></tr></thead>
+      <thead><tr><th>Code</th><th>Function</th><th class="num">All-Funds Actual</th><th class="num">Gen. Fund Budget</th><th class="num">Gen. Fund Actual</th><th class="num">Budget vs Actual</th></tr></thead>
       <tbody id="functions-body"></tbody>
     </table>
   </div>
@@ -481,14 +481,15 @@ function renderVendors() {
 function renderFunctions() {
   const fy    = activeFuncFY;
   const query = (document.getElementById('func-search')?.value || '').toLowerCase().trim();
-  // Build budget lookup: function → amount for this FY
+  // Build budget lookup: function → budgeted amount for this FY
   const budgetByFunc = {};
   BUDGET_FUNC.forEach(f => { budgetByFunc[f.function] = f.by_fy[fy] || 0; });
 
   let rows = FUNCTIONS.map(f => ({
     ...f,
-    actual: f.by_fy[fy] || 0,
-    budget: budgetByFunc[f.function] || 0,
+    actual:      f.by_fy[fy] || 0,
+    actualGen:   (f.by_fy_general || {})[fy] || 0,  // general fund only
+    budget:      budgetByFunc[f.function] || 0,
   })).filter(f => f.actual > 0);
 
   if (query) {
@@ -504,18 +505,19 @@ function renderFunctions() {
     `${rows.length} function${rows.length !== 1 ? 's' : ''}${query ? ` matching "${query}"` : ''}`;
 
   document.getElementById('functions-body').innerHTML = rows.map(f => {
-    // Budget data covers general fund only; suppress comparison if variance is
-    // extreme (likely a cross-fund mismatch, not a real overage)
-    const rawVar = f.budget > 0 ? (f.actual - f.budget) / f.budget * 100 : null;
-    const showVar = rawVar != null && Math.abs(rawVar) < 500;
-    const variance = showVar ? rawVar.toFixed(1) : null;
+    // Compare general-fund actual against general-fund budget for an apples-to-apples result
+    const rawVar = f.budget > 0 && f.actualGen > 0 ? (f.actualGen - f.budget) / f.budget * 100 : null;
+    const variance = rawVar != null ? rawVar.toFixed(1) : null;
     const varClass = variance == null ? '' : parseFloat(variance) > 10 ? 'change-up' : parseFloat(variance) < -10 ? 'change-down' : '';
     const codeDisplay = f.function ? `<code>${f.function}</code>` : '<span style="color:var(--text-secondary);font-size:0.8rem">—</span>';
+    // Show general-fund actual in budget col when budget exists, so the comparison is clear
+    const budgetActualStr = f.budget > 0 && f.actualGen > 0 ? fmt(f.actualGen) : '—';
     return `<tr>
       <td>${codeDisplay}</td>
       <td>${f.label}</td>
       <td class="num">${fmt(f.actual)}</td>
       <td class="num">${f.budget > 0 ? fmt(f.budget) : '—'}</td>
+      <td class="num">${f.budget > 0 && f.actualGen > 0 ? fmt(f.actualGen) : '—'}</td>
       <td class="num ${varClass}">${variance != null ? variance + '%' : '—'}</td>
     </tr>`;
   }).join('');

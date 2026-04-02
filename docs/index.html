@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CISD Finance Tracker</title>
+  <style>
+    /* ── Theme variables ─────────────────────────────────────────── */
+    :root {
+      --bg-header:      #1a3a5c;
+      --border-accent:  #c8912a;
+      --bg-page:        #f5f6f8;
+      --bg-card:        #ffffff;
+      --bg-card-alt:    #f0f4f8;
+      --text-primary:   #1a1a2e;
+      --text-secondary: #5a6a7a;
+      --text-header:    #ffffff;
+      --border-subtle:  #dde3ea;
+      --bg-disclaimer:  #fff8e8;
+      --text-disclaimer:#7a5a00;
+      --color-general:  #2563eb;
+      --color-federal:  #7c3aed;
+      --color-food:     #059669;
+      --color-debt:     #dc2626;
+      --color-construct:#d97706;
+      --color-other:    #6b7280;
+      --color-watchdog-medium: #d97706;
+      --color-watchdog-low:    #2563eb;
+      --color-watchdog-high:   #dc2626;
+    }
+    [data-theme="dark"] {
+      --bg-header:      #0a1929;
+      --bg-page:        #0f1923;
+      --bg-card:        #1a2535;
+      --bg-card-alt:    #111d2b;
+      --text-primary:   #e8edf2;
+      --text-secondary: #8a9bac;
+      --border-subtle:  #2a3a4a;
+      --bg-disclaimer:  #1e1a08;
+      --text-disclaimer:#c8a840;
+    }
+
+    /* ── Base ────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg-page); color: var(--text-primary); }
+    a { color: inherit; }
+
+    /* ── Header ──────────────────────────────────────────────────── */
+    header { background: var(--bg-header); color: var(--text-header); padding: 1.25rem 1.5rem; border-bottom: 4px solid var(--border-accent); }
+    .header-inner { max-width: 1100px; margin: 0 auto; }
+    .header-brand h1 { font-size: 1.6rem; font-weight: 700; }
+    .header-brand p  { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
+
+    /* ── Controls bar ────────────────────────────────────────────── */
+    .controls-bar { background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 1.5rem; display: flex; justify-content: flex-end; }
+    .controls-bar-inner { max-width: 1100px; width: 100%; margin: 0 auto; display: flex; justify-content: flex-end; gap: 0.4rem; }
+    .hctrl-btn { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; cursor: pointer; }
+    .hctrl-btn:hover { background: rgba(255,255,255,0.22); }
+
+    /* ── Disclaimer ──────────────────────────────────────────────── */
+    .disclaimer { background: var(--bg-disclaimer); padding: 0.55rem 1.5rem; font-size: 0.82rem; color: var(--text-disclaimer); }
+    .disclaimer-inner { max-width: 1100px; margin: 0 auto; }
+
+    /* ── Nav tabs ────────────────────────────────────────────────── */
+    .site-nav { background: var(--bg-card); border-bottom: 1px solid var(--border-subtle); padding: 0 1.5rem; }
+    .site-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 0; }
+    .nav-tab { padding: 0.8rem 1.2rem; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); text-decoration: none; border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
+    .nav-tab:hover { color: var(--text-primary); }
+    .nav-tab.active { color: var(--text-primary); border-bottom-color: var(--border-accent); }
+
+    /* ── Main layout ─────────────────────────────────────────────── */
+    main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ── Section headings ────────────────────────────────────────── */
+    .section-title { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--border-subtle); }
+    .section-title:first-child { margin-top: 0; }
+
+    /* ── Summary cards ───────────────────────────────────────────── */
+    .summary-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .summary-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1rem 1.25rem; }
+    .summary-card .card-label { font-size: 0.78rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+    .summary-card .card-value { font-size: 1.6rem; font-weight: 700; }
+    .summary-card .card-sub   { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem; }
+
+    /* ── FY selector ─────────────────────────────────────────────── */
+    .fy-selector { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .fy-selector label { font-size: 0.85rem; color: var(--text-secondary); }
+    .fy-btn { padding: 0.3rem 0.8rem; border: 1px solid var(--border-subtle); border-radius: 20px; background: var(--bg-card); font-size: 0.82rem; cursor: pointer; color: var(--text-secondary); }
+    .fy-btn.active { background: var(--bg-header); color: white; border-color: var(--bg-header); }
+    .fy-btn:hover:not(.active) { border-color: var(--text-secondary); }
+
+    /* ── Fund category bars ──────────────────────────────────────── */
+    .fund-bars { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem; }
+    .fund-bar-row { display: grid; grid-template-columns: 140px 1fr 110px; gap: 0.75rem; align-items: center; font-size: 0.85rem; }
+    .fund-bar-label { color: var(--text-secondary); text-align: right; }
+    .fund-bar-track { background: var(--border-subtle); border-radius: 4px; height: 18px; overflow: hidden; }
+    .fund-bar-fill  { height: 100%; border-radius: 4px; transition: width 0.4s; }
+    .fund-bar-amount { font-weight: 600; text-align: right; }
+    .cat-general     { background: var(--color-general); }
+    .cat-federal     { background: var(--color-federal); }
+    .cat-food_service{ background: var(--color-food); }
+    .cat-debt_service{ background: var(--color-debt); }
+    .cat-construction{ background: var(--color-construct); }
+    .cat-other       { background: var(--color-other); }
+
+    /* ── Data table ──────────────────────────────────────────────── */
+    .data-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-subtle); }
+    .data-table th { background: var(--bg-card-alt); padding: 0.6rem 0.9rem; text-align: left; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-secondary); border-bottom: 1px solid var(--border-subtle); }
+    .data-table td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border-subtle); }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: var(--bg-card-alt); }
+    .data-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .data-table .change-up   { color: #dc2626; }
+    .data-table .change-down { color: #059669; }
+
+    /* ── Search bar ──────────────────────────────────────────────── */
+    .search-bar { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+    .search-bar input { flex: 1; padding: 0.5rem 0.75rem; border: 1px solid var(--border-subtle); border-radius: 6px; background: var(--bg-card); color: var(--text-primary); font-size: 0.9rem; max-width: 400px; }
+    .search-bar input:focus { outline: 2px solid var(--bg-header); }
+
+    /* ── Watchdog flags ──────────────────────────────────────────── */
+    .watchdog-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .flag-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-left: 4px solid; border-radius: 0 6px 6px 0; padding: 0.75rem 1rem; }
+    .flag-card.medium { border-left-color: var(--color-watchdog-medium); }
+    .flag-card.low    { border-left-color: var(--color-watchdog-low); }
+    .flag-card.high   { border-left-color: var(--color-watchdog-high); }
+    .flag-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
+    .flag-vendor { font-weight: 600; font-size: 0.95rem; margin: 0.15rem 0; }
+    .flag-note  { font-size: 0.83rem; color: var(--text-secondary); }
+    .flag-meta  { font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.25rem; }
+
+    /* ── Pagination ──────────────────────────────────────────────── */
+    .pagination { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; flex-wrap: wrap; }
+    .page-btn { padding: 0.25rem 0.6rem; border: 1px solid var(--border-subtle); border-radius: 4px; background: var(--bg-card); font-size: 0.8rem; cursor: pointer; color: var(--text-secondary); }
+    .page-btn.active { background: var(--bg-header); color: white; border-color: var(--bg-header); }
+    .page-btn:hover:not(.active) { border-color: var(--text-secondary); }
+    .page-info { font-size: 0.8rem; color: var(--text-secondary); margin-left: 0.5rem; }
+
+    /* ── Loading ─────────────────────────────────────────────────── */
+    #loading { text-align: center; padding: 3rem; color: var(--text-secondary); }
+
+    /* ── Responsive ──────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .summary-cards { grid-template-columns: 1fr 1fr; }
+      .fund-bar-row { grid-template-columns: 90px 1fr 90px; }
+      .site-nav-inner { overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-brand">
+      <h1>CISD Finance Tracker</h1>
+      <p>Constituent spending transparency for Conroe ISD</p>
+    </div>
+  </div>
+</header>
+
+<div class="controls-bar">
+  <div class="controls-bar-inner">
+    <button class="hctrl-btn" id="font-down" title="Decrease font size">A−</button>
+    <button class="hctrl-btn" id="font-up" title="Increase font size">A+</button>
+    <button class="hctrl-btn" id="theme-toggle" title="Toggle dark mode">☾</button>
+  </div>
+</div>
+
+<div class="disclaimer">
+  <div class="disclaimer-inner">Unofficial analysis based on public financial records. Not affiliated with or endorsed by Conroe Independent School District.</div>
+</div>
+
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a class="nav-tab active" data-page="dashboard">Dashboard</a>
+    <a class="nav-tab" data-page="vendors">Vendors</a>
+    <a class="nav-tab" data-page="functions">By Function</a>
+    <a class="nav-tab" data-page="watchdog">Watchdog ⚑</a>
+  </div>
+</nav>
+
+<main>
+  <div id="loading">Loading financial data…</div>
+
+  <!-- ── DASHBOARD ── -->
+  <div class="page" id="page-dashboard">
+    <div class="section-title">Overview</div>
+
+    <div class="fy-selector">
+      <label>Fiscal Year:</label>
+      <div id="fy-buttons"></div>
+    </div>
+
+    <div class="summary-cards" id="summary-cards"></div>
+
+    <div class="section-title">Spending by Fund Category</div>
+    <div class="fund-bars" id="fund-bars"></div>
+
+    <div class="section-title">Top 20 Vendors <span id="top-vendor-fy-label" style="font-weight:400;font-size:0.9rem"></span></div>
+    <table class="data-table" id="top-vendors-table">
+      <thead><tr><th>#</th><th>Vendor</th><th class="num">Amount</th><th class="num">Prior Year</th><th class="num">Change</th></tr></thead>
+      <tbody id="top-vendors-body"></tbody>
+    </table>
+
+    <div class="section-title" style="margin-top:1.5rem">Monthly Spending Trend</div>
+    <table class="data-table" id="monthly-table">
+      <thead><tr><th>Month</th><th class="num">AP Checks</th></tr></thead>
+      <tbody id="monthly-body"></tbody>
+    </table>
+  </div>
+
+  <!-- ── VENDORS ── -->
+  <div class="page" id="page-vendors">
+    <div class="section-title">Vendor Explorer</div>
+    <div class="search-bar">
+      <input type="search" id="vendor-search" placeholder="Search vendor name…" autocomplete="off">
+    </div>
+    <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="vendor-count-label"></div>
+    <table class="data-table" id="vendors-table">
+      <thead><tr><th>#</th><th>Vendor</th><th class="num">Total (All Years)</th><th class="num" id="vendor-fy-col">Current FY</th><th class="num">Prior FY</th><th class="num">YoY Δ</th></tr></thead>
+      <tbody id="vendors-body"></tbody>
+    </table>
+    <div class="pagination" id="vendor-pagination"></div>
+  </div>
+
+  <!-- ── FUNCTIONS ── -->
+  <div class="page" id="page-functions">
+    <div class="section-title">Spending by Function</div>
+    <div class="fy-selector">
+      <label>Fiscal Year:</label>
+      <div id="func-fy-buttons"></div>
+    </div>
+    <table class="data-table" id="functions-table">
+      <thead><tr><th>Code</th><th>Function</th><th class="num">Actual Spend</th><th class="num">Budget</th><th class="num">Budget vs Actual</th></tr></thead>
+      <tbody id="functions-body"></tbody>
+    </table>
+  </div>
+
+  <!-- ── WATCHDOG ── -->
+  <div class="page" id="page-watchdog">
+    <div class="section-title">⚑ Watchdog Flags</div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:1rem">Automatically identified patterns that merit constituent attention. All flags are based solely on public financial records.</p>
+
+    <div class="fy-selector" id="watchdog-filter-row">
+      <label>Filter:</label>
+      <button class="fy-btn active" data-wtype="all">All</button>
+      <button class="fy-btn" data-wtype="threshold_proximity">Near Bid Threshold</button>
+      <button class="fy-btn" data-wtype="yoy_increase">YoY Increase</button>
+      <button class="fy-btn" data-wtype="new_vendor">New Vendors</button>
+      <button class="fy-btn" data-wtype="spending_spike">Spending Spikes</button>
+    </div>
+    <div style="font-size:0.82rem;color:var(--text-secondary);margin:0.5rem 0 0.75rem" id="watchdog-count-label"></div>
+    <div class="watchdog-list" id="watchdog-list"></div>
+    <div class="pagination" id="watchdog-pagination"></div>
+  </div>
+</main>
+
+<script>
+'use strict';
+
+// ── State ──────────────────────────────────────────────────────────────────
+let META        = null;
+let VENDORS     = null;
+let FUNCTIONS   = null;
+let MONTHLY     = null;
+let FUND_CATS   = null;
+let WATCHDOG    = null;
+let BUDGET_FUNC = null;
+
+let activeFY       = null;
+let activeFuncFY   = null;
+let vendorPage     = 1;
+let watchdogPage   = 1;
+let watchdogFilter = 'all';
+const VENDOR_PAGE_SIZE   = 50;
+const WATCHDOG_PAGE_SIZE = 30;
+
+// ── Utilities ──────────────────────────────────────────────────────────────
+const fmt  = v => v == null ? '—' : '$' + Math.round(v).toLocaleString();
+const pct  = (a, b) => b ? ((a - b) / b * 100).toFixed(1) + '%' : '—';
+
+function prevFY(fy) {
+  if (!fy || !META) return null;
+  const fys = META.fiscal_years;
+  const i = fys.indexOf(fy);
+  return i > 0 ? fys[i - 1] : null;
+}
+
+// ── Data loading ────────────────────────────────────────────────────────────
+async function loadJSON(path) {
+  const r = await fetch(path);
+  if (!r.ok) throw new Error(`Failed to load ${path}`);
+  return r.json();
+}
+
+async function init() {
+  try {
+    [META, VENDORS, FUNCTIONS, MONTHLY, FUND_CATS, WATCHDOG, BUDGET_FUNC] = await Promise.all([
+      loadJSON('data/meta.json'),
+      loadJSON('data/vendors.json'),
+      loadJSON('data/functions.json'),
+      loadJSON('data/monthly.json'),
+      loadJSON('data/fund_categories.json'),
+      loadJSON('data/watchdog.json'),
+      loadJSON('data/budget_by_function.json'),
+    ]);
+
+    activeFY     = META.fiscal_years[META.fiscal_years.length - 1];
+    activeFuncFY = activeFY;
+
+    document.getElementById('loading').style.display = 'none';
+
+    buildFYButtons('fy-buttons',     META.fiscal_years, activeFY,     fy => { activeFY = fy; renderDashboard(); });
+    buildFYButtons('func-fy-buttons',META.fiscal_years, activeFuncFY, fy => { activeFuncFY = fy; renderFunctions(); });
+
+    renderDashboard();
+    renderVendors();
+    renderFunctions();
+    renderWatchdog();
+
+    document.querySelectorAll('.page')[0].classList.add('active');
+  } catch (e) {
+    document.getElementById('loading').textContent = 'Error loading data: ' + e.message;
+  }
+}
+
+// ── FY button builder ───────────────────────────────────────────────────────
+function buildFYButtons(containerId, fys, selected, onChange) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = '';
+  fys.forEach(fy => {
+    const btn = document.createElement('button');
+    btn.className = 'fy-btn' + (fy === selected ? ' active' : '');
+    btn.textContent = fy;
+    btn.addEventListener('click', () => {
+      el.querySelectorAll('.fy-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      onChange(fy);
+    });
+    el.appendChild(btn);
+  });
+}
+
+// ── Dashboard ────────────────────────────────────────────────────────────────
+function renderDashboard() {
+  const fy   = activeFY;
+  const prev = prevFY(fy);
+
+  // Summary cards
+  const totalFY   = VENDORS.reduce((s, v) => s + (v.by_fy[fy] || 0), 0);
+  const totalPrev = prev ? VENDORS.reduce((s, v) => s + (v.by_fy[prev] || 0), 0) : 0;
+  const vendorCount = VENDORS.filter(v => v.by_fy[fy]).length;
+  const monthlyData = MONTHLY.filter(m => m.month.startsWith(fy.slice(0,4)));
+
+  document.getElementById('summary-cards').innerHTML = `
+    <div class="summary-card">
+      <div class="card-label">Total AP Spend (${fy})</div>
+      <div class="card-value">${fmt(totalFY)}</div>
+      ${prev ? `<div class="card-sub">${pct(totalFY, totalPrev)} vs ${prev}</div>` : ''}
+    </div>
+    <div class="summary-card">
+      <div class="card-label">Active Vendors</div>
+      <div class="card-value">${vendorCount.toLocaleString()}</div>
+      <div class="card-sub">across ${META.fiscal_years.length} fiscal years</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">Total Transactions</div>
+      <div class="card-value">${META.total_transactions.toLocaleString()}</div>
+      <div class="card-sub">all years combined</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">Watchdog Flags</div>
+      <div class="card-value">${WATCHDOG.length}</div>
+      <div class="card-sub"><a href="#" class="nav-link" data-page="watchdog">View all flags →</a></div>
+    </div>
+  `;
+
+  // Fund category bars
+  const fyFundCats = FUND_CATS.map(fc => ({
+    ...fc, fyTotal: fc.by_fy[fy] || 0
+  })).sort((a, b) => b.fyTotal - a.fyTotal);
+  const maxCat = Math.max(...fyFundCats.map(f => f.fyTotal));
+  const CAT_LABELS = {
+    general: 'General Operating', federal: 'Federal Grants',
+    food_service: 'Child Nutrition', debt_service: 'Debt Service',
+    construction: 'Construction', other: 'Other'
+  };
+  document.getElementById('fund-bars').innerHTML = fyFundCats.map(fc => `
+    <div class="fund-bar-row">
+      <div class="fund-bar-label">${CAT_LABELS[fc.category] || fc.category}</div>
+      <div class="fund-bar-track">
+        <div class="fund-bar-fill cat-${fc.category}" style="width:${maxCat > 0 ? (fc.fyTotal/maxCat*100).toFixed(1) : 0}%"></div>
+      </div>
+      <div class="fund-bar-amount">${fmt(fc.fyTotal)}</div>
+    </div>
+  `).join('');
+
+  // Top vendors
+  document.getElementById('top-vendor-fy-label').textContent = `— ${fy}`;
+  const topVendors = [...VENDORS]
+    .filter(v => v.by_fy[fy])
+    .sort((a, b) => (b.by_fy[fy] || 0) - (a.by_fy[fy] || 0))
+    .slice(0, 20);
+  document.getElementById('top-vendors-body').innerHTML = topVendors.map((v, i) => {
+    const curr = v.by_fy[fy] || 0;
+    const prior = prev ? (v.by_fy[prev] || 0) : null;
+    const delta = prior != null ? curr - prior : null;
+    const deltaClass = delta == null ? '' : delta > 0 ? 'change-up' : 'change-down';
+    const deltaStr = delta == null ? '—' : (delta > 0 ? '+' : '') + fmt(delta);
+    return `<tr>
+      <td>${i+1}</td>
+      <td>${v.vendor}</td>
+      <td class="num">${fmt(curr)}</td>
+      <td class="num">${prior != null ? fmt(prior) : '—'}</td>
+      <td class="num ${deltaClass}">${deltaStr}</td>
+    </tr>`;
+  }).join('');
+
+  // Monthly trend
+  document.getElementById('monthly-body').innerHTML = MONTHLY
+    .slice().reverse()
+    .slice(0, 24)
+    .map(m => `<tr><td>${m.month}</td><td class="num">${fmt(m.total)}</td></tr>`)
+    .join('');
+}
+
+// ── Vendors ──────────────────────────────────────────────────────────────────
+function renderVendors() {
+  const query = (document.getElementById('vendor-search')?.value || '').toLowerCase().trim();
+  const fy    = activeFY;
+  const prev  = prevFY(fy);
+
+  let list = query
+    ? VENDORS.filter(v => v.vendor.toLowerCase().includes(query))
+    : VENDORS;
+
+  document.getElementById('vendor-count-label').textContent =
+    `${list.length.toLocaleString()} vendors${query ? ` matching "${query}"` : ''}`;
+  document.getElementById('vendor-fy-col').textContent = fy || 'Current FY';
+
+  const total = list.length;
+  const pages = Math.ceil(total / VENDOR_PAGE_SIZE);
+  vendorPage  = Math.min(vendorPage, pages || 1);
+  const slice = list.slice((vendorPage - 1) * VENDOR_PAGE_SIZE, vendorPage * VENDOR_PAGE_SIZE);
+
+  document.getElementById('vendors-body').innerHTML = slice.map((v, i) => {
+    const curr  = v.by_fy[fy] || 0;
+    const prior = prev ? (v.by_fy[prev] || 0) : null;
+    const delta = prior != null ? curr - prior : null;
+    const deltaClass = delta == null ? '' : delta > 0 ? 'change-up' : 'change-down';
+    const deltaStr = delta == null ? '—' : (delta > 0 ? '+' : '') + fmt(delta);
+    return `<tr>
+      <td>${(vendorPage-1)*VENDOR_PAGE_SIZE + i + 1}</td>
+      <td>${v.vendor}</td>
+      <td class="num">${fmt(v.total)}</td>
+      <td class="num">${curr > 0 ? fmt(curr) : '—'}</td>
+      <td class="num">${prior != null && prior > 0 ? fmt(prior) : '—'}</td>
+      <td class="num ${deltaClass}">${deltaStr}</td>
+    </tr>`;
+  }).join('');
+
+  renderPagination('vendor-pagination', pages, vendorPage, p => { vendorPage = p; renderVendors(); });
+}
+
+// ── Functions ────────────────────────────────────────────────────────────────
+function renderFunctions() {
+  const fy = activeFuncFY;
+  // Build budget lookup: function → amount for this FY
+  const budgetByFunc = {};
+  BUDGET_FUNC.forEach(f => { budgetByFunc[f.function] = f.by_fy[fy] || 0; });
+
+  const rows = FUNCTIONS.map(f => ({
+    ...f,
+    actual: f.by_fy[fy] || 0,
+    budget: budgetByFunc[f.function] || 0,
+  })).filter(f => f.actual > 0).sort((a, b) => b.actual - a.actual);
+
+  document.getElementById('functions-body').innerHTML = rows.map(f => {
+    const variance = f.budget > 0 ? ((f.actual - f.budget) / f.budget * 100).toFixed(1) : null;
+    const varClass = variance == null ? '' : parseFloat(variance) > 10 ? 'change-up' : parseFloat(variance) < -10 ? 'change-down' : '';
+    return `<tr>
+      <td><code>${f.function}</code></td>
+      <td>${f.label}</td>
+      <td class="num">${fmt(f.actual)}</td>
+      <td class="num">${f.budget > 0 ? fmt(f.budget) : '—'}</td>
+      <td class="num ${varClass}">${variance != null ? variance + '%' : '—'}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── Watchdog ─────────────────────────────────────────────────────────────────
+function renderWatchdog() {
+  const list = watchdogFilter === 'all'
+    ? WATCHDOG
+    : WATCHDOG.filter(f => f.type === watchdogFilter);
+
+  document.getElementById('watchdog-count-label').textContent =
+    `${list.length} flag${list.length !== 1 ? 's' : ''}${watchdogFilter !== 'all' ? ` of type "${watchdogFilter}"` : ''}`;
+
+  const pages = Math.ceil(list.length / WATCHDOG_PAGE_SIZE);
+  watchdogPage = Math.min(watchdogPage, pages || 1);
+  const slice  = list.slice((watchdogPage - 1) * WATCHDOG_PAGE_SIZE, watchdogPage * WATCHDOG_PAGE_SIZE);
+
+  document.getElementById('watchdog-list').innerHTML = slice.map(f => `
+    <div class="flag-card ${f.severity || 'low'}">
+      <div class="flag-label">${f.label}</div>
+      <div class="flag-vendor">${f.vendor || f.month || ''}</div>
+      <div class="flag-note">${f.note}</div>
+      <div class="flag-meta">${[f.fy, f.month, f.amount ? fmt(f.amount) : null].filter(Boolean).join(' · ')}</div>
+    </div>
+  `).join('');
+
+  renderPagination('watchdog-pagination', pages, watchdogPage, p => { watchdogPage = p; renderWatchdog(); });
+}
+
+// ── Pagination ────────────────────────────────────────────────────────────────
+function renderPagination(containerId, pages, current, onChange) {
+  const el = document.getElementById(containerId);
+  if (!el || pages <= 1) { if (el) el.innerHTML = ''; return; }
+  let html = '';
+  const show = p => `<button class="page-btn${p === current ? ' active' : ''}" data-p="${p}">${p}</button>`;
+  if (current > 1) html += `<button class="page-btn" data-p="${current-1}">‹</button>`;
+  if (pages <= 7) {
+    for (let p = 1; p <= pages; p++) html += show(p);
+  } else {
+    html += show(1);
+    if (current > 3) html += '<span class="page-info">…</span>';
+    for (let p = Math.max(2, current-1); p <= Math.min(pages-1, current+1); p++) html += show(p);
+    if (current < pages - 2) html += '<span class="page-info">…</span>';
+    html += show(pages);
+  }
+  if (current < pages) html += `<button class="page-btn" data-p="${current+1}">›</button>`;
+  html += `<span class="page-info">Page ${current} of ${pages}</span>`;
+  el.innerHTML = html;
+  el.querySelectorAll('[data-p]').forEach(btn =>
+    btn.addEventListener('click', () => onChange(parseInt(btn.dataset.p)))
+  );
+}
+
+// ── Navigation ────────────────────────────────────────────────────────────────
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  const pageEl = document.getElementById(`page-${name}`);
+  const tabEl  = document.querySelector(`[data-page="${name}"]`);
+  if (pageEl) pageEl.classList.add('active');
+  if (tabEl)  tabEl.classList.add('active');
+}
+
+document.addEventListener('click', e => {
+  const tab = e.target.closest('[data-page]');
+  if (tab) { e.preventDefault(); showPage(tab.dataset.page); }
+
+  const wtype = e.target.closest('[data-wtype]');
+  if (wtype) {
+    document.querySelectorAll('[data-wtype]').forEach(b => b.classList.remove('active'));
+    wtype.classList.add('active');
+    watchdogFilter = wtype.dataset.wtype;
+    watchdogPage = 1;
+    renderWatchdog();
+  }
+});
+
+document.getElementById('vendor-search')?.addEventListener('input', () => {
+  vendorPage = 1;
+  renderVendors();
+});
+
+// ── Theme & font controls ──────────────────────────────────────────────────
+let fontSize = 15;
+document.getElementById('font-down').addEventListener('click', () => {
+  fontSize = Math.max(11, fontSize - 1);
+  document.body.style.fontSize = fontSize + 'px';
+});
+document.getElementById('font-up').addEventListener('click', () => {
+  fontSize = Math.min(22, fontSize + 1);
+  document.body.style.fontSize = fontSize + 'px';
+});
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
+  document.getElementById('theme-toggle').textContent = isDark ? '☾' : '☀';
+});
+
+init();
+</script>
+</body>
+</html>

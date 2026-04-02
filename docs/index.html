@@ -239,6 +239,10 @@
       <label>Fiscal Year:</label>
       <div id="func-fy-buttons"></div>
     </div>
+    <div class="search-bar">
+      <input type="search" id="func-search" placeholder="Search by function code or name…" autocomplete="off">
+    </div>
+    <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="func-count-label"></div>
     <table class="data-table" id="functions-table">
       <thead><tr><th>Code</th><th>Function</th><th class="num">Actual Spend</th><th class="num">Budget</th><th class="num">Budget vs Actual</th></tr></thead>
       <tbody id="functions-body"></tbody>
@@ -366,12 +370,12 @@ function renderDashboard() {
     <div class="summary-card">
       <div class="card-label">Total AP Spend (${fy})</div>
       <div class="card-value">${fmt(totalFY)}</div>
-      ${prev ? `<div class="card-sub">${pct(totalFY, totalPrev)} vs ${prev}</div>` : ''}
+      ${prev ? `<div class="card-sub">${pct(totalFY, totalPrev)} vs ${prev}${fy === META.fiscal_years[META.fiscal_years.length - 1] ? ' (YTD)' : ''}</div>` : ''}
     </div>
     <div class="summary-card">
       <div class="card-label">Active Vendors</div>
       <div class="card-value">${vendorCount.toLocaleString()}</div>
-      <div class="card-sub">across ${META.fiscal_years.length} fiscal years</div>
+      <div class="card-sub">in ${fy}</div>
     </div>
     <div class="summary-card">
       <div class="card-label">Total Transactions</div>
@@ -474,16 +478,29 @@ function renderVendors() {
 
 // ── Functions ────────────────────────────────────────────────────────────────
 function renderFunctions() {
-  const fy = activeFuncFY;
+  const fy    = activeFuncFY;
+  const query = (document.getElementById('func-search')?.value || '').toLowerCase().trim();
   // Build budget lookup: function → amount for this FY
   const budgetByFunc = {};
   BUDGET_FUNC.forEach(f => { budgetByFunc[f.function] = f.by_fy[fy] || 0; });
 
-  const rows = FUNCTIONS.map(f => ({
+  let rows = FUNCTIONS.map(f => ({
     ...f,
     actual: f.by_fy[fy] || 0,
     budget: budgetByFunc[f.function] || 0,
-  })).filter(f => f.actual > 0).sort((a, b) => b.actual - a.actual);
+  })).filter(f => f.actual > 0);
+
+  if (query) {
+    rows = rows.filter(f =>
+      f.function.toLowerCase().includes(query) ||
+      f.label.toLowerCase().includes(query)
+    );
+  }
+
+  rows.sort((a, b) => b.actual - a.actual);
+
+  document.getElementById('func-count-label').textContent =
+    `${rows.length} function${rows.length !== 1 ? 's' : ''}${query ? ` matching "${query}"` : ''}`;
 
   document.getElementById('functions-body').innerHTML = rows.map(f => {
     const variance = f.budget > 0 ? ((f.actual - f.budget) / f.budget * 100).toFixed(1) : null;
@@ -574,6 +591,10 @@ document.addEventListener('click', e => {
 document.getElementById('vendor-search')?.addEventListener('input', () => {
   vendorPage = 1;
   renderVendors();
+});
+
+document.getElementById('func-search')?.addEventListener('input', () => {
+  renderFunctions();
 });
 
 // ── Theme & font controls ──────────────────────────────────────────────────

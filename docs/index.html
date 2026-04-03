@@ -105,12 +105,12 @@
     .fund-bar-track { background: var(--border-subtle); border-radius: 4px; height: 18px; overflow: hidden; }
     .fund-bar-fill  { height: 100%; border-radius: 4px; transition: width 0.4s; }
     .fund-bar-amount { font-weight: 600; text-align: right; }
-    .cat-general     { background: var(--color-general); }
-    .cat-federal     { background: var(--color-federal); }
-    .cat-food_service{ background: var(--color-food); }
-    .cat-debt_service{ background: var(--color-debt); }
-    .cat-construction{ background: var(--color-construct); }
-    .cat-other       { background: var(--color-other); }
+    .cat-general          { background: var(--color-general); }
+    .cat-federal          { background: var(--color-federal); }
+    .cat-construction     { background: var(--color-construct); }
+    .cat-debt_service     { background: var(--color-debt); }
+    .cat-student_activity { background: var(--color-other); }
+    .cat-other            { background: var(--color-other); }
 
     /* ── Data table ──────────────────────────────────────────────── */
     .data-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--bg-card); border-radius: 8px; overflow: hidden; border: 1px solid var(--border-subtle); }
@@ -367,26 +367,40 @@ function renderDashboard() {
   const vendorCount = VENDORS.filter(v => v.by_fy[fy]).length;
   const monthlyData = MONTHLY.filter(m => m.month.startsWith(fy.slice(0,4)));
 
+  // Near-threshold payments this FY (within 15% of $100k bid threshold)
+  const nearThresholdCount = WATCHDOG.filter(f =>
+    f.type === 'threshold_proximity' && f.fy === fy
+  ).length;
+
+  // New vendors this FY with >= $50k in payments
+  const newVendorFlags = WATCHDOG.filter(f => f.type === 'new_vendor' && f.fy === fy).length;
+
+  // Top vendor concentration: what % of total FY spend goes to top vendor
+  const topVendorAmt = VENDORS.filter(v => v.by_fy[fy]).sort((a,b) => (b.by_fy[fy]||0)-(a.by_fy[fy]||0))[0];
+  const topPct = topVendorAmt && totalFY > 0 ? ((topVendorAmt.by_fy[fy] / totalFY) * 100).toFixed(1) : null;
+
+  const isCurrentFY = fy === META.fiscal_years[META.fiscal_years.length - 1];
+
   document.getElementById('summary-cards').innerHTML = `
     <div class="summary-card">
-      <div class="card-label">Total AP Spend (${fy})</div>
+      <div class="card-label">Total AP Spend — ${fy}</div>
       <div class="card-value">${fmt(totalFY)}</div>
-      ${prev ? `<div class="card-sub">${pct(totalFY, totalPrev)} vs ${prev}${fy === META.fiscal_years[META.fiscal_years.length - 1] ? ' (YTD)' : ''}</div>` : ''}
+      ${prev ? `<div class="card-sub">${pct(totalFY, totalPrev)} vs ${prev}${isCurrentFY ? ' (YTD)' : ''}</div>` : ''}
     </div>
     <div class="summary-card">
-      <div class="card-label">Active Vendors</div>
-      <div class="card-value">${vendorCount.toLocaleString()}</div>
-      <div class="card-sub">in ${fy}</div>
+      <div class="card-label">Near Bid Threshold</div>
+      <div class="card-value">${nearThresholdCount}</div>
+      <div class="card-sub">payments within 15% of $100k limit — <a href="#" data-page="watchdog">review →</a></div>
     </div>
     <div class="summary-card">
-      <div class="card-label">Total Transactions</div>
-      <div class="card-value">${META.total_transactions.toLocaleString()}</div>
-      <div class="card-sub">all years combined</div>
+      <div class="card-label">New Vendors ≥ $50k</div>
+      <div class="card-value">${newVendorFlags}</div>
+      <div class="card-sub">first-time vendors receiving large payments in ${fy}</div>
     </div>
     <div class="summary-card">
-      <div class="card-label">Watchdog Flags</div>
-      <div class="card-value">${WATCHDOG.length}</div>
-      <div class="card-sub"><a href="#" class="nav-link" data-page="watchdog">View all flags →</a></div>
+      <div class="card-label">Top Vendor Share</div>
+      <div class="card-value">${topPct != null ? topPct + '%' : '—'}</div>
+      <div class="card-sub">${topVendorAmt ? topVendorAmt.vendor.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()).slice(0,28) : ''}</div>
     </div>
   `;
 
@@ -397,8 +411,8 @@ function renderDashboard() {
   const maxCat = Math.max(...fyFundCats.map(f => f.fyTotal));
   const CAT_LABELS = {
     general: 'General Operating', federal: 'Federal Grants',
-    food_service: 'Child Nutrition', debt_service: 'Debt Service',
-    construction: 'Construction', other: 'Other'
+    construction: 'Bond Construction', debt_service: 'Debt Service',
+    student_activity: 'Student Activity', other: 'Other'
   };
   document.getElementById('fund-bars').innerHTML = fyFundCats.map(fc => `
     <div class="fund-bar-row">

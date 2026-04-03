@@ -1,8 +1,8 @@
 [
   {
     "fund": "613",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 486507899.22,
     "by_fy": {
       "2022-2023": 3893449.02,
@@ -27,8 +27,8 @@
   },
   {
     "fund": "623",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 300604403.23,
     "by_fy": {
       "2024-2025": 67785048.12,
@@ -37,8 +37,8 @@
   },
   {
     "fund": "629",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 185530448.0,
     "by_fy": {
       "2020-2021": 44181420.71,
@@ -51,8 +51,8 @@
   },
   {
     "fund": "639",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 172755873.33,
     "by_fy": {
       "2021-2022": 44820562.32,
@@ -64,8 +64,8 @@
   },
   {
     "fund": "649",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 145113046.3,
     "by_fy": {
       "2021-2022": 12265.02,
@@ -77,8 +77,8 @@
   },
   {
     "fund": "699",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 122253184.1,
     "by_fy": {
       "2020-2021": 25406703.3,
@@ -105,8 +105,8 @@
   },
   {
     "fund": "619",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 88632500.63,
     "by_fy": {
       "2020-2021": 67556464.76,
@@ -213,8 +213,8 @@
   },
   {
     "fund": "633",
-    "label": "Food Service",
-    "category": "food_service",
+    "label": "Bond / Capital Projects",
+    "category": "construction",
     "total": 8986158.42,
     "by_fy": {
       "2025-2026": 8986158.42

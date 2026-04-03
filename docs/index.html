@@ -145,6 +145,20 @@
     .page-btn:hover:not(.active) { border-color: var(--text-secondary); }
     .page-info { font-size: 0.8rem; color: var(--text-secondary); margin-left: 0.5rem; }
 
+    /* ── Trend charts ────────────────────────────────────────────── */
+    .chart-wrap { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1.25rem; margin-bottom: 0.5rem; }
+    .chart-wrap svg text { font-family: system-ui, -apple-system, sans-serif; }
+    .chart-ref-line { stroke: #c9a227; stroke-dasharray: 5 4; stroke-width: 1.5; }
+    .chart-ref-label { fill: #c9a227; font-size: 11px; font-weight: 600; }
+    .chart-line { stroke: var(--bg-header); stroke-width: 2.5; fill: none; }
+    .chart-dot  { fill: var(--bg-header); }
+    .chart-label-val   { font-size: 12px; font-weight: 700; fill: var(--text-primary); }
+    .chart-label-delta { font-size: 10px; }
+    .chart-label-fy    { font-size: 11px; fill: var(--text-secondary); }
+    .delta-up   { fill: #dc2626; }
+    .delta-down { fill: #059669; }
+    .delta-flat { fill: var(--text-secondary); }
+
     /* ── Loading ─────────────────────────────────────────────────── */
     #loading { text-align: center; padding: 3rem; color: var(--text-secondary); }
 
@@ -184,6 +198,7 @@
     <a class="nav-tab active" data-page="dashboard">Dashboard</a>
     <a class="nav-tab" data-page="vendors">Vendors</a>
     <a class="nav-tab" data-page="functions">By Function</a>
+    <a class="nav-tab" data-page="trends">Trends</a>
     <a class="nav-tab" data-page="watchdog">Watchdog ⚑</a>
   </div>
 </nav>
@@ -250,6 +265,25 @@
     </table>
   </div>
 
+  <!-- ── TRENDS ── -->
+  <div class="page" id="page-trends">
+    <div class="section-title">Expenditure Per Student</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:1rem">
+      All-funds expenditure per student (general fund, debt service, capital projects, and non-major governmental).
+      Source: CISD Expenditures Per Student reports and Summary of Finances (ADA).
+    </p>
+    <div id="chart-perpupil" style="overflow-x:auto"></div>
+
+    <div class="section-title" style="margin-top:2rem">Instruction vs. Administration — General Fund</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:1rem">
+      Instruction (Function 11) as a percentage of total general fund AP spending.
+      Administration includes Functions 21 (Instructional Admin), 23 (School Admin), and 41 (General Admin).
+      Note: AP check registers reflect non-payroll expenditures only; payroll is the largest component of instruction spending and is not included.
+    </p>
+    <div id="chart-instruction" style="overflow-x:auto"></div>
+    <div id="trends-table" style="margin-top:1.5rem"></div>
+  </div>
+
   <!-- ── WATCHDOG ── -->
   <div class="page" id="page-watchdog">
     <div class="section-title">⚑ Watchdog Flags</div>
@@ -258,6 +292,7 @@
     <div class="fy-selector" id="watchdog-filter-row">
       <label>Filter:</label>
       <button class="fy-btn active" data-wtype="all">All</button>
+      <button class="fy-btn" data-wtype="split_purchase">Split Purchases ⚠</button>
       <button class="fy-btn" data-wtype="threshold_proximity">Near Bid Threshold</button>
       <button class="fy-btn" data-wtype="yoy_increase">YoY Increase</button>
       <button class="fy-btn" data-wtype="new_vendor">New Vendors</button>
@@ -280,6 +315,7 @@ let MONTHLY     = null;
 let FUND_CATS   = null;
 let WATCHDOG    = null;
 let BUDGET_FUNC = null;
+let ENROLLMENT  = null;
 
 let activeFY       = null;
 let activeFuncFY   = null;
@@ -309,7 +345,7 @@ async function loadJSON(path) {
 
 async function init() {
   try {
-    [META, VENDORS, FUNCTIONS, MONTHLY, FUND_CATS, WATCHDOG, BUDGET_FUNC] = await Promise.all([
+    [META, VENDORS, FUNCTIONS, MONTHLY, FUND_CATS, WATCHDOG, BUDGET_FUNC, ENROLLMENT] = await Promise.all([
       loadJSON('data/meta.json'),
       loadJSON('data/vendors.json'),
       loadJSON('data/functions.json'),
@@ -317,6 +353,7 @@ async function init() {
       loadJSON('data/fund_categories.json'),
       loadJSON('data/watchdog.json'),
       loadJSON('data/budget_by_function.json'),
+      loadJSON('data/enrollment.json'),
     ]);
 
     activeFY     = META.fiscal_years[META.fiscal_years.length - 1];
@@ -330,6 +367,7 @@ async function init() {
     renderDashboard();
     renderVendors();
     renderFunctions();
+    renderTrends();
     renderWatchdog();
 
     document.querySelectorAll('.page')[0].classList.add('active');
@@ -535,6 +573,145 @@ function renderFunctions() {
       <td class="num ${varClass}">${variance != null ? variance + '%' : '—'}</td>
     </tr>`;
   }).join('');
+}
+
+// ── Trends ───────────────────────────────────────────────────────────────────
+function buildLineChart({ points, yFmt, refLine, refLabel, yLabel, title }) {
+  const W = 700, H = 220, padL = 60, padR = 30, padT = 30, padB = 50;
+  const innerW = W - padL - padR;
+  const innerH = H - padT - padB;
+  const n = points.length;
+  if (n < 2) return '<p style="color:var(--text-secondary)">Insufficient data</p>';
+
+  const vals = points.map(p => p.y);
+  const yMin = Math.min(...vals) * 0.9;
+  const yMax = refLine ? Math.max(...vals, refLine) * 1.08 : Math.max(...vals) * 1.1;
+  const xOf = i => padL + (i / (n - 1)) * innerW;
+  const yOf = v => padT + innerH - ((v - yMin) / (yMax - yMin)) * innerH;
+
+  let svg = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;max-width:${W}px;display:block">`;
+
+  // Y-axis gridlines + labels
+  const yTicks = 4;
+  for (let i = 0; i <= yTicks; i++) {
+    const v = yMin + (yMax - yMin) * (i / yTicks);
+    const y = yOf(v);
+    svg += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="var(--border-subtle)" stroke-width="1"/>`;
+    svg += `<text x="${padL - 6}" y="${y + 4}" text-anchor="end" font-size="10" fill="var(--text-secondary)">${yFmt(v)}</text>`;
+  }
+
+  // Reference line
+  if (refLine != null) {
+    const ry = yOf(refLine);
+    svg += `<line x1="${padL}" y1="${ry}" x2="${W - padR}" y2="${ry}" class="chart-ref-line"/>`;
+    svg += `<text x="${W - padR + 4}" y="${ry + 4}" class="chart-ref-label">${refLabel}</text>`;
+  }
+
+  // Line path
+  const path = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${xOf(i)},${yOf(p.y)}`).join(' ');
+  svg += `<path d="${path}" class="chart-line"/>`;
+
+  // Dots, value labels, delta labels, x-axis labels
+  points.forEach((p, i) => {
+    const cx = xOf(i), cy = yOf(p.y);
+    svg += `<circle cx="${cx}" cy="${cy}" r="5" class="chart-dot"/>`;
+    svg += `<text x="${cx}" y="${cy - 10}" text-anchor="middle" class="chart-label-val">${yFmt(p.y)}</text>`;
+    if (p.delta != null) {
+      const cls = p.delta > 0 ? 'delta-up' : p.delta < 0 ? 'delta-down' : 'delta-flat';
+      const sign = p.delta > 0 ? '+' : '';
+      svg += `<text x="${cx}" y="${cy - 22}" text-anchor="middle" class="chart-label-delta ${cls}">${sign}${yFmt(p.delta)}</text>`;
+    }
+    svg += `<text x="${cx}" y="${H - 8}" text-anchor="middle" class="chart-label-fy">${p.label}</text>`;
+  });
+
+  svg += '</svg>';
+  return `<div class="chart-wrap">${svg}</div>`;
+}
+
+function renderTrends() {
+  // ── Chart 1: Per-pupil expenditure ──────────────────────────────────────
+  const ppPoints = ENROLLMENT.map((e, i) => ({
+    y:     e.per_student,
+    label: e.fy.slice(2, 4) + '–' + e.fy.slice(7, 9),
+    delta: i > 0 ? e.per_student - ENROLLMENT[i - 1].per_student : null,
+  }));
+  document.getElementById('chart-perpupil').innerHTML = buildLineChart({
+    points:   ppPoints,
+    yFmt:     v => '$' + Math.round(v).toLocaleString(),
+    refLine:  null,
+    yLabel:   '$ per student',
+  });
+
+  // ── Chart 2: Instruction % of general fund AP spend ─────────────────────
+  const ADMIN_CODES = new Set(['21', '23', '41']);
+  const INSTR_CODE  = '11';
+  const fyList = [...new Set(ENROLLMENT.map(e => e.fy))].sort();
+
+  const instrPoints = fyList.map((fy, i) => {
+    const instrFunc = FUNCTIONS.find(f => f.function === INSTR_CODE);
+    const instrAmt = instrFunc ? ((instrFunc.by_fy_general || {})[fy] || 0) : 0;
+    const totalGen = FUNCTIONS.reduce((s, f) => s + ((f.by_fy_general || {})[fy] || 0), 0);
+    const adminAmt = FUNCTIONS
+      .filter(f => ADMIN_CODES.has(f.function))
+      .reduce((s, f) => s + ((f.by_fy_general || {})[fy] || 0), 0);
+    const pct = totalGen > 0 ? (instrAmt / totalGen) * 100 : null;
+    const prev = i > 0 ? (() => {
+      const prevFy = fyList[i - 1];
+      const pInstr = instrFunc ? ((instrFunc.by_fy_general || {})[prevFy] || 0) : 0;
+      const pTotal = FUNCTIONS.reduce((s, f) => s + ((f.by_fy_general || {})[prevFy] || 0), 0);
+      return pTotal > 0 ? (pInstr / pTotal) * 100 : null;
+    })() : null;
+    return {
+      y:     pct,
+      label: fy.slice(2, 4) + '–' + fy.slice(7, 9),
+      delta: (pct != null && prev != null) ? pct - prev : null,
+      adminPct: totalGen > 0 ? (adminAmt / totalGen) * 100 : null,
+    };
+  }).filter(p => p.y != null);
+
+  document.getElementById('chart-instruction').innerHTML = buildLineChart({
+    points:   instrPoints,
+    yFmt:     v => v.toFixed(1) + '%',
+    refLine:  60,
+    refLabel: '60% benchmark',
+    yLabel:   '% of gen. fund',
+  });
+
+  // ── Summary table ────────────────────────────────────────────────────────
+  const rows = fyList.map(fy => {
+    const e = ENROLLMENT.find(x => x.fy === fy) || {};
+    const instrFunc = FUNCTIONS.find(f => f.function === INSTR_CODE);
+    const instrAmt = instrFunc ? ((instrFunc.by_fy_general || {})[fy] || 0) : 0;
+    const totalGen = FUNCTIONS.reduce((s, f) => s + ((f.by_fy_general || {})[fy] || 0), 0);
+    const adminAmt = FUNCTIONS
+      .filter(f => ADMIN_CODES.has(f.function))
+      .reduce((s, f) => s + ((f.by_fy_general || {})[fy] || 0), 0);
+    const instrPct = totalGen > 0 ? (instrAmt / totalGen * 100).toFixed(1) : '—';
+    const adminPct = totalGen > 0 ? (adminAmt / totalGen * 100).toFixed(1) : '—';
+    return `<tr>
+      <td>${fy}</td>
+      <td class="num">${e.ada ? e.ada.toLocaleString() : '—'}</td>
+      <td class="num">${e.per_student ? '$' + e.per_student.toLocaleString() : '—'}</td>
+      <td class="num">${instrPct !== '—' ? instrPct + '%' : '—'}</td>
+      <td class="num">${adminPct !== '—' ? adminPct + '%' : '—'}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('trends-table').innerHTML = `
+    <table class="data-table">
+      <thead><tr>
+        <th>Fiscal Year</th>
+        <th class="num">ADA Enrollment</th>
+        <th class="num">Exp. per Student</th>
+        <th class="num">Instruction % <span style="font-weight:400;text-transform:none">(AP non-payroll)</span></th>
+        <th class="num">Admin % <span style="font-weight:400;text-transform:none">(AP non-payroll)</span></th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p style="font-size:0.78rem;color:var(--text-secondary);margin-top:0.5rem">
+      Instruction % and Admin % reflect general fund AP checks only — payroll (the largest component) is not in the check register.
+      Expenditure per student is all-funds from CISD's published reports.
+    </p>`;
 }
 
 // ── Watchdog ─────────────────────────────────────────────────────────────────

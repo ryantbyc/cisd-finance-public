@@ -1,853 +1,2330 @@
 [
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MEMORIAL HERMANN MEDICAL GROUP",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "CYNTHIA WOODS MITCHELL PAVILION",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 273513.03,
+    "tx_count": 6,
+    "note": "6 payments totaling $273,513 — each $42,040–$49,088, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "CYNTHIA WOODS MITCHELL PAVILION",
+    "month": "2024-07",
+    "fy": "2023-2024",
+    "amount": 257381.42,
+    "tx_count": 6,
+    "note": "6 payments totaling $257,381 — each $39,727–$45,933, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "CYNTHIA WOODS MITCHELL PAVILION",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 231546.27,
+    "tx_count": 6,
+    "note": "6 payments totaling $231,546 — each $34,302–$41,658, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "CYNTHIA WOODS MITCHELL PAVILION",
+    "month": "2022-07",
+    "fy": "2021-2022",
+    "amount": 192866.77,
+    "tx_count": 6,
+    "note": "6 payments totaling $192,867 — each $30,799–$34,550, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "COLLEGE BOARD ENTRANCE EXAMINATION",
     "month": "2022-01",
     "fy": "2021-2022",
-    "amount": 99951.81,
-    "note": "Monthly total $99,952 is within 15% of $100,000 competitive bid threshold"
+    "amount": 164912.0,
+    "tx_count": 6,
+    "note": "6 payments totaling $164,912 — each $16,848–$39,072, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DAHILL OFFICE TECHNOLOGY CORPORATIO",
-    "month": "2021-04",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "PROCTORIO INC",
+    "month": "2020-09",
     "fy": "2020-2021",
-    "amount": 99906.83,
-    "note": "Monthly total $99,907 is within 15% of $100,000 competitive bid threshold"
+    "amount": 160000.0,
+    "tx_count": 6,
+    "note": "6 payments totaling $160,000 — each $26,666–$26,670, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DTURFMEISTER LLC",
-    "month": "2024-12",
-    "fy": "2024-2025",
-    "amount": 99847.0,
-    "note": "Monthly total $99,847 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "APPLE INC",
-    "month": "2022-10",
-    "fy": "2022-2023",
-    "amount": 99755.0,
-    "note": "Monthly total $99,755 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "RELAY GRADUATE SCHOOL OF EDUCATION",
-    "month": "2024-06",
-    "fy": "2023-2024",
-    "amount": 99750.0,
-    "note": "Monthly total $99,750 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DAHILL OFFICE TECHNOLOGY CORPORATIO",
-    "month": "2020-11",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "CYNTHIA WOODS MITCHELL PAVILION",
+    "month": "2021-07",
     "fy": "2020-2021",
-    "amount": 99732.77,
-    "note": "Monthly total $99,733 is within 15% of $100,000 competitive bid threshold"
+    "amount": 158614.54,
+    "tx_count": 6,
+    "note": "6 payments totaling $158,615 — each $23,182–$28,298, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "FOLLETT SCHOOL SOLUTIONS INC",
-    "month": "2021-11",
-    "fy": "2021-2022",
-    "amount": 99730.99,
-    "note": "Monthly total $99,731 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MCKENNA CONTRACTING INC",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 99730.0,
-    "note": "Monthly total $99,730 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "OUTDOOR EQUIPMENT OUTLET",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
     "month": "2022-12",
     "fy": "2022-2023",
-    "amount": 99702.87,
-    "note": "Monthly total $99,703 is within 15% of $100,000 competitive bid threshold"
+    "amount": 148625.61,
+    "tx_count": 4,
+    "note": "4 payments totaling $148,626 — each $21,700–$42,970, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
-    "month": "2021-08",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "EDGENUITY INC",
+    "month": "2020-09",
     "fy": "2020-2021",
-    "amount": 99694.67,
-    "note": "Monthly total $99,695 is within 15% of $100,000 competitive bid threshold"
+    "amount": 135734.0,
+    "tx_count": 6,
+    "note": "6 payments totaling $135,734 — each $22,622–$22,624, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TOUR RIFIC OF TEXAS INC",
-    "month": "2025-11",
-    "fy": "2025-2026",
-    "amount": 99626.0,
-    "note": "Monthly total $99,626 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CROWN PAPER & CHEMICAL",
-    "month": "2022-03",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "EDGENUITY INC",
+    "month": "2021-09",
     "fy": "2021-2022",
-    "amount": 99624.27,
-    "note": "Monthly total $99,624 is within 15% of $100,000 competitive bid threshold"
+    "amount": 135733.0,
+    "tx_count": 6,
+    "note": "6 payments totaling $135,733 — each $22,622–$22,623, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "FRONTLINE EDUCATION",
-    "month": "2024-09",
-    "fy": "2024-2025",
-    "amount": 99606.76,
-    "note": "Monthly total $99,607 is within 15% of $100,000 competitive bid threshold"
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "IMAGINE LEARNING LLC",
+    "month": "2022-12",
+    "fy": "2022-2023",
+    "amount": 135733.0,
+    "tx_count": 6,
+    "note": "6 payments totaling $135,733 — each $22,622–$22,623, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TEXAS ARCADIS INC",
-    "month": "2026-01",
-    "fy": "2025-2026",
-    "amount": 99461.35,
-    "note": "Monthly total $99,461 is within 15% of $100,000 competitive bid threshold"
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "MEMORIAL HERMANN MEDICAL GROUP",
+    "month": "2021-12",
+    "fy": "2021-2022",
+    "amount": 130583.25,
+    "tx_count": 3,
+    "note": "3 payments totaling $130,583 — each $42,047–$46,019, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "MIDTEX OIL LP",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 112129.01,
+    "tx_count": 4,
+    "note": "4 payments totaling $112,129 — each $19,780–$37,544, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
     "vendor": "OFFICE DEPOT INC",
     "month": "2024-07",
     "fy": "2023-2024",
-    "amount": 99452.42,
-    "note": "Monthly total $99,452 is within 15% of $100,000 competitive bid threshold"
+    "amount": 99120.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $99,120 — each $49,560–$49,560, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
-    "month": "2021-12",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BRIGHTLY SOFTWARE INC",
+    "month": "2024-10",
+    "fy": "2024-2025",
+    "amount": 96843.3,
+    "tx_count": 4,
+    "note": "4 payments totaling $96,843 — each $11,481–$42,541, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BRIGHTLY SOFTWARE INC",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 93118.55,
+    "tx_count": 4,
+    "note": "4 payments totaling $93,119 — each $11,040–$40,905, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "JASPER ENGINE EXCHANGE INC",
+    "month": "2021-08",
+    "fy": "2020-2021",
+    "amount": 92782.0,
+    "tx_count": 6,
+    "note": "6 payments totaling $92,782 — each $14,117–$15,733, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BRIGHTLY SOFTWARE INC",
+    "month": "2022-10",
+    "fy": "2022-2023",
+    "amount": 89537.07,
+    "tx_count": 4,
+    "note": "4 payments totaling $89,537 — each $10,615–$39,332, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "TURNITIN LLC",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 88300.0,
+    "tx_count": 8,
+    "note": "8 payments totaling $88,300 — each $11,038–$11,038, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 87297.93,
+    "tx_count": 4,
+    "note": "4 payments totaling $87,298 — each $21,700–$21,967, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "IMPACT FIRE SERVICES LLC",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 87128.54,
+    "tx_count": 3,
+    "note": "3 payments totaling $87,129 — each $18,424–$47,236, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "DUDE SOLUTIONS INC",
+    "month": "2021-10",
     "fy": "2021-2022",
-    "amount": 99331.28,
-    "note": "Monthly total $99,331 is within 15% of $100,000 competitive bid threshold"
+    "amount": 86093.33,
+    "tx_count": 4,
+    "note": "4 payments totaling $86,093 — each $10,207–$37,819, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HEINEMANN",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2022-11",
+    "fy": "2022-2023",
+    "amount": 85940.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $85,940 — each $42,700–$43,240, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "T & R MECHANICAL INC",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 85814.13,
+    "tx_count": 2,
+    "note": "2 payments totaling $85,814 — each $36,952–$48,862, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "MEMORIAL HERMANN MEDICAL GROUP",
+    "month": "2021-03",
+    "fy": "2020-2021",
+    "amount": 85624.88,
+    "tx_count": 2,
+    "note": "2 payments totaling $85,625 — each $39,561–$46,063, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "AETNA LIFE INSURANCE COMPANY",
+    "month": "2022-10",
+    "fy": "2022-2023",
+    "amount": 83480.32,
+    "tx_count": 3,
+    "note": "3 payments totaling $83,480 — each $17,203–$48,271, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "AETNA LIFE INSURANCE COMPANY",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 83480.32,
+    "tx_count": 3,
+    "note": "3 payments totaling $83,480 — each $17,203–$48,271, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "T & R MECHANICAL INC",
+    "month": "2021-09",
+    "fy": "2021-2022",
+    "amount": 81717.9,
+    "tx_count": 2,
+    "note": "2 payments totaling $81,718 — each $32,672–$49,046, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "MIDTEX OIL LP",
+    "month": "2020-12",
+    "fy": "2020-2021",
+    "amount": 78210.49,
+    "tx_count": 2,
+    "note": "2 payments totaling $78,210 — each $38,885–$39,326, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "ELLISOR CONSTRUCTORS INC",
     "month": "2020-10",
     "fy": "2020-2021",
-    "amount": 99298.45,
-    "note": "Monthly total $99,298 is within 15% of $100,000 competitive bid threshold"
+    "amount": 75989.72,
+    "tx_count": 2,
+    "note": "2 payments totaling $75,990 — each $32,035–$43,955, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "NASH INDUSTRIES",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "NCS PEARSON INC SAN ANTONIO",
+    "month": "2025-09",
+    "fy": "2025-2026",
+    "amount": 75500.0,
+    "tx_count": 3,
+    "note": "3 payments totaling $75,500 — each $12,000–$42,500, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 74919.82,
+    "tx_count": 2,
+    "note": "2 payments totaling $74,920 — each $36,941–$37,979, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "IDENTITY AUTOMATION LP",
+    "month": "2021-06",
+    "fy": "2020-2021",
+    "amount": 74795.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $74,795 — each $31,595–$43,200, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "EDUCATION ADVANCED INC",
+    "month": "2022-07",
+    "fy": "2021-2022",
+    "amount": 74537.1,
+    "tx_count": 3,
+    "note": "3 payments totaling $74,537 — each $13,552–$47,433, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2020-09",
+    "fy": "2020-2021",
+    "amount": 74123.82,
+    "tx_count": 2,
+    "note": "2 payments totaling $74,124 — each $36,424–$37,700, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
     "month": "2024-10",
     "fy": "2024-2025",
-    "amount": 99296.71,
-    "note": "Monthly total $99,297 is within 15% of $100,000 competitive bid threshold"
+    "amount": 73600.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $73,600 — each $24,800–$48,800, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HEINEMANN",
-    "month": "2021-05",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "ALLY ROOFING SERVICES LLC",
+    "month": "2021-06",
     "fy": "2020-2021",
-    "amount": 99206.13,
-    "note": "Monthly total $99,206 is within 15% of $100,000 competitive bid threshold"
+    "amount": 71870.87,
+    "tx_count": 3,
+    "note": "3 payments totaling $71,871 — each $22,047–$25,311, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "STANTEC ARCHITECTURE INC",
+    "month": "2022-08",
+    "fy": "2021-2022",
+    "amount": 70089.27,
+    "tx_count": 2,
+    "note": "2 payments totaling $70,089 — each $30,229–$39,860, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "TRUE NORTH CONSULTING GROUP LLC",
+    "month": "2024-12",
+    "fy": "2024-2025",
+    "amount": 69990.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $69,990 — each $34,995–$34,995, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "PERFORM AMERICA TX LLC",
+    "month": "2025-03",
+    "fy": "2024-2025",
+    "amount": 69923.0,
+    "tx_count": 3,
+    "note": "3 payments totaling $69,923 — each $17,019–$33,320, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "RANDALL REEDS PLANET FORD",
+    "month": "2025-03",
+    "fy": "2024-2025",
+    "amount": 66565.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $66,565 — each $25,685–$40,880, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 65705.43,
+    "tx_count": 3,
+    "note": "3 payments totaling $65,705 — each $21,729–$22,010, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2023-12",
+    "fy": "2023-2024",
+    "amount": 65705.43,
+    "tx_count": 3,
+    "note": "3 payments totaling $65,705 — each $21,729–$22,010, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 65705.43,
+    "tx_count": 3,
+    "note": "3 payments totaling $65,705 — each $21,729–$22,010, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2024-03",
+    "fy": "2023-2024",
+    "amount": 65705.43,
+    "tx_count": 3,
+    "note": "3 payments totaling $65,705 — each $21,729–$22,010, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2023-11",
+    "fy": "2023-2024",
+    "amount": 63585.9,
+    "tx_count": 3,
+    "note": "3 payments totaling $63,586 — each $21,028–$21,300, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2024-04",
+    "fy": "2023-2024",
+    "amount": 63585.9,
+    "tx_count": 3,
+    "note": "3 payments totaling $63,586 — each $21,028–$21,300, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "TEAL CONSTRUCTION COMPANY",
+    "month": "2025-04",
+    "fy": "2024-2025",
+    "amount": 62443.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $62,443 — each $21,958–$40,485, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "JASPER ENGINE EXCHANGE INC",
+    "month": "2025-01",
+    "fy": "2024-2025",
+    "amount": 61736.0,
+    "tx_count": 4,
+    "note": "4 payments totaling $61,736 — each $15,434–$15,434, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
     "month": "2024-02",
     "fy": "2023-2024",
-    "amount": 99109.53,
-    "note": "Monthly total $99,110 is within 15% of $100,000 competitive bid threshold"
+    "amount": 61466.37,
+    "tx_count": 3,
+    "note": "3 payments totaling $61,466 — each $20,327–$20,590, all under $50,000 threshold but combined exceeds it"
   },
   {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD NO",
-    "month": "2024-10",
-    "fy": "2024-2025",
-    "amount": 99082.76,
-    "note": "Monthly total $99,083 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "EDUCATION RESOURCE GROUP LLC",
-    "month": "2021-11",
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "KRONOS INCORPORATED",
+    "month": "2022-04",
     "fy": "2021-2022",
-    "amount": 99000.0,
-    "note": "Monthly total $99,000 is within 15% of $100,000 competitive bid threshold"
+    "amount": 61412.21,
+    "tx_count": 2,
+    "note": "2 payments totaling $61,412 — each $13,000–$48,412, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "TEXAS DEPARTMENT OF TRANSPORTATION",
+    "month": "2022-07",
+    "fy": "2021-2022",
+    "amount": 61140.76,
+    "tx_count": 2,
+    "note": "2 payments totaling $61,141 — each $30,570–$30,570, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "KYRISH TRUCK CENTERS OF HOUSTON",
+    "month": "2023-07",
+    "fy": "2022-2023",
+    "amount": 60267.72,
+    "tx_count": 4,
+    "note": "4 payments totaling $60,268 — each $10,969–$24,656, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "EKON O PAC LLC",
+    "month": "2022-01",
+    "fy": "2021-2022",
+    "amount": 59700.0,
+    "tx_count": 3,
+    "note": "3 payments totaling $59,700 — each $16,250–$26,000, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "PINWHEEL THERAPY LLC",
+    "month": "2020-09",
+    "fy": "2020-2021",
+    "amount": 59490.0,
+    "tx_count": 3,
+    "note": "3 payments totaling $59,490 — each $11,520–$30,834, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "SUNBELT RENTALS INC",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 58314.8,
+    "tx_count": 3,
+    "note": "3 payments totaling $58,315 — each $18,095–$22,124, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "ALLY ROOFING SERVICES LLC",
+    "month": "2022-12",
+    "fy": "2022-2023",
+    "amount": 57494.1,
+    "tx_count": 2,
+    "note": "2 payments totaling $57,494 — each $18,789–$38,706, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "HEWLETT PACKARD ENTERPRISE CO",
+    "month": "2020-09",
+    "fy": "2020-2021",
+    "amount": 56659.88,
+    "tx_count": 2,
+    "note": "2 payments totaling $56,660 — each $11,900–$44,760, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "TEXAS OPERATIONS & PROFESSIONAL SER",
+    "month": "2023-02",
+    "fy": "2022-2023",
+    "amount": 56393.95,
+    "tx_count": 2,
+    "note": "2 payments totaling $56,394 — each $23,588–$32,806, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "DOCENTUS GROUP LLC THE",
+    "month": "2026-02",
+    "fy": "2025-2026",
+    "amount": 56250.0,
+    "tx_count": 2,
+    "note": "2 payments totaling $56,250 — each $27,000–$29,250, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "PINWHEEL THERAPY LLC",
+    "month": "2020-10",
+    "fy": "2020-2021",
+    "amount": 54972.0,
+    "tx_count": 4,
+    "note": "4 payments totaling $54,972 — each $11,376–$20,484, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "CANON FINANCIAL SERV INC (COPIERS)",
+    "month": "2020-11",
+    "fy": "2020-2021",
+    "amount": 54888.0,
+    "tx_count": 4,
+    "note": "4 payments totaling $54,888 — each $13,650–$13,794, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "SUNBELT RENTALS INC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 54828.08,
+    "tx_count": 2,
+    "note": "2 payments totaling $54,828 — each $18,095–$36,733, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "WEAVER AND TIDWELL LLP",
+    "month": "2025-12",
+    "fy": "2025-2026",
+    "amount": 53062.5,
+    "tx_count": 2,
+    "note": "2 payments totaling $53,062 — each $18,062–$35,000, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "PINWHEEL THERAPY LLC",
+    "month": "2021-04",
+    "fy": "2020-2021",
+    "amount": 53028.0,
+    "tx_count": 4,
+    "note": "4 payments totaling $53,028 — each $10,296–$20,484, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "COMMUNITIES IN SCHOOLS",
+    "month": "2022-09",
+    "fy": "2022-2023",
+    "amount": 53000.0,
+    "tx_count": 4,
+    "note": "4 payments totaling $53,000 — each $13,250–$13,250, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "split_purchase",
+    "label": "Possible Split Purchase",
+    "severity": "high",
+    "vendor": "TOUR RIFIC OF TEXAS INC",
+    "month": "2023-05",
+    "fy": "2022-2023",
+    "amount": 50893.5,
+    "tx_count": 2,
+    "note": "2 payments totaling $50,894 — each $25,134–$25,760, all under $50,000 threshold but combined exceeds it"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CITY OF CONROE",
+    "month": "2021-01",
+    "fy": "2020-2021",
+    "amount": 49986.4,
+    "note": "Monthly total $49,986 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "VERTIV CORPORATION",
+    "month": "2025-01",
+    "fy": "2024-2025",
+    "amount": 49957.17,
+    "note": "Monthly total $49,957 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SUMMIT REFRIGERANTS LLC",
+    "month": "2022-08",
+    "fy": "2021-2022",
+    "amount": 49930.0,
+    "note": "Monthly total $49,930 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "ODP BUSINESS SOLUTIONS LLC",
-    "month": "2026-02",
+    "month": "2026-01",
     "fy": "2025-2026",
-    "amount": 98984.39,
-    "note": "Monthly total $98,984 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HEINEMANN",
-    "month": "2021-10",
-    "fy": "2021-2022",
-    "amount": 98953.62,
-    "note": "Monthly total $98,954 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BLACKMON MOORING",
-    "month": "2024-05",
-    "fy": "2023-2024",
-    "amount": 98939.1,
-    "note": "Monthly total $98,939 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HOLT TRUCK CENTERS",
-    "month": "2025-05",
-    "fy": "2024-2025",
-    "amount": 98795.58,
-    "note": "Monthly total $98,796 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "COASTAL WELDING SUPPLY INC",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 98652.51,
-    "note": "Monthly total $98,653 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HARDIES FRESH FOODS",
-    "month": "2023-06",
-    "fy": "2022-2023",
-    "amount": 98627.36,
-    "note": "Monthly total $98,627 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "RIVERSIDE INSIGHTS",
-    "month": "2025-08",
-    "fy": "2024-2025",
-    "amount": 98477.62,
-    "note": "Monthly total $98,478 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
-    "month": "2024-04",
-    "fy": "2023-2024",
-    "amount": 98449.57,
-    "note": "Monthly total $98,450 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "LISLE VIOLIN SHOP NON REPAIR",
-    "month": "2025-07",
-    "fy": "2024-2025",
-    "amount": 98370.0,
-    "note": "Monthly total $98,370 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DANIEL OFFICE PRODU **DO NOT USE**",
-    "month": "2021-03",
-    "fy": "2020-2021",
-    "amount": 98272.14,
-    "note": "Monthly total $98,272 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2026-02",
-    "fy": "2025-2026",
-    "amount": 98213.89,
-    "note": "Monthly total $98,214 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "WINNING WAY SERVICES INC",
-    "month": "2025-05",
-    "fy": "2024-2025",
-    "amount": 97875.0,
-    "note": "Monthly total $97,875 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SCHOOL SPECIALTY LLC",
-    "month": "2025-04",
-    "fy": "2024-2025",
-    "amount": 97815.42,
-    "note": "Monthly total $97,815 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TEXTHELP INC",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 97572.0,
-    "note": "Monthly total $97,572 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "VELOCITY BUSINESS PRODUCTS",
-    "month": "2023-03",
-    "fy": "2022-2023",
-    "amount": 97307.8,
-    "note": "Monthly total $97,308 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MACKIN EDUCATIONAL RESOURCES",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 97212.61,
-    "note": "Monthly total $97,213 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SALAS OBRIEN LLC",
-    "month": "2025-12",
-    "fy": "2025-2026",
-    "amount": 97196.24,
-    "note": "Monthly total $97,196 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "LIBERTY OFFICE PRODUCTS",
-    "month": "2024-09",
-    "fy": "2024-2025",
-    "amount": 97170.44,
-    "note": "Monthly total $97,170 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "THOMAS BUS GULF COAST",
-    "month": "2021-04",
-    "fy": "2020-2021",
-    "amount": 96915.74,
-    "note": "Monthly total $96,916 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BRIGHTLY SOFTWARE INC",
-    "month": "2024-10",
-    "fy": "2024-2025",
-    "amount": 96843.3,
-    "note": "Monthly total $96,843 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TRUCK CENTERS OF HOUSTON  LTD",
-    "month": "2023-11",
-    "fy": "2023-2024",
-    "amount": 96823.52,
-    "note": "Monthly total $96,824 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MUSIC & ARTS INSTRUMENTS",
-    "month": "2025-05",
-    "fy": "2024-2025",
-    "amount": 96707.53,
-    "note": "Monthly total $96,708 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HARDIES FRESH FOODS",
-    "month": "2025-12",
-    "fy": "2025-2026",
-    "amount": 96655.48,
-    "note": "Monthly total $96,655 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "RIDDELL ALL AMERICAN SPORTS CORP",
-    "month": "2023-10",
-    "fy": "2023-2024",
-    "amount": 96607.84,
-    "note": "Monthly total $96,608 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "ALLTEX WELDING SUPPLY INC",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 96574.53,
-    "note": "Monthly total $96,575 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TEXAS EDUCATION AGENCY TIA",
-    "month": "2022-10",
-    "fy": "2022-2023",
-    "amount": 96500.0,
-    "note": "Monthly total $96,500 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MIDTEX OIL LP",
-    "month": "2023-11",
-    "fy": "2023-2024",
-    "amount": 96498.24,
-    "note": "Monthly total $96,498 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD NO",
-    "month": "2023-10",
-    "fy": "2023-2024",
-    "amount": 96280.28,
-    "note": "Monthly total $96,280 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SUMMIT K   HOLDINGS INC",
-    "month": "2022-10",
-    "fy": "2022-2023",
-    "amount": 96233.5,
-    "note": "Monthly total $96,234 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "APPLE INC",
-    "month": "2020-12",
-    "fy": "2020-2021",
-    "amount": 96224.0,
-    "note": "Monthly total $96,224 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "EDUCATION RESOURCE GROUP LLC",
-    "month": "2022-04",
-    "fy": "2021-2022",
-    "amount": 96000.0,
-    "note": "Monthly total $96,000 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "STEPS TO LITERACY",
-    "month": "2021-08",
-    "fy": "2020-2021",
-    "amount": 95930.63,
-    "note": "Monthly total $95,931 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
-    "month": "2025-06",
-    "fy": "2024-2025",
-    "amount": 95806.02,
-    "note": "Monthly total $95,806 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GUARDIAN REPAIR AND PARTS",
-    "month": "2024-03",
-    "fy": "2023-2024",
-    "amount": 95711.09,
-    "note": "Monthly total $95,711 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD NO",
-    "month": "2025-06",
-    "fy": "2024-2025",
-    "amount": 95668.78,
-    "note": "Monthly total $95,669 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MOTOROLA SOLUTIONS INC",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 95648.4,
-    "note": "Monthly total $95,648 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "WASTE CONNECTIONS OF TEXAS LLC",
-    "month": "2025-03",
-    "fy": "2024-2025",
-    "amount": 95624.4,
-    "note": "Monthly total $95,624 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "OFFICE DEPOT INC",
-    "month": "2021-12",
-    "fy": "2021-2022",
-    "amount": 95606.92,
-    "note": "Monthly total $95,607 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "AMPLIFY EDUCATION INC",
-    "month": "2024-05",
-    "fy": "2023-2024",
-    "amount": 95595.0,
-    "note": "Monthly total $95,595 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "OPERATIONSHERO INC",
-    "month": "2025-09",
-    "fy": "2025-2026",
-    "amount": 95550.0,
-    "note": "Monthly total $95,550 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HEARTLAND PAYMENT SYSTEMS LLC",
-    "month": "2025-08",
-    "fy": "2024-2025",
-    "amount": 95512.5,
-    "note": "Monthly total $95,512 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CROWN PAPER & CHEMICAL",
-    "month": "2025-09",
-    "fy": "2025-2026",
-    "amount": 95490.6,
-    "note": "Monthly total $95,491 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "LUXURY AIR COMMERCIAL SERVICES LLC",
-    "month": "2024-01",
-    "fy": "2023-2024",
-    "amount": 95312.09,
-    "note": "Monthly total $95,312 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SWEETWATER SOUND LLC",
-    "month": "2025-07",
-    "fy": "2024-2025",
-    "amount": 95151.26,
-    "note": "Monthly total $95,151 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TERRACON CONSULTANTS INC",
-    "month": "2024-04",
-    "fy": "2023-2024",
-    "amount": 94984.76,
-    "note": "Monthly total $94,985 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TAG COMMUNICATIONS LP",
-    "month": "2024-12",
-    "fy": "2024-2025",
-    "amount": 94674.0,
-    "note": "Monthly total $94,674 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "OFFICE DEPOT INC",
-    "month": "2022-01",
-    "fy": "2021-2022",
-    "amount": 94672.05,
-    "note": "Monthly total $94,672 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "KEV GROUP INC",
-    "month": "2021-10",
-    "fy": "2021-2022",
-    "amount": 94614.76,
-    "note": "Monthly total $94,615 is within 15% of $100,000 competitive bid threshold"
+    "amount": 49896.0,
+    "note": "Monthly total $49,896 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "BSN SPORTS LLC",
-    "month": "2020-10",
+    "month": "2021-05",
     "fy": "2020-2021",
-    "amount": 94465.96,
-    "note": "Monthly total $94,466 is within 15% of $100,000 competitive bid threshold"
+    "amount": 49869.22,
+    "note": "Monthly total $49,869 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "GC ELECTRIC",
-    "month": "2022-01",
-    "fy": "2021-2022",
-    "amount": 94190.82,
-    "note": "Monthly total $94,191 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 49816.5,
+    "note": "Monthly total $49,816 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "RIVERSIDE INSIGHTS",
-    "month": "2023-03",
-    "fy": "2022-2023",
-    "amount": 94156.15,
-    "note": "Monthly total $94,156 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "HOLT TRUCK CENTERS",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 49810.98,
+    "note": "Monthly total $49,811 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "LIBERTY OFFICE PRODUCTS",
-    "month": "2025-12",
-    "fy": "2025-2026",
-    "amount": 94011.56,
-    "note": "Monthly total $94,012 is within 15% of $100,000 competitive bid threshold"
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 49794.18,
+    "note": "Monthly total $49,794 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "DLR GROUP INC OF TEXAS",
+    "vendor": "CALDWELL COUNTRY CHEVROLET",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 49770.0,
+    "note": "Monthly total $49,770 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2020-12",
+    "fy": "2020-2021",
+    "amount": 49766.49,
+    "note": "Monthly total $49,766 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BLACKMON MOORING",
     "month": "2023-05",
     "fy": "2022-2023",
-    "amount": 93996.59,
-    "note": "Monthly total $93,997 is within 15% of $100,000 competitive bid threshold"
+    "amount": 49721.99,
+    "note": "Monthly total $49,722 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "STANTEC ARCHITECTURE INC",
-    "month": "2025-05",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2025-04",
     "fy": "2024-2025",
-    "amount": 93870.0,
-    "note": "Monthly total $93,870 is within 15% of $100,000 competitive bid threshold"
+    "amount": 49715.56,
+    "note": "Monthly total $49,716 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "SPECIALTY SUPPLY & INSTALLATION LLC",
-    "month": "2021-03",
-    "fy": "2020-2021",
-    "amount": 93802.0,
-    "note": "Monthly total $93,802 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "T-SHIRTS PLUS",
+    "month": "2024-12",
+    "fy": "2024-2025",
+    "amount": 49706.5,
+    "note": "Monthly total $49,706 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "TEXTHELP INC",
-    "month": "2021-08",
-    "fy": "2020-2021",
-    "amount": 93750.0,
-    "note": "Monthly total $93,750 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "IMPACT FIRE SERVICES LLC",
+    "month": "2023-07",
+    "fy": "2022-2023",
+    "amount": 49705.25,
+    "note": "Monthly total $49,705 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "TEXAS ARCADIS INC",
+    "vendor": "SAMS CLUB #     OR #",
+    "month": "2022-05",
+    "fy": "2021-2022",
+    "amount": 49675.68,
+    "note": "Monthly total $49,676 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "THOMAS BUS GULF COAST",
     "month": "2025-12",
     "fy": "2025-2026",
-    "amount": 93714.8,
-    "note": "Monthly total $93,715 is within 15% of $100,000 competitive bid threshold"
+    "amount": 49608.64,
+    "note": "Monthly total $49,609 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "TERRACON CONSULTANTS INC",
-    "month": "2023-11",
+    "vendor": "CALDWELL COUNTRY CHEVROLET",
+    "month": "2024-04",
     "fy": "2023-2024",
-    "amount": 93714.25,
-    "note": "Monthly total $93,714 is within 15% of $100,000 competitive bid threshold"
+    "amount": 49595.0,
+    "note": "Monthly total $49,595 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "LIBERTY OFFICE PRODUCTS",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 93708.75,
-    "note": "Monthly total $93,709 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "EE TOURS INC COM",
+    "month": "2025-10",
+    "fy": "2025-2026",
+    "amount": 49580.0,
+    "note": "Monthly total $49,580 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "WENGER CORPORATION",
-    "month": "2023-12",
+    "vendor": "BARNES & NOBLE BOOKSELLERS",
+    "month": "2021-04",
+    "fy": "2020-2021",
+    "amount": 49569.48,
+    "note": "Monthly total $49,569 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RAPTOR TECHNOLOGIES LLC",
+    "month": "2025-02",
+    "fy": "2024-2025",
+    "amount": 49565.0,
+    "note": "Monthly total $49,565 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DAIKIN APPLIED",
+    "month": "2020-10",
+    "fy": "2020-2021",
+    "amount": 49549.27,
+    "note": "Monthly total $49,549 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "OTWELL RICHARD A",
+    "month": "2025-05",
+    "fy": "2024-2025",
+    "amount": 49500.0,
+    "note": "Monthly total $49,500 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TECHNOLOGIES INC",
+    "month": "2025-09",
+    "fy": "2025-2026",
+    "amount": 49500.0,
+    "note": "Monthly total $49,500 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "IXL LEARNING INC",
+    "month": "2024-10",
+    "fy": "2024-2025",
+    "amount": 49484.5,
+    "note": "Monthly total $49,484 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SAMS CLUB #     OR #",
+    "month": "2024-01",
     "fy": "2023-2024",
-    "amount": 93627.14,
-    "note": "Monthly total $93,627 is within 15% of $100,000 competitive bid threshold"
+    "amount": 49462.95,
+    "note": "Monthly total $49,463 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MELHART MUSIC CENTER",
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 49444.8,
+    "note": "Monthly total $49,445 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEINEMANN",
+    "month": "2021-01",
+    "fy": "2020-2021",
+    "amount": 49434.95,
+    "note": "Monthly total $49,435 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ASTRO FENCE COMPANY",
+    "month": "2021-01",
+    "fy": "2020-2021",
+    "amount": 49426.67,
+    "note": "Monthly total $49,427 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2025-03",
+    "fy": "2024-2025",
+    "amount": 49400.74,
+    "note": "Monthly total $49,401 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "FOLLETT CONTENT SOLUTIONS LLC",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 49373.65,
+    "note": "Monthly total $49,374 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEINEMANN",
+    "month": "2021-04",
+    "fy": "2020-2021",
+    "amount": 49355.83,
+    "note": "Monthly total $49,356 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "WILSONART LLC",
+    "month": "2022-06",
+    "fy": "2021-2022",
+    "amount": 49341.97,
+    "note": "Monthly total $49,342 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MIDTEX OIL LP",
+    "month": "2021-07",
+    "fy": "2020-2021",
+    "amount": 49341.77,
+    "note": "Monthly total $49,342 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HOLT TRUCK CENTERS",
+    "month": "2026-02",
+    "fy": "2025-2026",
+    "amount": 49292.69,
+    "note": "Monthly total $49,293 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BUCKALEW CHEVROLET LP",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 49246.45,
+    "note": "Monthly total $49,246 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEINEMANN PROFESSIONAL DEVELOPMENT",
+    "month": "2022-03",
+    "fy": "2021-2022",
+    "amount": 49240.0,
+    "note": "Monthly total $49,240 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ROGERS MORRIS & GROVER LLP",
+    "month": "2021-10",
+    "fy": "2021-2022",
+    "amount": 49233.9,
+    "note": "Monthly total $49,234 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BUCKEYE CLEANING CENTER",
+    "month": "2024-12",
+    "fy": "2024-2025",
+    "amount": 49226.11,
+    "note": "Monthly total $49,226 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SAMS CLUB #     OR #",
+    "month": "2023-09",
+    "fy": "2023-2024",
+    "amount": 49223.79,
+    "note": "Monthly total $49,224 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "OKAPI EDUCATIONAL PUBLISHING INC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 49214.74,
+    "note": "Monthly total $49,215 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2022-07",
+    "fy": "2021-2022",
+    "amount": 49213.84,
+    "note": "Monthly total $49,214 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ACME ARCHITECTURAL HARDWARE",
+    "month": "2024-02",
+    "fy": "2023-2024",
+    "amount": 49154.12,
+    "note": "Monthly total $49,154 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SCHOOL SPECIALTY LLC",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 49151.64,
+    "note": "Monthly total $49,152 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BSN SPORTS LLC",
+    "month": "2022-11",
+    "fy": "2022-2023",
+    "amount": 49126.15,
+    "note": "Monthly total $49,126 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BOSWORTH PAPERS",
+    "month": "2021-09",
+    "fy": "2021-2022",
+    "amount": 49097.97,
+    "note": "Monthly total $49,098 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HYDRO EXTRUSION USA LLC",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 49084.0,
+    "note": "Monthly total $49,084 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "KYRISH TRUCK CENTERS OF HOUSTON",
-    "month": "2023-03",
-    "fy": "2022-2023",
-    "amount": 93606.84,
-    "note": "Monthly total $93,607 is within 15% of $100,000 competitive bid threshold"
+    "month": "2022-03",
+    "fy": "2021-2022",
+    "amount": 49045.19,
+    "note": "Monthly total $49,045 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "UKG KRONOS SYSTEMS LLC",
+    "vendor": "BUCKALEW CHEVROLET LP",
+    "month": "2022-10",
+    "fy": "2022-2023",
+    "amount": 49044.66,
+    "note": "Monthly total $49,045 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2024-07",
+    "fy": "2023-2024",
+    "amount": 49022.56,
+    "note": "Monthly total $49,023 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DLR GROUP INC OF TEXAS",
+    "month": "2022-01",
+    "fy": "2021-2022",
+    "amount": 49009.5,
+    "note": "Monthly total $49,010 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LMC CORPORATION",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 49005.86,
+    "note": "Monthly total $49,006 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ALLY ROOFING SERVICES LLC",
+    "month": "2020-10",
+    "fy": "2020-2021",
+    "amount": 48977.06,
+    "note": "Monthly total $48,977 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ROGERS MORRIS & GROVER LLP",
+    "month": "2022-02",
+    "fy": "2021-2022",
+    "amount": 48971.19,
+    "note": "Monthly total $48,971 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RIDDELL ALL AMERICAN SPORTS CORP",
+    "month": "2024-06",
+    "fy": "2023-2024",
+    "amount": 48884.87,
+    "note": "Monthly total $48,885 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEINEMANN",
+    "month": "2025-05",
+    "fy": "2024-2025",
+    "amount": 48879.6,
+    "note": "Monthly total $48,880 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "GENERATOR & CONTROL SERVICES",
     "month": "2024-10",
     "fy": "2024-2025",
-    "amount": 93600.0,
-    "note": "Monthly total $93,600 is within 15% of $100,000 competitive bid threshold"
+    "amount": 48868.01,
+    "note": "Monthly total $48,868 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "UKG KRONOS SYSTEMS LLC",
+    "vendor": "BSN SPORTS LLC",
+    "month": "2022-06",
+    "fy": "2021-2022",
+    "amount": 48847.02,
+    "note": "Monthly total $48,847 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TREE HOUSE INC THE",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 48841.83,
+    "note": "Monthly total $48,842 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HILAND DAIRY FOODS COMPANY LLC",
+    "month": "2025-08",
+    "fy": "2024-2025",
+    "amount": 48833.28,
+    "note": "Monthly total $48,833 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2023-12",
+    "fy": "2023-2024",
+    "amount": 48827.07,
+    "note": "Monthly total $48,827 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ACCELERATE LEARNING INC",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 48773.28,
+    "note": "Monthly total $48,773 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HARDIES FRESH FOODS",
+    "month": "2021-10",
+    "fy": "2021-2022",
+    "amount": 48724.08,
+    "note": "Monthly total $48,724 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DELL MARKETING LP",
+    "month": "2025-11",
+    "fy": "2025-2026",
+    "amount": 48705.47,
+    "note": "Monthly total $48,705 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RUSH BUS CENTERS",
+    "month": "2021-08",
+    "fy": "2020-2021",
+    "amount": 48704.16,
+    "note": "Monthly total $48,704 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CARROLLS DISCOUNT OFFICE FURN-OFUSA",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 48699.79,
+    "note": "Monthly total $48,700 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MIDTEX OIL LP",
+    "month": "2021-08",
+    "fy": "2020-2021",
+    "amount": 48637.21,
+    "note": "Monthly total $48,637 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEINEMANN",
+    "month": "2022-09",
+    "fy": "2022-2023",
+    "amount": 48579.76,
+    "note": "Monthly total $48,580 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "READING WRITING PROJECT NETWORK LLC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 48500.0,
+    "note": "Monthly total $48,500 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "AT&T MOBILITY",
+    "month": "2020-10",
+    "fy": "2020-2021",
+    "amount": 48493.04,
+    "note": "Monthly total $48,493 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "THOMAS BUS GULF COAST",
+    "month": "2022-01",
+    "fy": "2021-2022",
+    "amount": 48486.88,
+    "note": "Monthly total $48,487 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "KOMMERCIAL KITCHENS",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 48470.0,
+    "note": "Monthly total $48,470 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RUSH BUS CENTERS",
+    "month": "2024-06",
+    "fy": "2023-2024",
+    "amount": 48458.52,
+    "note": "Monthly total $48,459 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LIBERTY OFFICE PRODUCTS",
+    "month": "2024-11",
+    "fy": "2024-2025",
+    "amount": 48457.98,
+    "note": "Monthly total $48,458 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "GRAINGER",
+    "month": "2024-02",
+    "fy": "2023-2024",
+    "amount": 48429.7,
+    "note": "Monthly total $48,430 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TAG COMMUNICATIONS LP",
+    "month": "2024-03",
+    "fy": "2023-2024",
+    "amount": 48392.5,
+    "note": "Monthly total $48,392 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "PRESIDIO NETWORKED SOLUTIONS GRP LL",
+    "month": "2021-07",
+    "fy": "2020-2021",
+    "amount": 48359.18,
+    "note": "Monthly total $48,359 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "KEY INSTALLATIONS LLC",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 48317.0,
+    "note": "Monthly total $48,317 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RIVERSIDE INSIGHTS",
+    "month": "2022-06",
+    "fy": "2021-2022",
+    "amount": 48291.11,
+    "note": "Monthly total $48,291 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MIDTEX OIL LP",
+    "month": "2023-07",
+    "fy": "2022-2023",
+    "amount": 48262.98,
+    "note": "Monthly total $48,263 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SAMS CLUB #     OR #",
+    "month": "2024-11",
+    "fy": "2024-2025",
+    "amount": 48218.7,
+    "note": "Monthly total $48,219 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "EVERDRIVEN TECHNOLOGIES LLC",
+    "month": "2025-11",
+    "fy": "2025-2026",
+    "amount": 48215.0,
+    "note": "Monthly total $48,215 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DOWN PATT",
+    "month": "2023-12",
+    "fy": "2023-2024",
+    "amount": 48165.0,
+    "note": "Monthly total $48,165 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "O'HANLON DEMERATH & CASTILLO PC",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 48158.6,
+    "note": "Monthly total $48,159 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MAGNA FLOW ENVIRONMENTAL INC",
+    "month": "2025-08",
+    "fy": "2024-2025",
+    "amount": 48089.52,
+    "note": "Monthly total $48,090 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2023-01",
+    "fy": "2022-2023",
+    "amount": 48075.33,
+    "note": "Monthly total $48,075 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "REGION VI EDUCATION SERVICE CENTER",
+    "month": "2022-08",
+    "fy": "2021-2022",
+    "amount": 48037.15,
+    "note": "Monthly total $48,037 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MCKENNA CONTRACTING INC",
+    "month": "2022-01",
+    "fy": "2021-2022",
+    "amount": 48025.0,
+    "note": "Monthly total $48,025 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MCKENNA CONTRACTING INC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 48024.0,
+    "note": "Monthly total $48,024 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MAGNA FLOW ENVIRONMENTAL INC",
+    "month": "2024-07",
+    "fy": "2023-2024",
+    "amount": 48016.92,
+    "note": "Monthly total $48,017 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "FOREST SCIENTIFIC CORPORATION",
+    "month": "2020-10",
+    "fy": "2020-2021",
+    "amount": 48013.06,
+    "note": "Monthly total $48,013 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DREAMBOX LEARNING INC",
+    "month": "2021-10",
+    "fy": "2021-2022",
+    "amount": 48000.0,
+    "note": "Monthly total $48,000 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "EDUCATION RESOURCE GROUP LLC",
+    "month": "2022-12",
+    "fy": "2022-2023",
+    "amount": 48000.0,
+    "note": "Monthly total $48,000 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BLUUM OF TEXAS LLC",
+    "month": "2021-12",
+    "fy": "2021-2022",
+    "amount": 47958.0,
+    "note": "Monthly total $47,958 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MIDSOUTH ELECTRIC CO-OP",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 47957.2,
+    "note": "Monthly total $47,957 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DATAVOX INC",
+    "month": "2023-01",
+    "fy": "2022-2023",
+    "amount": 47926.74,
+    "note": "Monthly total $47,927 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DAIKIN APPLIED",
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 47766.35,
+    "note": "Monthly total $47,766 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MAGNA FLOW ENVIRONMENTAL INC",
+    "month": "2021-01",
+    "fy": "2020-2021",
+    "amount": 47743.32,
+    "note": "Monthly total $47,743 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ASTRO FENCE COMPANY",
+    "month": "2024-08",
+    "fy": "2023-2024",
+    "amount": 47725.0,
+    "note": "Monthly total $47,725 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MAGNA FLOW ENVIRONMENTAL INC",
+    "month": "2023-01",
+    "fy": "2022-2023",
+    "amount": 47724.82,
+    "note": "Monthly total $47,725 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TEXAS DECA",
+    "month": "2024-02",
+    "fy": "2023-2024",
+    "amount": 47685.0,
+    "note": "Monthly total $47,685 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RUSH BUS CENTERS",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 47683.14,
+    "note": "Monthly total $47,683 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CITY OF CONROE",
+    "month": "2021-06",
+    "fy": "2020-2021",
+    "amount": 47668.62,
+    "note": "Monthly total $47,669 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LIBERTY OFFICE PRODUCTS",
+    "month": "2023-06",
+    "fy": "2022-2023",
+    "amount": 47667.52,
+    "note": "Monthly total $47,668 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DLR GROUP INC OF TEXAS",
+    "month": "2024-07",
+    "fy": "2023-2024",
+    "amount": 47611.21,
+    "note": "Monthly total $47,611 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2025-12",
+    "fy": "2025-2026",
+    "amount": 47587.11,
+    "note": "Monthly total $47,587 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "THOMAS BUS GULF COAST",
+    "month": "2021-02",
+    "fy": "2020-2021",
+    "amount": 47576.8,
+    "note": "Monthly total $47,577 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SYMMETRY ENERGY SOLUTIONS LLC",
+    "month": "2022-06",
+    "fy": "2021-2022",
+    "amount": 47569.95,
+    "note": "Monthly total $47,570 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TEXAS EDUCATION AGENCY TIA",
+    "month": "2023-11",
+    "fy": "2023-2024",
+    "amount": 47500.0,
+    "note": "Monthly total $47,500 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "APPLE INC",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 47488.99,
+    "note": "Monthly total $47,489 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MAGNA FLOW ENVIRONMENTAL INC",
+    "month": "2022-01",
+    "fy": "2021-2022",
+    "amount": 47391.82,
+    "note": "Monthly total $47,392 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HILAND DAIRY FOODS COMPANY LLC",
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 47361.93,
+    "note": "Monthly total $47,362 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MUSIC & ARTS INSTRUMENTS",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 47358.55,
+    "note": "Monthly total $47,359 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2021-04",
+    "fy": "2020-2021",
+    "amount": 47248.28,
+    "note": "Monthly total $47,248 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BSN SPORTS LLC",
+    "month": "2024-05",
+    "fy": "2023-2024",
+    "amount": 47219.9,
+    "note": "Monthly total $47,220 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HENRY GREEN BOSTWICK PLLC",
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 47200.0,
+    "note": "Monthly total $47,200 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "KING HOUSE MOVING",
+    "month": "2022-08",
+    "fy": "2021-2022",
+    "amount": 47185.0,
+    "note": "Monthly total $47,185 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2025-11",
+    "fy": "2025-2026",
+    "amount": 47164.76,
+    "note": "Monthly total $47,165 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "JASPER ENGINE EXCHANGE INC",
+    "month": "2022-03",
+    "fy": "2021-2022",
+    "amount": 47088.8,
+    "note": "Monthly total $47,089 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "B&H PHOTO VIDEO",
+    "month": "2022-02",
+    "fy": "2021-2022",
+    "amount": 47088.05,
+    "note": "Monthly total $47,088 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "VERTIV CORPORATION",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 47084.98,
+    "note": "Monthly total $47,085 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "WEBBS UNIFORMS LLC",
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 47066.58,
+    "note": "Monthly total $47,067 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BSN SPORTS LLC",
+    "month": "2023-06",
+    "fy": "2022-2023",
+    "amount": 47062.29,
+    "note": "Monthly total $47,062 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TOP CUT TREE SERVICE INC",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 47050.0,
+    "note": "Monthly total $47,050 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SOUTHERN TIRE MART LLC",
+    "month": "2024-10",
+    "fy": "2024-2025",
+    "amount": 46993.7,
+    "note": "Monthly total $46,994 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LIBERTY OFFICE PRODUCTS",
+    "month": "2023-07",
+    "fy": "2022-2023",
+    "amount": 46990.68,
+    "note": "Monthly total $46,991 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "**DO NOT USE** FTG TEXAS",
+    "month": "2025-09",
+    "fy": "2025-2026",
+    "amount": 46965.18,
+    "note": "Monthly total $46,965 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "FTG TEXAS",
+    "month": "2025-08",
+    "fy": "2024-2025",
+    "amount": 46960.0,
+    "note": "Monthly total $46,960 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "**DO NOT USE** FTG TEXAS",
     "month": "2025-10",
     "fy": "2025-2026",
-    "amount": 93600.0,
-    "note": "Monthly total $93,600 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46960.0,
+    "note": "Monthly total $46,960 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "**DO NOT USE** FTG TEXAS",
+    "month": "2025-12",
+    "fy": "2025-2026",
+    "amount": 46960.0,
+    "note": "Monthly total $46,960 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "**DO NOT USE** FTG TEXAS",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 46960.0,
+    "note": "Monthly total $46,960 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2024-02",
+    "fy": "2023-2024",
+    "amount": 46941.01,
+    "note": "Monthly total $46,941 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "APPLE INC",
+    "month": "2025-12",
+    "fy": "2025-2026",
+    "amount": 46933.6,
+    "note": "Monthly total $46,934 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SCHOOL SPECIALTY LLC",
+    "month": "2025-05",
+    "fy": "2024-2025",
+    "amount": 46926.13,
+    "note": "Monthly total $46,926 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ASTRO FENCE COMPANY",
+    "month": "2022-09",
+    "fy": "2022-2023",
+    "amount": 46877.97,
+    "note": "Monthly total $46,878 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RIDDELL ALL AMERICAN SPORTS CORP",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 46844.54,
+    "note": "Monthly total $46,845 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RON TURLEY ASSOCIATES INC",
+    "month": "2025-04",
+    "fy": "2024-2025",
+    "amount": 46827.0,
+    "note": "Monthly total $46,827 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SAMS CLUB #     OR #",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 46791.94,
+    "note": "Monthly total $46,792 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HARDIES FRESH FOODS",
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 46776.18,
+    "note": "Monthly total $46,776 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SUN COAST RESOURCES INC",
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 46761.71,
+    "note": "Monthly total $46,762 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "EVERDRIVEN TECHNOLOGIES LLC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 46737.5,
+    "note": "Monthly total $46,738 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "THOMAS BUS GULF COAST",
+    "month": "2020-11",
+    "fy": "2020-2021",
+    "amount": 46723.18,
+    "note": "Monthly total $46,723 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "NASH INDUSTRIES",
+    "month": "2024-07",
+    "fy": "2023-2024",
+    "amount": 46696.74,
+    "note": "Monthly total $46,697 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEWLETT PACKARD    K-   SALES",
+    "month": "2020-09",
+    "fy": "2020-2021",
+    "amount": 46675.62,
+    "note": "Monthly total $46,676 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2025-10",
+    "fy": "2025-2026",
+    "amount": 46665.05,
+    "note": "Monthly total $46,665 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CROWN PAPER & CHEMICAL",
+    "month": "2023-12",
+    "fy": "2023-2024",
+    "amount": 46625.2,
+    "note": "Monthly total $46,625 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "FIRST CLASS TRANSPORTATION LLC",
+    "month": "2025-02",
+    "fy": "2024-2025",
+    "amount": 46617.07,
+    "note": "Monthly total $46,617 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LAB RESOURCES INC",
+    "month": "2024-08",
+    "fy": "2023-2024",
+    "amount": 46598.0,
+    "note": "Monthly total $46,598 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SYMMETRY ENERGY SOLUTIONS LLC",
+    "month": "2022-10",
+    "fy": "2022-2023",
+    "amount": 46584.66,
+    "note": "Monthly total $46,585 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HOLT TRUCK CENTERS",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 46572.93,
+    "note": "Monthly total $46,573 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "AMAZON CAPITAL SERVICES INC",
+    "month": "2020-09",
+    "fy": "2020-2021",
+    "amount": 46464.84,
+    "note": "Monthly total $46,465 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CRAWFORD ELECTRIC SUPPLY",
+    "month": "2025-10",
+    "fy": "2025-2026",
+    "amount": 46437.49,
+    "note": "Monthly total $46,437 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SCHOOL SPECIALTY LLC",
+    "month": "2023-11",
+    "fy": "2023-2024",
+    "amount": 46395.16,
+    "note": "Monthly total $46,395 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2025-08",
+    "fy": "2024-2025",
+    "amount": 46384.95,
+    "note": "Monthly total $46,385 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SOLID BORDER",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 46367.92,
+    "note": "Monthly total $46,368 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "PERFORM AMERICA TX LLC",
+    "month": "2022-12",
+    "fy": "2022-2023",
+    "amount": 46362.0,
+    "note": "Monthly total $46,362 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ISPHERE INNOVATION PARTNERS LLC",
+    "month": "2025-11",
+    "fy": "2025-2026",
+    "amount": 46342.5,
+    "note": "Monthly total $46,342 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "T & R MECHANICAL INC",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 46332.0,
+    "note": "Monthly total $46,332 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LIBERTY OFFICE PRODUCTS",
+    "month": "2022-11",
+    "fy": "2022-2023",
+    "amount": 46318.3,
+    "note": "Monthly total $46,318 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "COMFORT SUITES",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 46293.02,
+    "note": "Monthly total $46,293 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
@@ -856,1178 +2333,1428 @@
     "vendor": "EDUCATORS DEPOT INC",
     "month": "2021-11",
     "fy": "2021-2022",
-    "amount": 93363.02,
-    "note": "Monthly total $93,363 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46267.9,
+    "note": "Monthly total $46,268 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "HOLT TRUCK CENTERS",
-    "month": "2024-12",
-    "fy": "2024-2025",
-    "amount": 93324.66,
-    "note": "Monthly total $93,325 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "B&H PHOTO VIDEO",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 46249.4,
+    "note": "Monthly total $46,249 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "PBK ARCHITECTS INC",
-    "month": "2022-03",
-    "fy": "2021-2022",
-    "amount": 93212.6,
-    "note": "Monthly total $93,213 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BRIGHTLY SOFTWARE INC",
-    "month": "2023-10",
-    "fy": "2023-2024",
-    "amount": 93118.55,
-    "note": "Monthly total $93,119 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HOLIDAY INN TYLER",
-    "month": "2025-05",
-    "fy": "2024-2025",
-    "amount": 93058.49,
-    "note": "Monthly total $93,058 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD NO",
-    "month": "2021-10",
-    "fy": "2021-2022",
-    "amount": 93009.65,
-    "note": "Monthly total $93,010 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
-    "month": "2021-01",
-    "fy": "2020-2021",
-    "amount": 92917.0,
-    "note": "Monthly total $92,917 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2024-09",
-    "fy": "2024-2025",
-    "amount": 92914.58,
-    "note": "Monthly total $92,915 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DAIKIN APPLIED",
-    "month": "2024-10",
-    "fy": "2024-2025",
-    "amount": 92875.86,
-    "note": "Monthly total $92,876 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "JASPER ENGINE EXCHANGE INC",
-    "month": "2021-08",
-    "fy": "2020-2021",
-    "amount": 92782.0,
-    "note": "Monthly total $92,782 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "VIOLIN SHOP",
-    "month": "2023-10",
-    "fy": "2023-2024",
-    "amount": 92673.0,
-    "note": "Monthly total $92,673 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CATCH GLOBAL FOUNDATION",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 92540.0,
-    "note": "Monthly total $92,540 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "EE TOURS INC COM",
-    "month": "2025-04",
-    "fy": "2024-2025",
-    "amount": 92525.0,
-    "note": "Monthly total $92,525 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "RUSH BUS CENTERS",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 46230.38,
+    "note": "Monthly total $46,230 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "HEINEMANN",
-    "month": "2022-07",
+    "month": "2021-11",
     "fy": "2021-2022",
-    "amount": 92494.56,
-    "note": "Monthly total $92,495 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46228.44,
+    "note": "Monthly total $46,228 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "DANIEL OFFICE PRODUCTS",
-    "month": "2021-09",
-    "fy": "2021-2022",
-    "amount": 92424.71,
-    "note": "Monthly total $92,425 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "EDUCATORS DEPOT INC",
-    "month": "2022-10",
-    "fy": "2022-2023",
-    "amount": 92397.51,
-    "note": "Monthly total $92,398 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TRUCK CENTERS OF HOUSTON  LTD",
-    "month": "2024-03",
-    "fy": "2023-2024",
-    "amount": 92180.06,
-    "note": "Monthly total $92,180 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD NO",
-    "month": "2022-09",
-    "fy": "2022-2023",
-    "amount": 92103.53,
-    "note": "Monthly total $92,104 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "EDUCATION ADVANCED INC",
-    "month": "2023-12",
-    "fy": "2023-2024",
-    "amount": 92017.9,
-    "note": "Monthly total $92,018 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
-    "month": "2020-10",
-    "fy": "2020-2021",
-    "amount": 92017.48,
-    "note": "Monthly total $92,017 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "VELOCITY BUSINESS PRODUCTS",
-    "month": "2023-07",
-    "fy": "2022-2023",
-    "amount": 91830.5,
-    "note": "Monthly total $91,830 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2021-10",
-    "fy": "2021-2022",
-    "amount": 91706.46,
-    "note": "Monthly total $91,706 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "LIBERTY OFFICE PRODUCTS",
-    "month": "2022-09",
-    "fy": "2022-2023",
-    "amount": 91359.31,
-    "note": "Monthly total $91,359 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DAHILL OFFICE TECHNOLOGY CORPORATIO",
-    "month": "2024-03",
-    "fy": "2023-2024",
-    "amount": 91242.25,
-    "note": "Monthly total $91,242 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BLUUM OF TEXAS LLC",
-    "month": "2022-12",
-    "fy": "2022-2023",
-    "amount": 91211.0,
-    "note": "Monthly total $91,211 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "NETSYNC NETWORK SOLUTIONS INC",
-    "month": "2021-08",
-    "fy": "2020-2021",
-    "amount": 91153.3,
-    "note": "Monthly total $91,153 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "ANCORA PUBLISHING SAFE&CIVIL SCHLS",
-    "month": "2024-06",
-    "fy": "2023-2024",
-    "amount": 91117.07,
-    "note": "Monthly total $91,117 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HEARTLAND PAYMENT SYSTEMS LLC",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 91065.0,
-    "note": "Monthly total $91,065 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HEWLETT PACKARD    K-   SALES",
-    "month": "2022-09",
-    "fy": "2022-2023",
-    "amount": 90948.75,
-    "note": "Monthly total $90,949 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "NINYO & MOORE",
-    "month": "2024-10",
-    "fy": "2024-2025",
-    "amount": 90782.5,
-    "note": "Monthly total $90,782 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SYMMETRY ENERGY SOLUTIONS LLC",
-    "month": "2025-02",
-    "fy": "2024-2025",
-    "amount": 90742.66,
-    "note": "Monthly total $90,743 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "PERFORM AMERICA TX LLC",
-    "month": "2022-10",
-    "fy": "2022-2023",
-    "amount": 90696.0,
-    "note": "Monthly total $90,696 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GC ELECTRIC",
+    "vendor": "ALLY ROOFING SERVICES LLC",
     "month": "2024-07",
     "fy": "2023-2024",
-    "amount": 90647.18,
-    "note": "Monthly total $90,647 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46226.23,
+    "note": "Monthly total $46,226 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "ENTERGY",
-    "month": "2022-04",
-    "fy": "2021-2022",
-    "amount": 90547.31,
-    "note": "Monthly total $90,547 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BOSWORTH PAPERS",
-    "month": "2021-07",
-    "fy": "2020-2021",
-    "amount": 90515.84,
-    "note": "Monthly total $90,516 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DANIEL OFFICE PRODUCTS",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 90448.26,
-    "note": "Monthly total $90,448 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD",
-    "month": "2024-09",
-    "fy": "2024-2025",
-    "amount": 90447.43,
-    "note": "Monthly total $90,447 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BLUUM OF TEXAS LLC",
-    "month": "2023-01",
-    "fy": "2022-2023",
-    "amount": 90391.6,
-    "note": "Monthly total $90,392 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "PBK ARCHITECTS INC",
-    "month": "2022-06",
-    "fy": "2021-2022",
-    "amount": 90328.71,
-    "note": "Monthly total $90,329 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CROWN PAPER & CHEMICAL",
-    "month": "2023-04",
-    "fy": "2022-2023",
-    "amount": 90227.04,
-    "note": "Monthly total $90,227 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SALAS OBRIEN LLC",
-    "month": "2026-02",
+    "vendor": "TREE HOUSE INC THE",
+    "month": "2025-09",
     "fy": "2025-2026",
-    "amount": 90031.75,
-    "note": "Monthly total $90,032 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46221.41,
+    "note": "Monthly total $46,221 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "EDUCATION RESOURCE GROUP LLC",
-    "month": "2022-01",
-    "fy": "2021-2022",
-    "amount": 90000.0,
-    "note": "Monthly total $90,000 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "TASB RISK MANAGEMENT FUND",
+    "month": "2025-08",
+    "fy": "2024-2025",
+    "amount": 46207.48,
+    "note": "Monthly total $46,207 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "PARTS TOWN LLC",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 46195.9,
+    "note": "Monthly total $46,196 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "BSN SPORTS LLC",
-    "month": "2023-08",
-    "fy": "2022-2023",
-    "amount": 89708.61,
-    "note": "Monthly total $89,709 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "ISTUDIO PROJECTS INC",
-    "month": "2022-12",
-    "fy": "2022-2023",
-    "amount": 89573.75,
-    "note": "Monthly total $89,574 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BRIGHTLY SOFTWARE INC",
-    "month": "2022-10",
-    "fy": "2022-2023",
-    "amount": 89537.07,
-    "note": "Monthly total $89,537 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "THOMAS BUS GULF COAST",
-    "month": "2023-03",
-    "fy": "2022-2023",
-    "amount": 89448.66,
-    "note": "Monthly total $89,449 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "FRONTLINE EDUCATION",
-    "month": "2024-10",
-    "fy": "2024-2025",
-    "amount": 89372.96,
-    "note": "Monthly total $89,373 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HARDIES FRESH FOODS",
-    "month": "2023-12",
-    "fy": "2023-2024",
-    "amount": 89151.88,
-    "note": "Monthly total $89,152 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "FOLLETT SCHOOL SOLUTIONS INC",
-    "month": "2021-08",
+    "month": "2020-11",
     "fy": "2020-2021",
-    "amount": 89046.4,
-    "note": "Monthly total $89,046 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46154.91,
+    "note": "Monthly total $46,155 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2021-04",
-    "fy": "2020-2021",
-    "amount": 88852.6,
-    "note": "Monthly total $88,853 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TEXAS ARCADIS INC - IBI GROUP",
-    "month": "2023-06",
-    "fy": "2022-2023",
-    "amount": 88830.44,
-    "note": "Monthly total $88,830 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HARDIES FRESH FOODS",
+    "vendor": "ROGERS MORRIS & GROVER LLP",
     "month": "2024-03",
     "fy": "2023-2024",
-    "amount": 88803.88,
-    "note": "Monthly total $88,804 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46145.8,
+    "note": "Monthly total $46,146 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2025-12",
-    "fy": "2025-2026",
-    "amount": 88796.73,
-    "note": "Monthly total $88,797 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BUCKEYE CLEANING CENTER",
-    "month": "2024-04",
-    "fy": "2023-2024",
-    "amount": 88738.55,
-    "note": "Monthly total $88,739 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CDW GOVERNMENT INC",
-    "month": "2023-11",
-    "fy": "2023-2024",
-    "amount": 88727.64,
-    "note": "Monthly total $88,728 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BROOKSIDE EQUIPMENT SALES INC",
-    "month": "2020-11",
-    "fy": "2020-2021",
-    "amount": 88707.64,
-    "note": "Monthly total $88,708 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "RUSH BUS CENTERS",
-    "month": "2025-02",
-    "fy": "2024-2025",
-    "amount": 88703.48,
-    "note": "Monthly total $88,703 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SEQUEL DATA SYSTEMS INC",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 88543.68,
-    "note": "Monthly total $88,544 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2025-01",
-    "fy": "2024-2025",
-    "amount": 88477.45,
-    "note": "Monthly total $88,477 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HUMBLE ELEVATOR SERVICE INC",
-    "month": "2023-08",
+    "vendor": "HYDRO EXTRUSION USA LLC",
+    "month": "2023-05",
     "fy": "2022-2023",
-    "amount": 88450.0,
-    "note": "Monthly total $88,450 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46132.0,
+    "note": "Monthly total $46,132 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "HEARTLAND PAYMENT SYSTEMS LLC",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 88416.0,
-    "note": "Monthly total $88,416 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TRUCK CENTERS OF HOUS**DO NOT USE**",
-    "month": "2024-09",
-    "fy": "2024-2025",
-    "amount": 88412.56,
-    "note": "Monthly total $88,413 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TAB TECHNOLOGIES LLC",
-    "month": "2022-04",
-    "fy": "2021-2022",
-    "amount": 88393.0,
-    "note": "Monthly total $88,393 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TURNITIN LLC",
-    "month": "2023-08",
-    "fy": "2022-2023",
-    "amount": 88300.0,
-    "note": "Monthly total $88,300 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "GORDON FOOD SERVICE",
-    "month": "2022-08",
-    "fy": "2021-2022",
-    "amount": 88287.58,
-    "note": "Monthly total $88,288 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "WASTE CONNECTIONS OF TEXAS LLC",
-    "month": "2023-04",
-    "fy": "2022-2023",
-    "amount": 88195.85,
-    "note": "Monthly total $88,196 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD NO",
-    "month": "2024-11",
-    "fy": "2024-2025",
-    "amount": 88184.7,
-    "note": "Monthly total $88,185 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "LIBERTY OFFICE PRODUCTS",
-    "month": "2023-11",
-    "fy": "2023-2024",
-    "amount": 88170.09,
-    "note": "Monthly total $88,170 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HARDIES FRESH FOODS",
-    "month": "2022-06",
-    "fy": "2021-2022",
-    "amount": 88102.41,
-    "note": "Monthly total $88,102 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "THOMAS BUS GULF COAST",
-    "month": "2022-12",
-    "fy": "2022-2023",
-    "amount": 88074.84,
-    "note": "Monthly total $88,075 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "OVERDRIVE INC",
-    "month": "2020-11",
-    "fy": "2020-2021",
-    "amount": 88006.57,
-    "note": "Monthly total $88,007 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DAHILL OFFICE TECHNOLOGY CORPORATIO",
-    "month": "2022-01",
-    "fy": "2021-2022",
-    "amount": 87990.39,
-    "note": "Monthly total $87,990 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "JACKSON ELECTRIC",
-    "month": "2025-11",
-    "fy": "2025-2026",
-    "amount": 87969.29,
-    "note": "Monthly total $87,969 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "NINYO & MOORE",
-    "month": "2025-07",
-    "fy": "2024-2025",
-    "amount": 87935.0,
-    "note": "Monthly total $87,935 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "T & R MECHANICAL INC",
-    "month": "2025-05",
-    "fy": "2024-2025",
-    "amount": 87919.67,
-    "note": "Monthly total $87,920 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HEARTLAND PAYMENT SYSTEMS LLC",
-    "month": "2023-09",
-    "fy": "2023-2024",
-    "amount": 87892.5,
-    "note": "Monthly total $87,892 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DLR GROUP INC OF TEXAS",
-    "month": "2023-11",
-    "fy": "2023-2024",
-    "amount": 87605.04,
-    "note": "Monthly total $87,605 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "WAVEMEDIA LLC",
-    "month": "2025-09",
-    "fy": "2025-2026",
-    "amount": 87450.0,
-    "note": "Monthly total $87,450 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "RUSH BUS CENTERS",
-    "month": "2025-01",
-    "fy": "2024-2025",
-    "amount": 87448.8,
-    "note": "Monthly total $87,449 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BAYES ACHIEVEMENT CENTER INC",
-    "month": "2023-08",
-    "fy": "2022-2023",
-    "amount": 87297.93,
-    "note": "Monthly total $87,298 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DAHILL OFFICE TECHNOLOGY CORPORATIO",
-    "month": "2023-11",
-    "fy": "2023-2024",
-    "amount": 87293.85,
-    "note": "Monthly total $87,294 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "HP INC",
-    "month": "2024-04",
-    "fy": "2023-2024",
-    "amount": 87270.36,
-    "note": "Monthly total $87,270 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BORDEN DAIRY",
+    "vendor": "OFFICE DEPOT INC",
     "month": "2020-12",
     "fy": "2020-2021",
-    "amount": 87153.51,
-    "note": "Monthly total $87,154 is within 15% of $100,000 competitive bid threshold"
+    "amount": 46120.08,
+    "note": "Monthly total $46,120 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CARROLLS DISCOUNT OFFICE FURN-OFUSA",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 46097.59,
+    "note": "Monthly total $46,098 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SHI GOVERNMENT SOLUTIONS INC",
+    "month": "2025-10",
+    "fy": "2025-2026",
+    "amount": 46078.05,
+    "note": "Monthly total $46,078 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BOOKSOURCE",
+    "month": "2021-11",
+    "fy": "2021-2022",
+    "amount": 46050.02,
+    "note": "Monthly total $46,050 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "IMPACT FIRE SERVICES LLC",
-    "month": "2024-01",
-    "fy": "2023-2024",
-    "amount": 87128.54,
-    "note": "Monthly total $87,129 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "INTERFACING COMPANY OF TEXAS LLC",
-    "month": "2026-01",
-    "fy": "2025-2026",
-    "amount": 87116.83,
-    "note": "Monthly total $87,117 is within 15% of $100,000 competitive bid threshold"
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 46048.42,
+    "note": "Monthly total $46,048 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "TAG COMMUNICATIONS LP",
-    "month": "2024-01",
-    "fy": "2023-2024",
-    "amount": 87050.0,
-    "note": "Monthly total $87,050 is within 15% of $100,000 competitive bid threshold"
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 46020.0,
+    "note": "Monthly total $46,020 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "LANSDOWNE MOODY CO LP",
-    "month": "2024-02",
-    "fy": "2023-2024",
-    "amount": 87016.96,
-    "note": "Monthly total $87,017 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "GC ELECTRIC",
+    "month": "2025-02",
+    "fy": "2024-2025",
+    "amount": 46012.69,
+    "note": "Monthly total $46,013 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "DATAVOX INC",
-    "month": "2022-10",
-    "fy": "2022-2023",
-    "amount": 86917.47,
-    "note": "Monthly total $86,917 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "PARTS TOWN LLC",
+    "month": "2025-09",
+    "fy": "2025-2026",
+    "amount": 45986.82,
+    "note": "Monthly total $45,987 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2025-09",
+    "fy": "2025-2026",
+    "amount": 45980.24,
+    "note": "Monthly total $45,980 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HP INC",
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 45943.5,
+    "note": "Monthly total $45,944 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "THOMAS BUS GULF COAST",
-    "month": "2022-05",
+    "month": "2024-12",
+    "fy": "2024-2025",
+    "amount": 45865.06,
+    "note": "Monthly total $45,865 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "EDUCATORS DEPOT INC",
+    "month": "2022-04",
     "fy": "2021-2022",
-    "amount": 86679.6,
-    "note": "Monthly total $86,680 is within 15% of $100,000 competitive bid threshold"
+    "amount": 45843.9,
+    "note": "Monthly total $45,844 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "ZONAR SYSTEMS INC",
-    "month": "2021-01",
-    "fy": "2020-2021",
-    "amount": 86622.02,
-    "note": "Monthly total $86,622 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "FTG TEXAS",
+    "month": "2025-02",
+    "fy": "2024-2025",
+    "amount": 45832.16,
+    "note": "Monthly total $45,832 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "HEWLETT PACKARD    K-   SALES",
-    "month": "2021-08",
-    "fy": "2020-2021",
-    "amount": 86480.84,
-    "note": "Monthly total $86,481 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TRUCK CENTERS OF HOUSTON  LTD",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 86440.95,
-    "note": "Monthly total $86,441 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2024-05",
-    "fy": "2023-2024",
-    "amount": 86415.24,
-    "note": "Monthly total $86,415 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BOUND TO STAY BOUND BOOKS",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 86394.82,
-    "note": "Monthly total $86,395 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2022-06",
-    "fy": "2021-2022",
-    "amount": 86209.07,
-    "note": "Monthly total $86,209 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DATAVOX INC",
-    "month": "2023-04",
-    "fy": "2022-2023",
-    "amount": 86191.89,
-    "note": "Monthly total $86,192 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "WARDS SCIENCE",
-    "month": "2022-01",
-    "fy": "2021-2022",
-    "amount": 86167.41,
-    "note": "Monthly total $86,167 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "DUDE SOLUTIONS INC",
-    "month": "2021-10",
-    "fy": "2021-2022",
-    "amount": 86093.33,
-    "note": "Monthly total $86,093 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MONTGOMERY COUNTY MUD NO",
-    "month": "2023-03",
-    "fy": "2022-2023",
-    "amount": 86067.0,
-    "note": "Monthly total $86,067 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "PBK ARCHITECTS INC",
-    "month": "2021-12",
-    "fy": "2021-2022",
-    "amount": 86034.56,
-    "note": "Monthly total $86,035 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "SPALDING NICHOLS LAMP LANGLOIS LLP",
+    "month": "2025-08",
+    "fy": "2024-2025",
+    "amount": 45819.65,
+    "note": "Monthly total $45,820 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "SAMS CLUB #     OR #",
-    "month": "2025-05",
-    "fy": "2024-2025",
-    "amount": 86023.82,
-    "note": "Monthly total $86,024 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "SUMMIT K   HOLDINGS INC",
     "month": "2024-09",
     "fy": "2024-2025",
-    "amount": 85967.3,
-    "note": "Monthly total $85,967 is within 15% of $100,000 competitive bid threshold"
+    "amount": 45800.87,
+    "note": "Monthly total $45,801 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "BAYES ACHIEVEMENT CENTER INC",
-    "month": "2022-11",
+    "vendor": "ALLY ROOFING SERVICES LLC",
+    "month": "2022-09",
     "fy": "2022-2023",
-    "amount": 85940.0,
-    "note": "Monthly total $85,940 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "ROMEO MUSIC",
-    "month": "2023-07",
-    "fy": "2022-2023",
-    "amount": 85919.0,
-    "note": "Monthly total $85,919 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BORDEN DAIRY",
-    "month": "2022-11",
-    "fy": "2022-2023",
-    "amount": 85881.29,
-    "note": "Monthly total $85,881 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "BAYES ACHIEVEMENT CENTER INC",
-    "month": "2023-09",
-    "fy": "2023-2024",
-    "amount": 85764.65,
-    "note": "Monthly total $85,765 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "INTERFACING COMPANY OF TEXAS LLC",
-    "month": "2026-02",
-    "fy": "2025-2026",
-    "amount": 85685.0,
-    "note": "Monthly total $85,685 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "MEMORIAL HERMANN MEDICAL GROUP",
-    "month": "2021-03",
-    "fy": "2020-2021",
-    "amount": 85624.88,
-    "note": "Monthly total $85,625 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "TAB TECHNOLOGIES LLC",
-    "month": "2025-08",
-    "fy": "2024-2025",
-    "amount": 85593.0,
-    "note": "Monthly total $85,593 is within 15% of $100,000 competitive bid threshold"
-  },
-  {
-    "type": "threshold_proximity",
-    "label": "Near Bid Threshold",
-    "severity": "medium",
-    "vendor": "CITY OF CONROE",
-    "month": "2024-08",
-    "fy": "2023-2024",
-    "amount": 85545.15,
-    "note": "Monthly total $85,545 is within 15% of $100,000 competitive bid threshold"
+    "amount": 45797.33,
+    "note": "Monthly total $45,797 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "THOMAS BUS GULF COAST",
+    "month": "2022-02",
+    "fy": "2021-2022",
+    "amount": 45786.15,
+    "note": "Monthly total $45,786 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "GOT YOU COVERED WORK WEAR &UNIFORMS",
+    "month": "2022-08",
+    "fy": "2021-2022",
+    "amount": 45762.66,
+    "note": "Monthly total $45,763 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HARDIES FRESH FOODS",
+    "month": "2021-11",
+    "fy": "2021-2022",
+    "amount": 45739.11,
+    "note": "Monthly total $45,739 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2024-03",
+    "fy": "2023-2024",
+    "amount": 45737.32,
+    "note": "Monthly total $45,737 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "JOHNSON SUPPLY",
+    "month": "2022-08",
+    "fy": "2021-2022",
+    "amount": 45695.01,
+    "note": "Monthly total $45,695 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BOOKSOURCE",
+    "month": "2023-05",
+    "fy": "2022-2023",
+    "amount": 45694.64,
+    "note": "Monthly total $45,695 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MAGNA FLOW ENVIRONMENTAL INC",
+    "month": "2025-01",
+    "fy": "2024-2025",
+    "amount": 45637.62,
+    "note": "Monthly total $45,638 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "KEATING CHEVROLET",
+    "month": "2025-08",
+    "fy": "2024-2025",
+    "amount": 45616.75,
+    "note": "Monthly total $45,617 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RAPTOR TECHNOLOGIES LLC",
+    "month": "2024-07",
+    "fy": "2023-2024",
+    "amount": 45540.0,
+    "note": "Monthly total $45,540 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "THOMAS BUS GULF COAST",
+    "month": "2022-06",
+    "fy": "2021-2022",
+    "amount": 45477.71,
+    "note": "Monthly total $45,478 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RJMJR CONSULTANTS OF TEXAS INC",
+    "month": "2021-03",
+    "fy": "2020-2021",
+    "amount": 45405.58,
+    "note": "Monthly total $45,406 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "PIPER LEARNING INC",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 45402.16,
+    "note": "Monthly total $45,402 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MAGNA FLOW ENVIRONMENTAL INC",
+    "month": "2022-08",
+    "fy": "2021-2022",
+    "amount": 45377.91,
+    "note": "Monthly total $45,378 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DRUMFIT USA CORPORATION",
+    "month": "2025-05",
+    "fy": "2024-2025",
+    "amount": 45324.0,
+    "note": "Monthly total $45,324 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
     "month": "2024-08",
     "fy": "2023-2024",
-    "amount": 85418.38,
-    "note": "Monthly total $85,418 is within 15% of $100,000 competitive bid threshold"
+    "amount": 45301.44,
+    "note": "Monthly total $45,301 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "BORDEN DAIRY",
-    "month": "2021-06",
-    "fy": "2020-2021",
-    "amount": 85370.02,
-    "note": "Monthly total $85,370 is within 15% of $100,000 competitive bid threshold"
+    "vendor": "SAMS CLUB #     OR #",
+    "month": "2025-03",
+    "fy": "2024-2025",
+    "amount": 45287.18,
+    "note": "Monthly total $45,287 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "NATIONAL HEALTHCAREER ASSOCIATION",
-    "month": "2022-10",
+    "vendor": "RIVERSIDE INSIGHTS",
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 45284.03,
+    "note": "Monthly total $45,284 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TREE HOUSE INC THE",
+    "month": "2023-03",
     "fy": "2022-2023",
-    "amount": 85350.0,
-    "note": "Monthly total $85,350 is within 15% of $100,000 competitive bid threshold"
+    "amount": 45279.54,
+    "note": "Monthly total $45,280 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "BURMAX COMPANY INC THE",
-    "month": "2024-04",
+    "vendor": "DANA SAFETY SUPPLY",
+    "month": "2022-09",
+    "fy": "2022-2023",
+    "amount": 45268.83,
+    "note": "Monthly total $45,269 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SPRING CREEK UTILITY DISTRICT",
+    "month": "2024-02",
     "fy": "2023-2024",
-    "amount": 85305.82,
-    "note": "Monthly total $85,306 is within 15% of $100,000 competitive bid threshold"
+    "amount": 45215.3,
+    "note": "Monthly total $45,215 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "BENCHMARK EDUCATION COMPANY LLC",
-    "month": "2021-06",
+    "vendor": "BOSWORTH PAPERS",
+    "month": "2021-04",
     "fy": "2020-2021",
-    "amount": 85259.0,
-    "note": "Monthly total $85,259 is within 15% of $100,000 competitive bid threshold"
+    "amount": 45184.96,
+    "note": "Monthly total $45,185 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
-    "vendor": "IBI GROUP INC - TEXAS",
+    "vendor": "KYRISH TRUCK CENTERS OF HOUSTON",
+    "month": "2021-04",
+    "fy": "2020-2021",
+    "amount": 45128.55,
+    "note": "Monthly total $45,129 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SCHOOL SPECIALTY LLC",
+    "month": "2024-10",
+    "fy": "2024-2025",
+    "amount": 45109.41,
+    "note": "Monthly total $45,109 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2025-06",
+    "fy": "2024-2025",
+    "amount": 45107.72,
+    "note": "Monthly total $45,108 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 45050.43,
+    "note": "Monthly total $45,050 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LAB RESOURCES INC",
+    "month": "2021-09",
+    "fy": "2021-2022",
+    "amount": 45050.0,
+    "note": "Monthly total $45,050 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ELLISOR CONSTRUCTORS INC",
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 45000.0,
+    "note": "Monthly total $45,000 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "EDUCATION RESOURCE GROUP LLC",
+    "month": "2022-11",
+    "fy": "2022-2023",
+    "amount": 45000.0,
+    "note": "Monthly total $45,000 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BOSWORTH PAPERS",
+    "month": "2021-05",
+    "fy": "2020-2021",
+    "amount": 44992.2,
+    "note": "Monthly total $44,992 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 44950.18,
+    "note": "Monthly total $44,950 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "READING WRITING PROJECT NETWORK LLC",
     "month": "2022-05",
     "fy": "2021-2022",
-    "amount": 85248.17,
-    "note": "Monthly total $85,248 is within 15% of $100,000 competitive bid threshold"
+    "amount": 44900.0,
+    "note": "Monthly total $44,900 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "JOHNSON SUPPLY",
+    "month": "2022-04",
+    "fy": "2021-2022",
+    "amount": 44873.09,
+    "note": "Monthly total $44,873 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "SYMMETRY ENERGY SOLUTIONS LLC",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 44833.53,
+    "note": "Monthly total $44,834 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MEMORIAL HERMANN MEDICAL GROUP",
+    "month": "2020-09",
+    "fy": "2020-2021",
+    "amount": 44830.78,
+    "note": "Monthly total $44,831 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "JASPER ENGINE EXCHANGE INC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 44808.0,
+    "note": "Monthly total $44,808 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TOPS **DO NOT USE**",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 44746.22,
+    "note": "Monthly total $44,746 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LEGO EDUCATION",
+    "month": "2022-06",
+    "fy": "2021-2022",
+    "amount": 44733.9,
+    "note": "Monthly total $44,734 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MUSIC & ARTS REPAIRS",
+    "month": "2020-10",
+    "fy": "2020-2021",
+    "amount": 44723.58,
+    "note": "Monthly total $44,724 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SUMMIT REFRIGERANTS LLC",
+    "month": "2024-10",
+    "fy": "2024-2025",
+    "amount": 44705.6,
+    "note": "Monthly total $44,706 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "AGE OF LEARNING INC",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 44660.75,
+    "note": "Monthly total $44,661 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LAKESHORE LEARNING MATERIALS LLC",
+    "month": "2021-10",
+    "fy": "2021-2022",
+    "amount": 44591.88,
+    "note": "Monthly total $44,592 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ENTERGY",
+    "month": "2020-09",
+    "fy": "2020-2021",
+    "amount": 44575.11,
+    "note": "Monthly total $44,575 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CARROLLS DISCOUNT OFFICE FURN-OFUSA",
+    "month": "2022-09",
+    "fy": "2022-2023",
+    "amount": 44571.12,
+    "note": "Monthly total $44,571 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "THOMAS BUS GULF COAST",
+    "month": "2022-11",
+    "fy": "2022-2023",
+    "amount": 44480.78,
+    "note": "Monthly total $44,481 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ROGERS MORRIS & GROVER LLP",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 44478.29,
+    "note": "Monthly total $44,478 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TECHNOLOGIES INC",
+    "month": "2023-12",
+    "fy": "2023-2024",
+    "amount": 44450.0,
+    "note": "Monthly total $44,450 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 44434.74,
+    "note": "Monthly total $44,435 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SAMS CLUB #     OR #",
+    "month": "2022-10",
+    "fy": "2022-2023",
+    "amount": 44412.87,
+    "note": "Monthly total $44,413 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TOOLS FOR SCHOOLS INC",
+    "month": "2023-09",
+    "fy": "2023-2024",
+    "amount": 44400.0,
+    "note": "Monthly total $44,400 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "JOHNSON SUPPLY",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 44357.32,
+    "note": "Monthly total $44,357 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "ACME ARCHITECTURAL HARDWARE",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 44263.47,
+    "note": "Monthly total $44,263 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SOLUTION TREE INC",
+    "month": "2024-02",
+    "fy": "2023-2024",
+    "amount": 44259.0,
+    "note": "Monthly total $44,259 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "PREFERRED TECHNOLOGIES LLC",
+    "month": "2022-10",
+    "fy": "2022-2023",
+    "amount": 44234.3,
+    "note": "Monthly total $44,234 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "GORDIAN GROUP INC THE",
+    "month": "2023-09",
+    "fy": "2023-2024",
+    "amount": 44200.64,
+    "note": "Monthly total $44,201 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RUSH BUS CENTERS",
+    "month": "2025-04",
+    "fy": "2024-2025",
+    "amount": 44188.17,
+    "note": "Monthly total $44,188 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2026-02",
+    "fy": "2025-2026",
+    "amount": 44164.56,
+    "note": "Monthly total $44,165 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SAFETYMED LLC",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 44144.0,
+    "note": "Monthly total $44,144 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "FIRST CLASS TRANSPORTATION LLC",
+    "month": "2022-06",
+    "fy": "2021-2022",
+    "amount": 44141.76,
+    "note": "Monthly total $44,142 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "DELL MARKETING LP",
+    "month": "2025-10",
+    "fy": "2025-2026",
+    "amount": 44068.75,
+    "note": "Monthly total $44,069 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "O DAY DRILLING COMPANY INC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 44054.0,
+    "note": "Monthly total $44,054 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TECHNOLOGIES INC",
+    "month": "2023-01",
+    "fy": "2022-2023",
+    "amount": 44050.0,
+    "note": "Monthly total $44,050 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "AVEX LLC",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 44013.8,
+    "note": "Monthly total $44,014 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RJMJR CONSULTANTS OF TEXAS INC",
+    "month": "2022-03",
+    "fy": "2021-2022",
+    "amount": 43990.08,
+    "note": "Monthly total $43,990 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "APPLE INC",
+    "month": "2021-03",
+    "fy": "2020-2021",
+    "amount": 43989.6,
+    "note": "Monthly total $43,990 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "EDUCATION RESOURCE GROUP INC",
+    "month": "2022-10",
+    "fy": "2022-2023",
+    "amount": 43940.0,
+    "note": "Monthly total $43,940 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "COLLEGE BOARD",
     "month": "2021-01",
     "fy": "2020-2021",
-    "amount": 85227.94,
-    "note": "Monthly total $85,228 is within 15% of $100,000 competitive bid threshold"
+    "amount": 43925.0,
+    "note": "Monthly total $43,925 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "threshold_proximity",
     "label": "Near Bid Threshold",
     "severity": "medium",
     "vendor": "DAHILL OFFICE TECHNOLOGY CORPORATIO",
-    "month": "2021-01",
+    "month": "2022-07",
+    "fy": "2021-2022",
+    "amount": 43843.51,
+    "note": "Monthly total $43,844 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "VERTIV CORPORATION",
+    "month": "2023-01",
+    "fy": "2022-2023",
+    "amount": 43799.98,
+    "note": "Monthly total $43,800 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SOUTHERN MONTGOMERY COUNTY MUD",
+    "month": "2025-07",
+    "fy": "2024-2025",
+    "amount": 43786.75,
+    "note": "Monthly total $43,787 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2023-05",
+    "fy": "2022-2023",
+    "amount": 43737.5,
+    "note": "Monthly total $43,738 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "KLEEN AIR FILTER SERVICES & SALES",
+    "month": "2023-10",
+    "fy": "2023-2024",
+    "amount": 43723.66,
+    "note": "Monthly total $43,724 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2023-03",
+    "fy": "2022-2023",
+    "amount": 43670.0,
+    "note": "Monthly total $43,670 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MOTOROLA SOLUTIONS INC",
+    "month": "2023-09",
+    "fy": "2023-2024",
+    "amount": 43634.61,
+    "note": "Monthly total $43,635 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BSN SPORTS LLC",
+    "month": "2025-05",
+    "fy": "2024-2025",
+    "amount": 43607.91,
+    "note": "Monthly total $43,608 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BAYES ACHIEVEMENT CENTER INC",
+    "month": "2023-01",
+    "fy": "2022-2023",
+    "amount": 43535.0,
+    "note": "Monthly total $43,535 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SOUTHERN TIRE MART LLC",
+    "month": "2023-05",
+    "fy": "2022-2023",
+    "amount": 43533.36,
+    "note": "Monthly total $43,533 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BLUUM OF TEXAS LLC",
+    "month": "2022-12",
+    "fy": "2022-2023",
+    "amount": 43533.0,
+    "note": "Monthly total $43,533 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SYMMETRY ENERGY SOLUTIONS LLC",
+    "month": "2024-05",
+    "fy": "2023-2024",
+    "amount": 43510.0,
+    "note": "Monthly total $43,510 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CITY OF CONROE",
+    "month": "2021-07",
     "fy": "2020-2021",
-    "amount": 85117.78,
-    "note": "Monthly total $85,118 is within 15% of $100,000 competitive bid threshold"
+    "amount": 43461.22,
+    "note": "Monthly total $43,461 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "TOP CUT TREE SERVICE INC",
+    "month": "2024-12",
+    "fy": "2024-2025",
+    "amount": 43450.0,
+    "note": "Monthly total $43,450 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LMC CORPORATION",
+    "month": "2024-06",
+    "fy": "2023-2024",
+    "amount": 43398.08,
+    "note": "Monthly total $43,398 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HCDE HARRIS CO DEPT OF ED SPEC ED",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 43375.0,
+    "note": "Monthly total $43,375 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "GATEWAY PRINTING & OFFICE SUPPLY IN",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 43368.8,
+    "note": "Monthly total $43,369 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SUN COAST RESOURCES INC",
+    "month": "2022-03",
+    "fy": "2021-2022",
+    "amount": 43366.65,
+    "note": "Monthly total $43,367 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CHEM AQUA INC",
+    "month": "2025-04",
+    "fy": "2024-2025",
+    "amount": 43351.97,
+    "note": "Monthly total $43,352 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "NETSYNC NETWORK SOLUTIONS INC",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 43340.16,
+    "note": "Monthly total $43,340 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "LIBERTY OFFICE PRODUCTS",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 43310.23,
+    "note": "Monthly total $43,310 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "THOMAS BUS GULF COAST",
+    "month": "2024-11",
+    "fy": "2024-2025",
+    "amount": 43260.41,
+    "note": "Monthly total $43,260 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BARNES & NOBLE BOOKSELLERS",
+    "month": "2025-05",
+    "fy": "2024-2025",
+    "amount": 43251.97,
+    "note": "Monthly total $43,252 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEARTLAND PAYMENT SYSTEMS LLC",
+    "month": "2024-01",
+    "fy": "2023-2024",
+    "amount": 43250.0,
+    "note": "Monthly total $43,250 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BSN SPORTS LLC",
+    "month": "2024-02",
+    "fy": "2023-2024",
+    "amount": 43245.41,
+    "note": "Monthly total $43,245 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "FULCRUM MANAGEMENT SOLUTIONS INC",
+    "month": "2024-09",
+    "fy": "2024-2025",
+    "amount": 43233.75,
+    "note": "Monthly total $43,234 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SAMS LIMOUSINE & TRANSPORTATION INC",
+    "month": "2022-03",
+    "fy": "2021-2022",
+    "amount": 43221.5,
+    "note": "Monthly total $43,222 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SUN COAST RESOURCES INC",
+    "month": "2021-04",
+    "fy": "2020-2021",
+    "amount": 43213.62,
+    "note": "Monthly total $43,214 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CITY OF OAK RIDGE NORTH",
+    "month": "2025-09",
+    "fy": "2025-2026",
+    "amount": 43204.68,
+    "note": "Monthly total $43,205 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "READING WRITING PROJECT NETWORK LLC",
+    "month": "2021-05",
+    "fy": "2020-2021",
+    "amount": 43200.0,
+    "note": "Monthly total $43,200 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CROWN PAPER & CHEMICAL",
+    "month": "2021-11",
+    "fy": "2021-2022",
+    "amount": 43193.27,
+    "note": "Monthly total $43,193 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SUN COAST RESOURCES INC",
+    "month": "2022-09",
+    "fy": "2022-2023",
+    "amount": 43160.49,
+    "note": "Monthly total $43,160 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BWI COMPANIES INC",
+    "month": "2023-08",
+    "fy": "2022-2023",
+    "amount": 43136.8,
+    "note": "Monthly total $43,137 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "RIDDELL ALL AMERICAN SPORTS CORP",
+    "month": "2021-03",
+    "fy": "2020-2021",
+    "amount": 43102.18,
+    "note": "Monthly total $43,102 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "AMAZON CAPITAL SERVICES INC",
+    "month": "2021-04",
+    "fy": "2020-2021",
+    "amount": 42983.42,
+    "note": "Monthly total $42,983 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "NATIONAL TRAVEL SYSTEMS LP",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 42975.36,
+    "note": "Monthly total $42,975 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "HEARTLAND PAYMENT SYSTEMS LLC",
+    "month": "2025-01",
+    "fy": "2024-2025",
+    "amount": 42960.0,
+    "note": "Monthly total $42,960 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "STANTEC ARCHITECTURE INC",
+    "month": "2022-02",
+    "fy": "2021-2022",
+    "amount": 42959.3,
+    "note": "Monthly total $42,959 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BLICK ART MATERIALS",
+    "month": "2025-05",
+    "fy": "2024-2025",
+    "amount": 42950.85,
+    "note": "Monthly total $42,951 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "SIENVIRONMENTAL LLC",
+    "month": "2024-12",
+    "fy": "2024-2025",
+    "amount": 42841.53,
+    "note": "Monthly total $42,842 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MONTGOMERY COUNTY MUD NO",
+    "month": "2021-07",
+    "fy": "2020-2021",
+    "amount": 42806.31,
+    "note": "Monthly total $42,806 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CROWN PAPER & CHEMICAL",
+    "month": "2024-07",
+    "fy": "2023-2024",
+    "amount": 42794.0,
+    "note": "Monthly total $42,794 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "NETSYNC NETWORK SOLUTIONS INC",
+    "month": "2023-04",
+    "fy": "2022-2023",
+    "amount": 42757.71,
+    "note": "Monthly total $42,758 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "IMPACT FIRE SERVICES LLC",
+    "month": "2024-04",
+    "fy": "2023-2024",
+    "amount": 42746.63,
+    "note": "Monthly total $42,747 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "REGION VI EDUCATION SERVICE CENTER",
+    "month": "2022-11",
+    "fy": "2022-2023",
+    "amount": 42708.6,
+    "note": "Monthly total $42,709 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "CONSOLIDATED COMMUNICATIONS",
+    "month": "2026-01",
+    "fy": "2025-2026",
+    "amount": 42703.08,
+    "note": "Monthly total $42,703 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "MPS DBA BEDFORD PUBLISHING",
+    "month": "2025-09",
+    "fy": "2025-2026",
+    "amount": 42680.06,
+    "note": "Monthly total $42,680 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BUCKEYE CLEANING CENTER",
+    "month": "2024-02",
+    "fy": "2023-2024",
+    "amount": 42666.75,
+    "note": "Monthly total $42,667 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "INDECO SALES INC",
+    "month": "2021-12",
+    "fy": "2021-2022",
+    "amount": 42586.23,
+    "note": "Monthly total $42,586 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
+  },
+  {
+    "type": "threshold_proximity",
+    "label": "Near Bid Threshold",
+    "severity": "medium",
+    "vendor": "BARNES & NOBLE BOOKSELLERS",
+    "month": "2021-06",
+    "fy": "2020-2021",
+    "amount": 42522.01,
+    "note": "Monthly total $42,522 is within 15% of $50,000 competitive bid threshold (TEC §44.031)"
   },
   {
     "type": "yoy_increase",
@@ -6794,6 +8521,15 @@
     "note": "Spending increased 68% from 2024-2025 ($101,398) to 2025-2026 ($170,582)"
   },
   {
+    "type": "spending_spike",
+    "label": "Unusual Monthly Spending",
+    "severity": "low",
+    "month": "2023-09",
+    "amount": 22867012.49,
+    "average": 11162489.01,
+    "note": "2023-09 spending $22,867,012 is 2.0x the monthly average of $11,162,489"
+  },
+  {
     "type": "new_vendor",
     "label": "New Vendor — Large Payment",
     "severity": "low",
@@ -6882,13 +8618,5 @@
     "fy": "2025-2026",
     "amount": 51741.59,
     "note": "First appearance in 2025-2026 with $51,742 in payments"
-  },
-  {
-    "type": "vendor_concentration",
-    "label": "High Vendor Concentration",
-    "severity": "low",
-    "pct": 47.9,
-    "top5_total": 1039188358.73,
-    "note": "Top 5 vendors account for 48% of operating fund spending"
   }
 ]

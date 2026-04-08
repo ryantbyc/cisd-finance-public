@@ -1,14 +1,9 @@
 {
   "fiscal_years": [
-    "2020-2021",
-    "2021-2022",
-    "2022-2023",
-    "2023-2024",
-    "2024-2025",
     "2025-2026"
   ],
-  "total_transactions": 576598,
-  "total_spend": 2185268503.45,
-  "vendor_count": 12304,
-  "last_updated": null
+  "total_transactions": 86334,
+  "total_spend": 465788946.67,
+  "vendor_count": 3813,
+  "last_updated": "2026-04-08T02:55:13Z"
 }

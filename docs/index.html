@@ -367,6 +367,12 @@
       <label>Fiscal Year:</label>
       <div id="campus-fy-buttons"></div>
     </div>
+    <div class="fy-selector" style="margin-bottom:0.75rem">
+      <label>Show:</label>
+      <button class="fy-btn active" data-ctype="campus">Campuses</button>
+      <button class="fy-btn" data-ctype="all">All</button>
+      <button class="fy-btn" data-ctype="dept">Departments</button>
+    </div>
     <div class="search-bar">
       <input type="search" id="campus-search" placeholder="Search school or department…" autocomplete="off">
     </div>
@@ -996,12 +1002,21 @@ function renderTrends() {
 }
 
 // ── By School (Campus) ────────────────────────────────────────────────────────
+let campusTypeFilter = 'campus';
+
 function renderCampus() {
   const fy    = activeCampusFY;
   const query = (document.getElementById('campus-search')?.value || '').toLowerCase().trim();
 
+  // Campuses = org codes 001–699; Departments = 700–999
   let list = BUDGET_CAMPUS
     .filter(c => c.by_fy[fy])
+    .filter(c => {
+      const code = parseInt(c.org, 10);
+      if (campusTypeFilter === 'campus') return code <= 699;
+      if (campusTypeFilter === 'dept')   return code >= 700;
+      return true;
+    })
     .map(c => ({ ...c, fyData: c.by_fy[fy] }));
 
   if (query) {
@@ -1202,6 +1217,17 @@ document.getElementById('func-search')?.addEventListener('input', () => {
 document.getElementById('campus-search')?.addEventListener('input', () => {
   campusPage = 1;
   renderCampus();
+});
+
+document.addEventListener('click', e => {
+  const ctype = e.target.closest('[data-ctype]');
+  if (ctype) {
+    document.querySelectorAll('[data-ctype]').forEach(b => b.classList.remove('active'));
+    ctype.classList.add('active');
+    campusTypeFilter = ctype.dataset.ctype;
+    campusPage = 1;
+    renderCampus();
+  }
 });
 
 // ── Theme & font controls ──────────────────────────────────────────────────

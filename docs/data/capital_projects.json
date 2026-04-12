@@ -1,0 +1,124 @@
+{
+  "bond_referendum": {
+    "year": 2023,
+    "propositions": {
+      "A": {
+        "label": "New Schools",
+        "total": 1820000000
+      },
+      "B": {
+        "label": "Additions & Renovations",
+        "total": null
+      },
+      "C": {
+        "label": "Technology & Safety",
+        "total": null
+      }
+    }
+  },
+  "annual_expenditures": [
+    {
+      "fy": "2020-2021",
+      "total": 161265979
+    },
+    {
+      "fy": "2021-2022",
+      "total": 212955658
+    },
+    {
+      "fy": "2022-2023",
+      "total": 229279833
+    },
+    {
+      "fy": "2023-2024",
+      "total": 197362606
+    },
+    {
+      "fy": "2024-2025",
+      "total": 541889026,
+      "is_budget": true
+    }
+  ],
+  "projects": [
+    {
+      "name": "Timber Mills High School (new)",
+      "prop": "A",
+      "amount": 384230000,
+      "capacity": 3800,
+      "opens": "2027",
+      "status": "Under construction"
+    },
+    {
+      "name": "Grand Oaks 7-8 / 9th Grade Campus",
+      "prop": "A",
+      "amount": 165540000,
+      "capacity": 2000,
+      "opens": "2026",
+      "status": "Under construction"
+    },
+    {
+      "name": "Caney Creek 9th Grade Campus",
+      "prop": "A",
+      "amount": 138100000,
+      "capacity": 1600,
+      "opens": "2027",
+      "status": "Under construction"
+    },
+    {
+      "name": "Conroe Area Intermediate",
+      "prop": "A",
+      "amount": 63730000,
+      "capacity": 950,
+      "opens": "2027",
+      "status": "Under construction"
+    },
+    {
+      "name": "Grand Oaks Elementary",
+      "prop": "A",
+      "amount": 63730000,
+      "capacity": 950,
+      "opens": "2026",
+      "status": "Under construction"
+    },
+    {
+      "name": "Eissler Elementary (The Woodlands)",
+      "prop": "A",
+      "amount": 59000000,
+      "capacity": 950,
+      "opens": "2025",
+      "status": "Opened 2025"
+    },
+    {
+      "name": "242 Corridor Elementary",
+      "prop": "A",
+      "amount": 59000000,
+      "capacity": 950,
+      "opens": "2025",
+      "status": "Opened 2025"
+    },
+    {
+      "name": "McCullough JH Addition",
+      "prop": "B",
+      "amount": 50900000,
+      "capacity": null,
+      "opens": "2026",
+      "status": "Under construction"
+    },
+    {
+      "name": "Hailey Elementary Addition",
+      "prop": "B",
+      "amount": 13500000,
+      "capacity": null,
+      "opens": "2025",
+      "status": "Complete"
+    },
+    {
+      "name": "Ford Elementary Addition",
+      "prop": "B",
+      "amount": 25900000,
+      "capacity": null,
+      "opens": "2025",
+      "status": "Complete"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "fy": "2020-2021",
+    "revenue_local": 103374083,
+    "revenue_state": 1406799,
+    "revenue_total": 104780882,
+    "principal": 46810000,
+    "interest": 57949398,
+    "expenditure_total": 104759398
+  },
+  {
+    "fy": "2021-2022",
+    "revenue_local": 111041675,
+    "revenue_state": 1330393,
+    "revenue_total": 112372068,
+    "principal": 50775000,
+    "interest": 62111672,
+    "expenditure_total": 112886672
+  },
+  {
+    "fy": "2022-2023",
+    "revenue_local": 133344094,
+    "revenue_state": 4440044,
+    "revenue_total": 137784138,
+    "principal": 66230000,
+    "interest": 67340000,
+    "expenditure_total": 133570000
+  },
+  {
+    "fy": "2023-2024",
+    "revenue_local": 133483584,
+    "revenue_state": 13695226,
+    "revenue_total": 147178810,
+    "principal": 84095000,
+    "interest": 80011251,
+    "expenditure_total": 164106251
+  },
+  {
+    "fy": "2024-2025",
+    "revenue_local": 157267209,
+    "revenue_state": 13188011,
+    "revenue_total": 170455220,
+    "principal": 91540000,
+    "interest": 84969248,
+    "expenditure_total": 176509248,
+    "is_budget": true
+  }
+]

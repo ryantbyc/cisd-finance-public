@@ -168,6 +168,41 @@
     /* ── Loading ─────────────────────────────────────────────────── */
     #loading { text-align: center; padding: 3rem; color: var(--text-secondary); }
 
+    /* ── Debt service bars ───────────────────────────────────────── */
+    .ds-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 0.5rem; }
+    .ds-stat { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1rem 1.25rem; }
+    .ds-stat .ds-label { font-size: 0.78rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .ds-stat .ds-value { font-size: 1.35rem; font-weight: 700; }
+    .ds-stat .ds-sub   { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.15rem; }
+    @media (max-width: 600px) { .ds-grid { grid-template-columns: 1fr 1fr; } }
+
+    /* ── Tax rate chart ──────────────────────────────────────────── */
+    .tax-bar-row { display: grid; grid-template-columns: 80px 1fr 120px; gap: 0.6rem; align-items: center; font-size: 0.85rem; margin-bottom: 0.4rem; }
+    .tax-bar-label { color: var(--text-secondary); text-align: right; }
+    .tax-bar-track { background: var(--border-subtle); border-radius: 4px; height: 22px; display: flex; overflow: hidden; }
+    .tax-bar-mo   { background: var(--bg-header); }
+    .tax-bar-is   { background: var(--color-debt); opacity: 0.75; }
+    .tax-bar-amt  { font-weight: 600; font-size: 0.83rem; }
+
+    /* ── Capital projects ────────────────────────────────────────── */
+    .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+    .proj-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1rem 1.25rem; }
+    .proj-card .proj-name   { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+    .proj-card .proj-meta   { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.3rem; }
+    .proj-card .proj-amount { font-weight: 700; font-size: 1.1rem; color: var(--bg-header); }
+    .status-badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 20px; margin-left: 0.4rem; }
+    .status-complete     { background: #d1fae5; color: #065f46; }
+    .status-construction { background: #fef3c7; color: #92400e; }
+    .status-opened       { background: #dbeafe; color: #1e40af; }
+
+    /* ── Campus search ───────────────────────────────────────────── */
+    .campus-obj-bar { display: flex; height: 10px; border-radius: 4px; overflow: hidden; min-width: 80px; }
+    .campus-obj-payroll    { background: #1d7a40; }
+    .campus-obj-contracted { background: #3b82f6; }
+    .campus-obj-supplies   { background: #f59e0b; }
+    .campus-obj-other      { background: #9ca3af; }
+    .campus-obj-capital    { background: #ef4444; }
+
     /* ── Responsive ──────────────────────────────────────────────── */
     @media (max-width: 600px) {
       .summary-cards { grid-template-columns: 1fr 1fr; }
@@ -205,7 +240,9 @@
     <a class="nav-tab" data-page="category">Category</a>
     <a class="nav-tab" data-page="vendors">Vendors</a>
     <a class="nav-tab" data-page="functions">By Function</a>
+    <a class="nav-tab" data-page="campus">By School</a>
     <a class="nav-tab" data-page="trends">Trends</a>
+    <a class="nav-tab" data-page="capital">Capital Projects</a>
     <a class="nav-tab" data-page="watchdog">Watchdog ⚑</a>
   </div>
 </nav>
@@ -237,6 +274,14 @@
     <table class="data-table" id="monthly-table">
       <thead><tr><th>Month</th><th class="num">AP Checks</th></tr></thead>
       <tbody id="monthly-body"></tbody>
+    </table>
+
+    <div class="section-title" style="margin-top:1.5rem">Debt Service (Bond Obligations)</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem">Annual principal &amp; interest payments on outstanding bonds. Source: CISD Budget Books.</p>
+    <div class="ds-grid" id="ds-cards"></div>
+    <table class="data-table" id="ds-table">
+      <thead><tr><th>Fiscal Year</th><th class="num">Revenue</th><th class="num">Principal</th><th class="num">Interest &amp; Fees</th><th class="num">Total Payments</th><th class="num">Coverage</th></tr></thead>
+      <tbody id="ds-body"></tbody>
     </table>
   </div>
 
@@ -299,6 +344,58 @@
     </p>
     <div id="chart-instruction" style="overflow-x:auto"></div>
     <div id="trends-table" style="margin-top:1.5rem"></div>
+
+    <div class="section-title" style="margin-top:2rem">Property Tax Rate History</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:1rem">
+      Maintenance &amp; Operations (M&amp;O) rate funds general operations; Interest &amp; Sinking (I&amp;S) rate services bond debt.
+      Source: CISD Official Budget Books, Tax Rate Calculation Worksheets.
+    </p>
+    <div id="tax-rate-chart"></div>
+    <table class="data-table" id="tax-rate-table" style="margin-top:1rem">
+      <thead><tr><th>Fiscal Year</th><th class="num">M&amp;O Rate</th><th class="num">I&amp;S Rate</th><th class="num">Combined Rate</th><th class="num">YoY Change</th></tr></thead>
+      <tbody id="tax-rate-body"></tbody>
+    </table>
+  </div>
+
+  <!-- ── BY SCHOOL ── -->
+  <div class="page" id="page-campus">
+    <div class="section-title">Budget by School / Department</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem">
+      General fund budget allocations per campus/department from official CISD budget files. Breakdown by major object category.
+    </p>
+    <div class="fy-selector">
+      <label>Fiscal Year:</label>
+      <div id="campus-fy-buttons"></div>
+    </div>
+    <div class="search-bar">
+      <input type="search" id="campus-search" placeholder="Search school or department…" autocomplete="off">
+    </div>
+    <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="campus-count-label"></div>
+    <table class="data-table" id="campus-table">
+      <thead><tr><th>#</th><th>School / Department</th><th class="num">Total Budget</th><th class="num">Payroll</th><th class="num">Contracted</th><th class="num">Supplies</th><th class="num">Other</th><th>Mix</th></tr></thead>
+      <tbody id="campus-body"></tbody>
+    </table>
+    <div class="pagination" id="campus-pagination"></div>
+  </div>
+
+  <!-- ── CAPITAL PROJECTS ── -->
+  <div class="page" id="page-capital">
+    <div class="section-title">Capital Projects — 2023 Bond Referendum</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem">
+      Voters approved a $1.82B Proposition A bond in November 2023 for new school construction.
+      Proposition B covers additions &amp; renovations. Source: CISD Official Budget Book 2024-2025.
+    </p>
+
+    <div class="summary-cards" id="capital-summary-cards"></div>
+
+    <div class="section-title" style="margin-top:1.5rem">Annual Capital Expenditures</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem">
+      All capital funds (bond construction, technology, facilities). 2024-2025 is budgeted.
+    </p>
+    <div id="capital-exp-chart"></div>
+
+    <div class="section-title" style="margin-top:1.5rem">Active Projects</div>
+    <div class="proj-grid" id="proj-grid"></div>
   </div>
 
   <!-- ── WATCHDOG ── -->
@@ -325,22 +422,29 @@
 'use strict';
 
 // ── State ──────────────────────────────────────────────────────────────────
-let META        = null;
-let VENDORS     = null;
-let FUNCTIONS   = null;
-let MONTHLY     = null;
-let FUND_CATS   = null;
-let WATCHDOG    = null;
-let BUDGET_FUNC = null;
-let ENROLLMENT  = null;
+let META            = null;
+let VENDORS         = null;
+let FUNCTIONS       = null;
+let MONTHLY         = null;
+let FUND_CATS       = null;
+let WATCHDOG        = null;
+let BUDGET_FUNC     = null;
+let ENROLLMENT      = null;
+let BUDGET_CAMPUS   = null;
+let TAX_RATES       = null;
+let DEBT_SERVICE    = null;
+let CAPITAL         = null;
 
-let activeFY       = null;
-let activeFuncFY   = null;
-let vendorPage     = 1;
-let watchdogPage   = 1;
-let watchdogFilter = 'all';
+let activeFY         = null;
+let activeFuncFY     = null;
+let activeCampusFY   = null;
+let vendorPage       = 1;
+let watchdogPage     = 1;
+let campusPage       = 1;
+let watchdogFilter   = 'all';
 const VENDOR_PAGE_SIZE   = 50;
 const WATCHDOG_PAGE_SIZE = 30;
+const CAMPUS_PAGE_SIZE   = 60;
 
 // ── Utilities ──────────────────────────────────────────────────────────────
 const fmt  = v => v == null ? '—' : '$' + Math.round(v).toLocaleString();
@@ -362,7 +466,8 @@ async function loadJSON(path) {
 
 async function init() {
   try {
-    [META, VENDORS, FUNCTIONS, MONTHLY, FUND_CATS, WATCHDOG, BUDGET_FUNC, ENROLLMENT] = await Promise.all([
+    [META, VENDORS, FUNCTIONS, MONTHLY, FUND_CATS, WATCHDOG, BUDGET_FUNC, ENROLLMENT,
+     BUDGET_CAMPUS, TAX_RATES, DEBT_SERVICE, CAPITAL] = await Promise.all([
       loadJSON('data/meta.json'),
       loadJSON('data/vendors.json'),
       loadJSON('data/functions.json'),
@@ -371,21 +476,29 @@ async function init() {
       loadJSON('data/watchdog.json'),
       loadJSON('data/budget_by_function.json'),
       loadJSON('data/enrollment.json'),
+      loadJSON('data/budget_by_campus.json'),
+      loadJSON('data/tax_rates.json'),
+      loadJSON('data/debt_service.json'),
+      loadJSON('data/capital_projects.json'),
     ]);
 
-    activeFY     = META.fiscal_years[META.fiscal_years.length - 1];
-    activeFuncFY = activeFY;
+    activeFY       = META.fiscal_years[META.fiscal_years.length - 1];
+    activeFuncFY   = activeFY;
+    activeCampusFY = activeFY;
 
     document.getElementById('loading').style.display = 'none';
 
-    buildFYButtons('fy-buttons',     META.fiscal_years, activeFY,     fy => { activeFY = fy; renderDashboard(); });
-    buildFYButtons('func-fy-buttons',META.fiscal_years, activeFuncFY, fy => { activeFuncFY = fy; renderFunctions(); });
+    buildFYButtons('fy-buttons',     META.fiscal_years, activeFY,       fy => { activeFY = fy; renderDashboard(); });
+    buildFYButtons('func-fy-buttons',META.fiscal_years, activeFuncFY,   fy => { activeFuncFY = fy; renderFunctions(); });
+    buildFYButtons('campus-fy-buttons', META.fiscal_years, activeCampusFY, fy => { activeCampusFY = fy; campusPage = 1; renderCampus(); });
 
     renderDashboard();
     renderCategory();
     renderVendors();
     renderFunctions();
+    renderCampus();
     renderTrends();
+    renderCapital();
     renderWatchdog();
 
     document.querySelectorAll('.page')[0].classList.add('active');
@@ -507,6 +620,43 @@ function renderDashboard() {
     .slice(0, 24)
     .map(m => `<tr><td>${m.month}</td><td class="num">${fmt(m.total)}</td></tr>`)
     .join('');
+
+  // Debt service summary
+  const dsLatest = DEBT_SERVICE[DEBT_SERVICE.length - 1];
+  const dsPrev   = DEBT_SERVICE[DEBT_SERVICE.length - 2];
+  document.getElementById('ds-cards').innerHTML = `
+    <div class="ds-stat">
+      <div class="ds-label">Total Payments — ${dsLatest.fy}${dsLatest.is_budget ? ' (Budget)' : ''}</div>
+      <div class="ds-value">${fmt(dsLatest.expenditure_total)}</div>
+      <div class="ds-sub">${dsPrev ? pct(dsLatest.expenditure_total, dsPrev.expenditure_total) + ' vs ' + dsPrev.fy : ''}</div>
+    </div>
+    <div class="ds-stat">
+      <div class="ds-label">Principal</div>
+      <div class="ds-value">${fmt(dsLatest.principal)}</div>
+      <div class="ds-sub">${fmt(dsLatest.interest)} interest &amp; fees</div>
+    </div>
+    <div class="ds-stat">
+      <div class="ds-label">Revenue (Tax + State)</div>
+      <div class="ds-value">${fmt(dsLatest.revenue_total)}</div>
+      <div class="ds-sub">${dsLatest.revenue_total > 0 ? (dsLatest.revenue_total / dsLatest.expenditure_total * 100).toFixed(1) + '% coverage ratio' : ''}</div>
+    </div>
+    <div class="ds-stat">
+      <div class="ds-label">Outstanding Bond Series</div>
+      <div class="ds-value">2019 &amp; 2023</div>
+      <div class="ds-sub">$1.82B Prop A approved Nov 2023</div>
+    </div>
+  `;
+  document.getElementById('ds-body').innerHTML = DEBT_SERVICE.map(d => {
+    const coverage = d.revenue_total > 0 ? (d.revenue_total / d.expenditure_total * 100).toFixed(1) + '%' : '—';
+    return `<tr>
+      <td>${d.fy}${d.is_budget ? ' <span style="font-size:0.72rem;color:var(--text-secondary)">(budget)</span>' : ''}</td>
+      <td class="num">${fmt(d.revenue_total)}</td>
+      <td class="num">${fmt(d.principal)}</td>
+      <td class="num">${fmt(d.interest)}</td>
+      <td class="num">${fmt(d.expenditure_total)}</td>
+      <td class="num">${coverage}</td>
+    </tr>`;
+  }).join('');
 }
 
 // ── Vendors ──────────────────────────────────────────────────────────────────
@@ -804,6 +954,168 @@ function renderTrends() {
       Instruction % and Admin % reflect general fund AP checks only — payroll (the largest component) is not in the check register.
       Expenditure per student is all-funds from CISD's published reports.
     </p>`;
+
+  // ── Tax rate chart ────────────────────────────────────────────────────────
+  const maxRate = Math.max(...TAX_RATES.map(r => r.combined));
+  const taxBars = TAX_RATES.map(r => {
+    const moPct  = (r.mo   / maxRate * 100).toFixed(1);
+    const isPct  = (r.is_  / maxRate * 100).toFixed(1);
+    const fmtR   = v => '$' + v.toFixed(4);
+    return `
+      <div class="tax-bar-row">
+        <div class="tax-bar-label">${r.fy.slice(2,4)}–${r.fy.slice(7,9)}</div>
+        <div class="tax-bar-track">
+          <div class="tax-bar-mo" style="width:${moPct}%" title="M&O: ${fmtR(r.mo)}"></div>
+          <div class="tax-bar-is" style="width:${isPct}%" title="I&S: ${fmtR(r.is_)}"></div>
+        </div>
+        <div class="tax-bar-amt">$${r.combined.toFixed(4)} <span style="font-size:0.75rem;color:var(--text-secondary)">/\$100</span></div>
+      </div>`;
+  }).join('');
+  document.getElementById('tax-rate-chart').innerHTML = `
+    <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:8px;padding:1rem 1.25rem">
+      <div style="font-size:0.78rem;color:var(--text-secondary);margin-bottom:0.75rem">
+        <span style="display:inline-block;width:12px;height:12px;background:var(--bg-header);border-radius:2px;margin-right:4px;vertical-align:middle"></span>M&amp;O Rate
+        <span style="display:inline-block;width:12px;height:12px;background:var(--color-debt);opacity:0.75;border-radius:2px;margin:0 4px 0 16px;vertical-align:middle"></span>I&amp;S (Bond Debt) Rate
+      </div>
+      ${taxBars}
+    </div>`;
+
+  document.getElementById('tax-rate-body').innerHTML = TAX_RATES.map((r, i) => {
+    const prev = i > 0 ? TAX_RATES[i - 1] : null;
+    const delta = prev ? (r.combined - prev.combined) : null;
+    const deltaStr = delta != null ? (delta > 0 ? '+' : '') + delta.toFixed(4) : '—';
+    const deltaClass = delta == null ? '' : delta > 0 ? 'change-up' : 'change-down';
+    return `<tr>
+      <td>${r.fy}</td>
+      <td class="num">$${r.mo.toFixed(4)}</td>
+      <td class="num">$${r.is_.toFixed(4)}</td>
+      <td class="num">$${r.combined.toFixed(4)}</td>
+      <td class="num ${deltaClass}">${deltaStr}</td>
+    </tr>`;
+  }).join('');
+}
+}
+
+// ── By School (Campus) ────────────────────────────────────────────────────────
+function renderCampus() {
+  const fy    = activeCampusFY;
+  const query = (document.getElementById('campus-search')?.value || '').toLowerCase().trim();
+
+  let list = BUDGET_CAMPUS
+    .filter(c => c.by_fy[fy])
+    .map(c => ({ ...c, fyData: c.by_fy[fy] }));
+
+  if (query) {
+    list = list.filter(c => c.name.toLowerCase().includes(query) || c.org.includes(query));
+  }
+
+  list.sort((a, b) => (b.fyData.total || 0) - (a.fyData.total || 0));
+
+  document.getElementById('campus-count-label').textContent =
+    `${list.length} schools/departments with budget in ${fy}${query ? ` matching "${query}"` : ''}`;
+
+  const total = list.length;
+  const pages = Math.ceil(total / CAMPUS_PAGE_SIZE);
+  campusPage  = Math.min(campusPage, pages || 1);
+  const slice = list.slice((campusPage - 1) * CAMPUS_PAGE_SIZE, campusPage * CAMPUS_PAGE_SIZE);
+
+  document.getElementById('campus-body').innerHTML = slice.map((c, i) => {
+    const d = c.fyData;
+    const t = d.total || 1;
+    const moW  = ((d.payroll    || 0) / t * 100).toFixed(1);
+    const ctW  = ((d.contracted || 0) / t * 100).toFixed(1);
+    const spW  = ((d.supplies   || 0) / t * 100).toFixed(1);
+    const otW  = (((d.other || 0) + (d.capital || 0)) / t * 100).toFixed(1);
+    const bar  = `<div class="campus-obj-bar" title="Payroll ${moW}% | Contracted ${ctW}% | Supplies ${spW}% | Other ${otW}%">
+      <div class="campus-obj-payroll"    style="width:${moW}%"></div>
+      <div class="campus-obj-contracted" style="width:${ctW}%"></div>
+      <div class="campus-obj-supplies"   style="width:${spW}%"></div>
+      <div class="campus-obj-other"      style="width:${otW}%"></div>
+    </div>`;
+    return `<tr>
+      <td>${(campusPage - 1) * CAMPUS_PAGE_SIZE + i + 1}</td>
+      <td>${c.name}</td>
+      <td class="num">${fmt(d.total)}</td>
+      <td class="num">${d.payroll    ? fmt(d.payroll)    : '—'}</td>
+      <td class="num">${d.contracted ? fmt(d.contracted) : '—'}</td>
+      <td class="num">${d.supplies   ? fmt(d.supplies)   : '—'}</td>
+      <td class="num">${(d.other || d.capital) ? fmt((d.other || 0) + (d.capital || 0)) : '—'}</td>
+      <td>${bar}</td>
+    </tr>`;
+  }).join('');
+
+  renderPagination('campus-pagination', pages, campusPage, p => { campusPage = p; renderCampus(); });
+}
+
+// ── Capital Projects ──────────────────────────────────────────────────────────
+function renderCapital() {
+  const fmtB = v => v >= 1e9 ? '$' + (v / 1e9).toFixed(2) + 'B' : '$' + (v / 1e6).toFixed(1) + 'M';
+
+  // Summary cards
+  const totalProjects = CAPITAL.projects.reduce((s, p) => s + (p.amount || 0), 0);
+  const complete   = CAPITAL.projects.filter(p => p.status.toLowerCase().includes('complete') || p.status.toLowerCase().includes('opened')).length;
+  const inProgress = CAPITAL.projects.filter(p => p.status.toLowerCase().includes('construction')).length;
+  const latestExp  = CAPITAL.annual_expenditures[CAPITAL.annual_expenditures.length - 1];
+
+  document.getElementById('capital-summary-cards').innerHTML = `
+    <div class="summary-card">
+      <div class="card-label">2023 Bond — Prop A</div>
+      <div class="card-value">$1.82B</div>
+      <div class="card-sub">New school construction, approved Nov 2023</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">Projects Tracked</div>
+      <div class="card-value">${CAPITAL.projects.length}</div>
+      <div class="card-sub">${complete} complete/open · ${inProgress} under construction</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">Capital Spend — ${latestExp.fy}${latestExp.is_budget ? ' (Budget)' : ''}</div>
+      <div class="card-value">${fmtB(latestExp.total)}</div>
+      <div class="card-sub">All capital funds combined</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">New Student Seats</div>
+      <div class="card-value">${(CAPITAL.projects.reduce((s, p) => s + (p.capacity || 0), 0)).toLocaleString()}+</div>
+      <div class="card-sub">Across all tracked new construction</div>
+    </div>
+  `;
+
+  // Capital expenditure bar chart
+  const maxExp = Math.max(...CAPITAL.annual_expenditures.map(e => e.total));
+  const expBars = CAPITAL.annual_expenditures.map(e => {
+    const pct = (e.total / maxExp * 100).toFixed(1);
+    return `
+      <div class="fund-bar-row">
+        <div class="fund-bar-label">${e.fy.slice(2,4)}–${e.fy.slice(7,9)}</div>
+        <div class="fund-bar-track">
+          <div class="fund-bar-fill" style="width:${pct}%;background:${e.is_budget ? '#d97706' : '#1a4a32'}"></div>
+        </div>
+        <div class="fund-bar-amount">${fmtB(e.total)}${e.is_budget ? ' <span style="font-size:0.72rem;color:var(--text-secondary)">(budget)</span>' : ''}</div>
+      </div>`;
+  }).join('');
+  document.getElementById('capital-exp-chart').innerHTML =
+    `<div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:8px;padding:1rem 1.25rem">
+      <div class="fund-bars">${expBars}</div>
+    </div>`;
+
+  // Project cards
+  const statusBadge = s => {
+    const sl = s.toLowerCase();
+    if (sl.includes('complete'))     return `<span class="status-badge status-complete">${s}</span>`;
+    if (sl.includes('construction')) return `<span class="status-badge status-construction">${s}</span>`;
+    if (sl.includes('opened'))       return `<span class="status-badge status-opened">${s}</span>`;
+    return `<span class="status-badge status-construction">${s}</span>`;
+  };
+
+  document.getElementById('proj-grid').innerHTML = CAPITAL.projects.map(p => `
+    <div class="proj-card">
+      <div class="proj-name">
+        ${p.name}${statusBadge(p.status)}
+      </div>
+      <div class="proj-meta">Proposition ${p.prop} · Opens ${p.opens}${p.capacity ? ' · ' + p.capacity.toLocaleString() + ' seats' : ''}</div>
+      <div class="proj-amount">${fmtB(p.amount)}</div>
+    </div>
+  `).join('');
 }
 
 // ── Watchdog ─────────────────────────────────────────────────────────────────
@@ -886,6 +1198,11 @@ document.getElementById('vendor-search')?.addEventListener('input', () => {
 
 document.getElementById('func-search')?.addEventListener('input', () => {
   renderFunctions();
+});
+
+document.getElementById('campus-search')?.addEventListener('input', () => {
+  campusPage = 1;
+  renderCampus();
 });
 
 // ── Theme & font controls ──────────────────────────────────────────────────

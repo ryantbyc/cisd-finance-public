@@ -1,0 +1,4151 @@
+[
+  {
+    "org": "999",
+    "name": "DISTRICT WIDE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 45044606.0,
+        "total": 46139995.0,
+        "contracted": 595389.0,
+        "other": 500000.0
+      },
+      "2022-2023": {
+        "payroll": 37033838.0,
+        "total": 38141357.0,
+        "contracted": 607489.0,
+        "supplies": 30.0,
+        "other": 500000.0
+      },
+      "2023-2024": {
+        "payroll": 39299150.0,
+        "total": 40962539.0,
+        "contracted": 653389.0,
+        "supplies": 10000.0,
+        "other": 1000000.0
+      },
+      "2024-2025": {
+        "payroll": 42175702.0,
+        "total": 43882501.0,
+        "contracted": 706799.0,
+        "other": 1000000.0
+      },
+      "2025-2026": {
+        "payroll": 46297955.0,
+        "total": 49040590.0,
+        "contracted": 742635.0,
+        "other": 2000000.0
+      }
+    }
+  },
+  {
+    "org": "930",
+    "name": "MAINTENANCE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6209517.0,
+        "total": 9853704.0,
+        "contracted": 1700000.0,
+        "supplies": 1899687.0,
+        "other": 44500.0
+      },
+      "2022-2023": {
+        "payroll": 26897640.0,
+        "total": 32653031.0,
+        "contracted": 3202781.0,
+        "supplies": 2463110.0,
+        "other": 54500.0,
+        "capital": 35000.0
+      },
+      "2023-2024": {
+        "payroll": 29225111.0,
+        "total": 36430502.0,
+        "contracted": 3997836.0,
+        "supplies": 3046610.0,
+        "other": 65945.0,
+        "capital": 95000.0
+      },
+      "2024-2025": {
+        "payroll": 31334465.0,
+        "total": 38717333.0,
+        "contracted": 3532783.0,
+        "supplies": 3720110.0,
+        "other": 69475.0,
+        "capital": 60500.0
+      },
+      "2025-2026": {
+        "payroll": 33522865.0,
+        "total": 41070875.0,
+        "contracted": 3717067.0,
+        "supplies": 3698968.0,
+        "other": 70975.0,
+        "capital": 61000.0
+      }
+    }
+  },
+  {
+    "org": "001",
+    "name": "CONROE HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 27252308.0,
+        "total": 29393521.0,
+        "contracted": 1171752.0,
+        "supplies": 719450.0,
+        "other": 242511.0,
+        "capital": 7500.0
+      },
+      "2022-2023": {
+        "payroll": 28987179.0,
+        "total": 31412081.0,
+        "contracted": 1374448.0,
+        "supplies": 770953.0,
+        "other": 272001.0,
+        "capital": 7500.0
+      },
+      "2023-2024": {
+        "payroll": 29457261.0,
+        "total": 31857778.0,
+        "contracted": 1326448.0,
+        "supplies": 774839.0,
+        "other": 291730.0,
+        "capital": 7500.0
+      },
+      "2024-2025": {
+        "payroll": 32332301.0,
+        "total": 34761074.0,
+        "contracted": 1355729.0,
+        "supplies": 781324.0,
+        "other": 284220.0,
+        "capital": 7500.0
+      },
+      "2025-2026": {
+        "payroll": 34357934.0,
+        "total": 36879469.0,
+        "contracted": 1429880.0,
+        "supplies": 809165.0,
+        "other": 274990.0,
+        "capital": 7500.0
+      }
+    }
+  },
+  {
+    "org": "906",
+    "name": "PRINTING",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 764207.0,
+        "total": 952807.0,
+        "contracted": 137365.0,
+        "supplies": 43485.0,
+        "other": 250.0,
+        "capital": 7500.0
+      },
+      "2022-2023": {
+        "payroll": 23521216.0,
+        "total": 28167253.0,
+        "contracted": 924482.0,
+        "supplies": 3160050.0,
+        "other": 554005.0,
+        "capital": 7500.0
+      },
+      "2023-2024": {
+        "payroll": 28315502.0,
+        "total": 33379578.0,
+        "contracted": 1180508.0,
+        "supplies": 3098210.0,
+        "other": 612255.0,
+        "capital": 173103.0
+      },
+      "2024-2025": {
+        "payroll": 25361056.0,
+        "total": 30434368.0,
+        "contracted": 1228849.0,
+        "supplies": 3059850.0,
+        "other": 612255.0,
+        "capital": 172358.0
+      },
+      "2025-2026": {
+        "payroll": 27647528.0,
+        "total": 32730104.0,
+        "contracted": 1238113.0,
+        "supplies": 3059850.0,
+        "other": 612255.0,
+        "capital": 172358.0
+      }
+    }
+  },
+  {
+    "org": "003",
+    "name": "THE WOODLANDS HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 24057148.0,
+        "total": 26064135.0,
+        "contracted": 1117631.0,
+        "supplies": 524980.0,
+        "other": 364376.0
+      },
+      "2022-2023": {
+        "payroll": 23763855.0,
+        "total": 26007584.0,
+        "contracted": 1368120.0,
+        "supplies": 493805.0,
+        "other": 381804.0
+      },
+      "2023-2024": {
+        "payroll": 24697263.0,
+        "total": 26957911.0,
+        "contracted": 1377575.0,
+        "supplies": 480160.0,
+        "other": 402913.0
+      },
+      "2024-2025": {
+        "payroll": 25496245.0,
+        "total": 27819506.0,
+        "contracted": 1432938.0,
+        "supplies": 484860.0,
+        "other": 405463.0
+      },
+      "2025-2026": {
+        "payroll": 27376153.0,
+        "total": 29709405.0,
+        "contracted": 1432650.0,
+        "supplies": 509139.0,
+        "other": 391463.0
+      }
+    }
+  },
+  {
+    "org": "910",
+    "name": "TRANSPORTATION",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 23708216.0,
+        "total": 27948649.0,
+        "contracted": 817646.0,
+        "supplies": 2786000.0,
+        "other": 621787.0,
+        "capital": 15000.0
+      }
+    }
+  },
+  {
+    "org": "016",
+    "name": "GRAND OAKS HIGH SCHOOL",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 16889070.0,
+        "total": 18163209.0,
+        "contracted": 588526.0,
+        "supplies": 484087.0,
+        "other": 201526.0
+      },
+      "2022-2023": {
+        "payroll": 18150058.0,
+        "total": 19510125.0,
+        "contracted": 617114.0,
+        "supplies": 506017.0,
+        "other": 236936.0
+      },
+      "2023-2024": {
+        "payroll": 18933876.0,
+        "total": 20320858.0,
+        "contracted": 598879.0,
+        "supplies": 522053.0,
+        "other": 261050.0,
+        "capital": 5000.0
+      },
+      "2024-2025": {
+        "payroll": 20498057.0,
+        "total": 21914855.0,
+        "contracted": 614619.0,
+        "supplies": 535175.0,
+        "other": 267004.0
+      },
+      "2025-2026": {
+        "payroll": 22442592.0,
+        "total": 23937600.0,
+        "contracted": 675500.0,
+        "supplies": 563642.0,
+        "other": 255866.0
+      }
+    }
+  },
+  {
+    "org": "014",
+    "name": "THE WOODLANDS COLLEGE PARK",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 18049584.0,
+        "total": 19428873.0,
+        "contracted": 698548.0,
+        "supplies": 459592.0,
+        "other": 221149.0
+      },
+      "2022-2023": {
+        "payroll": 18891869.0,
+        "total": 20457788.0,
+        "contracted": 858304.0,
+        "supplies": 476860.0,
+        "other": 230755.0
+      },
+      "2023-2024": {
+        "payroll": 18895175.0,
+        "total": 20452678.0,
+        "contracted": 857605.0,
+        "supplies": 461700.0,
+        "other": 238198.0
+      },
+      "2024-2025": {
+        "payroll": 19615408.0,
+        "total": 21183919.0,
+        "contracted": 869287.0,
+        "supplies": 447074.0,
+        "other": 252150.0
+      },
+      "2025-2026": {
+        "payroll": 20583503.0,
+        "total": 22202600.0,
+        "contracted": 917800.0,
+        "supplies": 430947.0,
+        "other": 270350.0
+      }
+    }
+  },
+  {
+    "org": "005",
+    "name": "OAK RIDGE HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 16492538.0,
+        "total": 17982519.0,
+        "contracted": 875784.0,
+        "supplies": 403526.0,
+        "other": 210671.0
+      },
+      "2022-2023": {
+        "payroll": 16986078.0,
+        "total": 18751701.0,
+        "contracted": 1122618.0,
+        "supplies": 408393.0,
+        "other": 234612.0
+      },
+      "2023-2024": {
+        "payroll": 17387943.0,
+        "total": 19122246.0,
+        "contracted": 1127299.0,
+        "supplies": 378217.0,
+        "other": 228787.0
+      },
+      "2024-2025": {
+        "payroll": 18736362.0,
+        "total": 20520989.0,
+        "contracted": 1169463.0,
+        "supplies": 385524.0,
+        "other": 229640.0
+      },
+      "2025-2026": {
+        "payroll": 20330791.0,
+        "total": 22128286.0,
+        "contracted": 1157545.0,
+        "supplies": 409390.0,
+        "other": 230560.0
+      }
+    }
+  },
+  {
+    "org": "011",
+    "name": "CANEY CREEK HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 14614683.0,
+        "total": 15707704.0,
+        "contracted": 486600.0,
+        "supplies": 360144.0,
+        "other": 246277.0
+      },
+      "2022-2023": {
+        "payroll": 15416813.0,
+        "total": 16572429.0,
+        "contracted": 507847.0,
+        "supplies": 388982.0,
+        "other": 258787.0
+      },
+      "2023-2024": {
+        "payroll": 16244513.0,
+        "total": 17408974.0,
+        "contracted": 504367.0,
+        "supplies": 370152.0,
+        "other": 289942.0
+      },
+      "2024-2025": {
+        "payroll": 18006652.0,
+        "total": 19256002.0,
+        "contracted": 578238.0,
+        "supplies": 381627.0,
+        "other": 289485.0
+      },
+      "2025-2026": {
+        "payroll": 19415967.0,
+        "total": 20796045.0,
+        "contracted": 676300.0,
+        "supplies": 411487.0,
+        "other": 292291.0
+      }
+    }
+  },
+  {
+    "org": "935",
+    "name": "CUSTODIAL SERVICES",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 18348463.0,
+        "total": 19565383.0,
+        "contracted": 704500.0,
+        "supplies": 467420.0,
+        "other": 10000.0,
+        "capital": 35000.0
+      }
+    }
+  },
+  {
+    "org": "998",
+    "name": "CENTRAL OFFICE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 425000.0,
+        "total": 12574137.0,
+        "contracted": 806538.0,
+        "supplies": 9507942.0,
+        "other": 1031957.0,
+        "capital": 802700.0
+      },
+      "2022-2023": {
+        "payroll": 425000.0,
+        "total": 12998063.0,
+        "contracted": 1699504.0,
+        "supplies": 8947061.0,
+        "other": 1103798.0,
+        "capital": 822700.0
+      },
+      "2023-2024": {
+        "payroll": 1485000.0,
+        "total": 18537267.0,
+        "contracted": 1203371.0,
+        "supplies": 10462441.0,
+        "other": 1594358.0,
+        "capital": 3792097.0
+      },
+      "2024-2025": {
+        "payroll": 1545000.0,
+        "total": 17514750.0,
+        "contracted": 1861098.0,
+        "supplies": 9502887.0,
+        "other": 1524423.0,
+        "capital": 3081342.0
+      },
+      "2025-2026": {
+        "payroll": 1580000.0,
+        "total": 17100185.0,
+        "contracted": 2153653.0,
+        "supplies": 9486432.0,
+        "other": 1170100.0,
+        "capital": 2710000.0
+      }
+    }
+  },
+  {
+    "org": "877",
+    "name": "SPECIAL EDUCATION",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 9738690.0,
+        "total": 10018641.0,
+        "contracted": 97562.0,
+        "supplies": 127389.0,
+        "other": 55000.0
+      },
+      "2022-2023": {
+        "payroll": 10687603.0,
+        "total": 10967794.0,
+        "contracted": 97702.0,
+        "supplies": 125989.0,
+        "other": 56500.0
+      },
+      "2023-2024": {
+        "payroll": 12545887.0,
+        "total": 12852892.0,
+        "contracted": 114977.0,
+        "supplies": 115228.0,
+        "other": 76800.0
+      },
+      "2024-2025": {
+        "payroll": 14325882.0,
+        "total": 14631107.0,
+        "contracted": 113195.0,
+        "supplies": 115230.0,
+        "other": 76800.0
+      },
+      "2025-2026": {
+        "payroll": 16250476.0,
+        "total": 16555106.0,
+        "contracted": 130000.0,
+        "supplies": 107450.0,
+        "other": 67180.0
+      }
+    }
+  },
+  {
+    "org": "053",
+    "name": "MCCULLOUGH JUNIOR HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 10593223.0,
+        "total": 11232939.0,
+        "contracted": 387151.0,
+        "supplies": 218865.0,
+        "other": 33700.0
+      },
+      "2022-2023": {
+        "payroll": 10620859.0,
+        "total": 11310960.0,
+        "contracted": 422419.0,
+        "supplies": 231214.0,
+        "other": 36468.0
+      },
+      "2023-2024": {
+        "payroll": 11224269.0,
+        "total": 11897677.0,
+        "contracted": 409494.0,
+        "supplies": 221014.0,
+        "other": 42900.0
+      },
+      "2024-2025": {
+        "payroll": 11807334.0,
+        "total": 12517388.0,
+        "contracted": 444573.0,
+        "supplies": 219181.0,
+        "other": 46300.0
+      },
+      "2025-2026": {
+        "payroll": 12453152.0,
+        "total": 13267828.0,
+        "contracted": 547000.0,
+        "supplies": 217976.0,
+        "other": 49700.0
+      }
+    }
+  },
+  {
+    "org": "049",
+    "name": "YORK JUNIOR HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 9498891.0,
+        "total": 10044521.0,
+        "contracted": 308821.0,
+        "supplies": 215559.0,
+        "other": 21250.0
+      },
+      "2022-2023": {
+        "payroll": 9678630.0,
+        "total": 10241322.0,
+        "contracted": 317299.0,
+        "supplies": 229394.0,
+        "other": 15999.0
+      },
+      "2023-2024": {
+        "payroll": 9929882.0,
+        "total": 10494508.0,
+        "contracted": 312299.0,
+        "supplies": 228788.0,
+        "other": 23539.0
+      },
+      "2024-2025": {
+        "payroll": 10875844.0,
+        "total": 11436308.0,
+        "contracted": 311882.0,
+        "supplies": 225182.0,
+        "other": 23400.0
+      },
+      "2025-2026": {
+        "payroll": 11647507.0,
+        "total": 12212786.0,
+        "contracted": 314050.0,
+        "supplies": 220229.0,
+        "other": 31000.0
+      }
+    }
+  },
+  {
+    "org": "051",
+    "name": "MOORHEAD JUNIOR HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 8019202.0,
+        "total": 8480861.0,
+        "contracted": 266521.0,
+        "supplies": 164978.0,
+        "other": 30160.0
+      },
+      "2022-2023": {
+        "payroll": 8374615.0,
+        "total": 8898813.0,
+        "contracted": 318648.0,
+        "supplies": 170980.0,
+        "other": 34570.0
+      },
+      "2023-2024": {
+        "payroll": 8698951.0,
+        "total": 9174675.0,
+        "contracted": 266151.0,
+        "supplies": 164632.0,
+        "other": 44941.0
+      },
+      "2024-2025": {
+        "payroll": 9285901.0,
+        "total": 9757449.0,
+        "contracted": 265804.0,
+        "supplies": 162394.0,
+        "other": 43350.0
+      },
+      "2025-2026": {
+        "payroll": 10250350.0,
+        "total": 10745519.0,
+        "contracted": 287350.0,
+        "supplies": 168269.0,
+        "other": 39550.0
+      }
+    }
+  },
+  {
+    "org": "873",
+    "name": "SECURITY",
+    "by_fy": {
+      "2021-2022": {
+        "contracted": 206309.0,
+        "total": 8446021.0,
+        "payroll": 7970560.0,
+        "supplies": 229652.0,
+        "other": 39500.0
+      },
+      "2022-2023": {
+        "contracted": 205242.0,
+        "total": 8782772.0,
+        "payroll": 8247343.0,
+        "supplies": 290687.0,
+        "other": 39500.0
+      },
+      "2023-2024": {
+        "contracted": 225642.0,
+        "total": 9086793.0,
+        "payroll": 8506995.0,
+        "supplies": 308156.0,
+        "other": 46000.0
+      },
+      "2024-2025": {
+        "contracted": 256681.0,
+        "total": 10223979.0,
+        "payroll": 9629142.0,
+        "supplies": 286156.0,
+        "other": 52000.0
+      },
+      "2025-2026": {
+        "contracted": 315300.0,
+        "total": 10715940.0,
+        "supplies": 284250.0,
+        "payroll": 10070884.0,
+        "other": 45506.0
+      }
+    }
+  },
+  {
+    "org": "055",
+    "name": "STOCKTON JUNIOR HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 8672600.0,
+        "total": 9164370.0,
+        "contracted": 287257.0,
+        "supplies": 167193.0,
+        "other": 37320.0
+      },
+      "2022-2023": {
+        "payroll": 8676928.0,
+        "total": 9083118.0,
+        "contracted": 195877.0,
+        "supplies": 170763.0,
+        "other": 39550.0
+      },
+      "2023-2024": {
+        "payroll": 8815308.0,
+        "total": 9205783.0,
+        "contracted": 185457.0,
+        "supplies": 149401.0,
+        "other": 55617.0
+      },
+      "2024-2025": {
+        "payroll": 9576201.0,
+        "total": 9957381.0,
+        "contracted": 185040.0,
+        "supplies": 133623.0,
+        "other": 62517.0
+      },
+      "2025-2026": {
+        "payroll": 10203773.0,
+        "total": 10589436.0,
+        "contracted": 197050.0,
+        "supplies": 143596.0,
+        "other": 45017.0
+      }
+    }
+  },
+  {
+    "org": "041",
+    "name": "PEET JUNIOR HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 8409327.0,
+        "total": 8853753.0,
+        "contracted": 259021.0,
+        "supplies": 157485.0,
+        "other": 27920.0
+      },
+      "2022-2023": {
+        "payroll": 8666953.0,
+        "total": 9137634.0,
+        "contracted": 284234.0,
+        "supplies": 160079.0,
+        "other": 26368.0
+      },
+      "2023-2024": {
+        "payroll": 8394239.0,
+        "total": 8871029.0,
+        "contracted": 284634.0,
+        "supplies": 156226.0,
+        "other": 35930.0
+      },
+      "2024-2025": {
+        "payroll": 9405446.0,
+        "total": 9896745.0,
+        "contracted": 294217.0,
+        "supplies": 161302.0,
+        "other": 35780.0
+      },
+      "2025-2026": {
+        "payroll": 9890022.0,
+        "total": 10456037.0,
+        "contracted": 367550.0,
+        "supplies": 166085.0,
+        "other": 32380.0
+      }
+    }
+  },
+  {
+    "org": "874",
+    "name": "TEACHING & LEARNING",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5597465.0,
+        "total": 7494443.0,
+        "contracted": 477812.0,
+        "supplies": 1176961.0,
+        "other": 242205.0
+      },
+      "2022-2023": {
+        "payroll": 6220448.0,
+        "total": 8131630.0,
+        "contracted": 336116.0,
+        "supplies": 1149316.0,
+        "other": 425750.0
+      },
+      "2023-2024": {
+        "payroll": 7406509.0,
+        "total": 9976808.0,
+        "contracted": 352574.0,
+        "supplies": 1680965.0,
+        "other": 536760.0
+      },
+      "2024-2025": {
+        "payroll": 7209964.0,
+        "total": 9698050.0,
+        "contracted": 274641.0,
+        "supplies": 1706370.0,
+        "other": 507075.0
+      },
+      "2025-2026": {
+        "payroll": 7653490.0,
+        "total": 10165034.0,
+        "contracted": 230776.0,
+        "supplies": 1822575.0,
+        "other": 458193.0
+      }
+    }
+  },
+  {
+    "org": "731",
+    "name": "TECHNOLOGY SERVICES",
+    "by_fy": {
+      "2025-2026": {
+        "payroll": 5717952.0,
+        "total": 9607099.0,
+        "supplies": 3839713.0,
+        "other": 47534.0,
+        "contracted": 1900.0
+      }
+    }
+  },
+  {
+    "org": "054",
+    "name": "IRONS JUNIOR HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6901450.0,
+        "total": 7321047.0,
+        "contracted": 247939.0,
+        "supplies": 143262.0,
+        "other": 28396.0
+      },
+      "2022-2023": {
+        "payroll": 7528063.0,
+        "total": 7986803.0,
+        "contracted": 269369.0,
+        "supplies": 160275.0,
+        "other": 29096.0
+      },
+      "2023-2024": {
+        "payroll": 7504465.0,
+        "total": 7970252.0,
+        "contracted": 280119.0,
+        "supplies": 159072.0,
+        "other": 26596.0
+      },
+      "2024-2025": {
+        "payroll": 8181106.0,
+        "total": 8640239.0,
+        "contracted": 277452.0,
+        "supplies": 154935.0,
+        "other": 26746.0
+      },
+      "2025-2026": {
+        "payroll": 9018671.0,
+        "total": 9539250.0,
+        "contracted": 336368.0,
+        "supplies": 149465.0,
+        "other": 34746.0
+      }
+    }
+  },
+  {
+    "org": "727",
+    "name": "FINANCE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 2938611.0,
+        "total": 5913063.0,
+        "contracted": 283852.0,
+        "supplies": 68606.0,
+        "other": 2621994.0
+      },
+      "2022-2023": {
+        "payroll": 3261298.0,
+        "total": 6482825.0,
+        "contracted": 316983.0,
+        "supplies": 82550.0,
+        "other": 2821994.0
+      },
+      "2023-2024": {
+        "payroll": 3575225.0,
+        "total": 7366565.0,
+        "contracted": 457091.0,
+        "supplies": 99605.0,
+        "other": 3234644.0
+      },
+      "2024-2025": {
+        "payroll": 3806671.0,
+        "total": 9151375.0,
+        "contracted": 509454.0,
+        "supplies": 98400.0,
+        "other": 4736850.0
+      },
+      "2025-2026": {
+        "payroll": 3613598.0,
+        "total": 9519408.0,
+        "contracted": 490375.0,
+        "supplies": 175085.0,
+        "other": 5240350.0
+      }
+    }
+  },
+  {
+    "org": "046",
+    "name": "KNOX JUNIOR HIGH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 7438001.0,
+        "total": 7915201.0,
+        "contracted": 299221.0,
+        "supplies": 146829.0,
+        "other": 31150.0
+      },
+      "2022-2023": {
+        "payroll": 7772467.0,
+        "total": 8256692.0,
+        "contracted": 296167.0,
+        "supplies": 151508.0,
+        "other": 36550.0
+      },
+      "2023-2024": {
+        "payroll": 8059241.0,
+        "total": 8550816.0,
+        "contracted": 295467.0,
+        "supplies": 150681.0,
+        "other": 45427.0
+      },
+      "2024-2025": {
+        "payroll": 8472929.0,
+        "total": 8961166.0,
+        "contracted": 296050.0,
+        "supplies": 145994.0,
+        "other": 46193.0
+      },
+      "2025-2026": {
+        "payroll": 8876591.0,
+        "total": 9367475.0,
+        "contracted": 297150.0,
+        "supplies": 151130.0,
+        "other": 42604.0
+      }
+    }
+  },
+  {
+    "org": "133",
+    "name": "DAVID & SHEREE SUCHMA K-6 ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5358174.0,
+        "total": 5634857.0,
+        "contracted": 195121.0,
+        "supplies": 77837.0,
+        "other": 3725.0
+      },
+      "2022-2023": {
+        "payroll": 6299653.0,
+        "total": 6558638.0,
+        "contracted": 181531.0,
+        "supplies": 70229.0,
+        "other": 7225.0
+      },
+      "2023-2024": {
+        "payroll": 6577223.0,
+        "total": 6857932.0,
+        "contracted": 173231.0,
+        "supplies": 104253.0,
+        "other": 3225.0
+      },
+      "2024-2025": {
+        "payroll": 8031608.0,
+        "total": 8321540.0,
+        "contracted": 177571.0,
+        "supplies": 99261.0,
+        "other": 13100.0
+      },
+      "2025-2026": {
+        "payroll": 5759891.0,
+        "total": 6012510.0,
+        "contracted": 179750.0,
+        "supplies": 62869.0,
+        "other": 10000.0
+      }
+    }
+  },
+  {
+    "org": "078",
+    "name": "BOZMAN INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5418809.0,
+        "total": 5710800.0,
+        "contracted": 204021.0,
+        "supplies": 87695.0,
+        "other": 275.0
+      },
+      "2022-2023": {
+        "payroll": 5630409.0,
+        "total": 5929843.0,
+        "contracted": 211474.0,
+        "supplies": 87685.0,
+        "other": 275.0
+      },
+      "2023-2024": {
+        "payroll": 5833258.0,
+        "total": 6139996.0,
+        "contracted": 210774.0,
+        "supplies": 95439.0,
+        "other": 525.0
+      },
+      "2024-2025": {
+        "payroll": 6333629.0,
+        "total": 6640351.0,
+        "contracted": 210357.0,
+        "supplies": 95690.0,
+        "other": 675.0
+      },
+      "2025-2026": {
+        "payroll": 7754830.0,
+        "total": 8069702.0,
+        "contracted": 209650.0,
+        "supplies": 104947.0,
+        "other": 275.0
+      }
+    }
+  },
+  {
+    "org": "074",
+    "name": "DERETCHIN K-6 SCHOOL",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5474682.0,
+        "total": 5730849.0,
+        "contracted": 187321.0,
+        "supplies": 68196.0,
+        "other": 650.0
+      },
+      "2022-2023": {
+        "payroll": 6194218.0,
+        "total": 6477517.0,
+        "contracted": 204767.0,
+        "supplies": 73357.0,
+        "other": 5175.0
+      },
+      "2023-2024": {
+        "payroll": 6826824.0,
+        "total": 7125632.0,
+        "contracted": 204467.0,
+        "supplies": 91666.0,
+        "other": 2675.0
+      },
+      "2024-2025": {
+        "payroll": 7367188.0,
+        "total": 7676532.0,
+        "contracted": 212054.0,
+        "supplies": 94290.0,
+        "other": 3000.0
+      },
+      "2025-2026": {
+        "payroll": 6781484.0,
+        "total": 7121755.0,
+        "contracted": 256150.0,
+        "supplies": 81721.0,
+        "other": 2400.0
+      }
+    }
+  },
+  {
+    "org": "068",
+    "name": "GRANGERLAND INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6927022.0,
+        "total": 7413780.0,
+        "contracted": 377221.0,
+        "supplies": 99812.0,
+        "other": 9725.0
+      },
+      "2022-2023": {
+        "payroll": 7071180.0,
+        "total": 7588959.0,
+        "contracted": 410157.0,
+        "supplies": 102607.0,
+        "other": 5015.0
+      },
+      "2023-2024": {
+        "payroll": 6604194.0,
+        "total": 7087339.0,
+        "contracted": 403657.0,
+        "supplies": 72213.0,
+        "other": 7275.0
+      },
+      "2024-2025": {
+        "payroll": 4457862.0,
+        "total": 4937308.0,
+        "contracted": 403240.0,
+        "supplies": 66356.0,
+        "other": 9850.0
+      },
+      "2025-2026": {
+        "payroll": 4883795.0,
+        "total": 5366264.0,
+        "contracted": 405750.0,
+        "supplies": 68769.0,
+        "other": 7950.0
+      }
+    }
+  },
+  {
+    "org": "127",
+    "name": "BROADWAY ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6570641.0,
+        "total": 6847879.0,
+        "contracted": 186171.0,
+        "supplies": 83942.0,
+        "other": 7125.0
+      },
+      "2022-2023": {
+        "payroll": 7074181.0,
+        "total": 7356210.0,
+        "contracted": 185401.0,
+        "supplies": 80853.0,
+        "other": 15775.0
+      },
+      "2023-2024": {
+        "payroll": 7203857.0,
+        "total": 7477582.0,
+        "contracted": 185301.0,
+        "supplies": 82645.0,
+        "other": 5779.0
+      },
+      "2024-2025": {
+        "payroll": 6145493.0,
+        "total": 6411436.0,
+        "contracted": 184884.0,
+        "supplies": 70497.0,
+        "other": 10562.0
+      },
+      "2025-2026": {
+        "payroll": 5842433.0,
+        "total": 6089515.0,
+        "contracted": 179600.0,
+        "supplies": 61282.0,
+        "other": 6200.0
+      }
+    }
+  },
+  {
+    "org": "128",
+    "name": "PATTERSON ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5227088.0,
+        "total": 5417703.0,
+        "contracted": 116021.0,
+        "supplies": 73419.0,
+        "other": 1175.0
+      },
+      "2022-2023": {
+        "payroll": 5554715.0,
+        "total": 5763599.0,
+        "contracted": 126016.0,
+        "supplies": 81693.0,
+        "other": 1175.0
+      },
+      "2023-2024": {
+        "payroll": 5788086.0,
+        "total": 6007986.0,
+        "contracted": 123366.0,
+        "supplies": 94559.0,
+        "other": 1975.0
+      },
+      "2024-2025": {
+        "payroll": 5840102.0,
+        "total": 6055412.0,
+        "contracted": 124449.0,
+        "supplies": 89261.0,
+        "other": 1600.0
+      },
+      "2025-2026": {
+        "payroll": 7179954.0,
+        "total": 7431679.0,
+        "contracted": 150000.0,
+        "supplies": 100525.0,
+        "other": 1200.0
+      }
+    }
+  },
+  {
+    "org": "067",
+    "name": "MITCHELL INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6069706.0,
+        "total": 6354851.0,
+        "contracted": 208492.0,
+        "supplies": 73078.0,
+        "other": 3575.0
+      },
+      "2022-2023": {
+        "payroll": 6389457.0,
+        "total": 6671256.0,
+        "contracted": 201189.0,
+        "supplies": 76335.0,
+        "other": 4275.0
+      },
+      "2023-2024": {
+        "payroll": 6608468.0,
+        "total": 6904089.0,
+        "contracted": 200589.0,
+        "supplies": 91757.0,
+        "other": 3275.0
+      },
+      "2024-2025": {
+        "payroll": 6949904.0,
+        "total": 7251420.0,
+        "contracted": 202429.0,
+        "supplies": 95937.0,
+        "other": 3150.0
+      },
+      "2025-2026": {
+        "payroll": 7130596.0,
+        "total": 7425267.0,
+        "contracted": 202750.0,
+        "supplies": 86421.0,
+        "other": 5500.0
+      }
+    }
+  },
+  {
+    "org": "130",
+    "name": "STEWART K-6 ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6059784.0,
+        "total": 6343186.0,
+        "contracted": 198021.0,
+        "supplies": 82506.0,
+        "other": 2875.0
+      },
+      "2022-2023": {
+        "payroll": 5327163.0,
+        "total": 5597989.0,
+        "contracted": 201863.0,
+        "supplies": 62838.0,
+        "other": 6125.0
+      },
+      "2023-2024": {
+        "payroll": 5351227.0,
+        "total": 5629891.0,
+        "contracted": 199563.0,
+        "supplies": 76526.0,
+        "other": 2575.0
+      },
+      "2024-2025": {
+        "payroll": 5916132.0,
+        "total": 6197330.0,
+        "contracted": 199146.0,
+        "supplies": 79077.0,
+        "other": 2975.0
+      },
+      "2025-2026": {
+        "payroll": 6817129.0,
+        "total": 7090436.0,
+        "contracted": 197500.0,
+        "supplies": 73807.0,
+        "other": 2000.0
+      }
+    }
+  },
+  {
+    "org": "069",
+    "name": "VOGEL INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5935199.0,
+        "total": 6228386.0,
+        "contracted": 208921.0,
+        "supplies": 83641.0,
+        "other": 625.0
+      },
+      "2022-2023": {
+        "payroll": 6158444.0,
+        "total": 6432005.0,
+        "contracted": 194021.0,
+        "supplies": 78915.0,
+        "other": 625.0
+      },
+      "2023-2024": {
+        "payroll": 5965363.0,
+        "total": 6245802.0,
+        "contracted": 192721.0,
+        "supplies": 87043.0,
+        "other": 675.0
+      },
+      "2024-2025": {
+        "payroll": 6760746.0,
+        "total": 7041506.0,
+        "contracted": 192304.0,
+        "supplies": 87656.0,
+        "other": 800.0
+      },
+      "2025-2026": {
+        "payroll": 5790116.0,
+        "total": 6071679.0,
+        "contracted": 199150.0,
+        "supplies": 81913.0,
+        "other": 500.0
+      }
+    }
+  },
+  {
+    "org": "077",
+    "name": "TOM COX INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5145158.0,
+        "total": 5404178.0,
+        "contracted": 188166.0,
+        "supplies": 66676.0,
+        "other": 4178.0
+      },
+      "2022-2023": {
+        "payroll": 4797446.0,
+        "total": 5052036.0,
+        "contracted": 184511.0,
+        "supplies": 65801.0,
+        "other": 4278.0
+      },
+      "2023-2024": {
+        "payroll": 5548431.0,
+        "total": 5811621.0,
+        "contracted": 184266.0,
+        "supplies": 67099.0,
+        "other": 11825.0
+      },
+      "2024-2025": {
+        "payroll": 5973000.0,
+        "total": 6233967.0,
+        "contracted": 183349.0,
+        "supplies": 69918.0,
+        "other": 7700.0
+      },
+      "2025-2026": {
+        "payroll": 6751027.0,
+        "total": 7007363.0,
+        "contracted": 169250.0,
+        "supplies": 79786.0,
+        "other": 7300.0
+      }
+    }
+  },
+  {
+    "org": "131",
+    "name": "ANN SNYDER ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6379572.0,
+        "total": 6696973.0,
+        "contracted": 227571.0,
+        "supplies": 89255.0,
+        "other": 575.0
+      },
+      "2022-2023": {
+        "payroll": 6646448.0,
+        "total": 6964165.0,
+        "contracted": 221678.0,
+        "supplies": 88264.0,
+        "other": 7775.0
+      },
+      "2023-2024": {
+        "payroll": 6637943.0,
+        "total": 6943950.0,
+        "contracted": 218878.0,
+        "supplies": 82454.0,
+        "other": 4675.0
+      },
+      "2024-2025": {
+        "payroll": 5661020.0,
+        "total": 5958307.0,
+        "contracted": 228486.0,
+        "supplies": 66901.0,
+        "other": 1900.0
+      },
+      "2025-2026": {
+        "payroll": 5677715.0,
+        "total": 6014573.0,
+        "contracted": 270100.0,
+        "supplies": 64258.0,
+        "other": 2500.0
+      }
+    }
+  },
+  {
+    "org": "102",
+    "name": "AUSTIN ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4707980.0,
+        "total": 4999153.0,
+        "contracted": 206811.0,
+        "supplies": 68017.0,
+        "other": 16345.0
+      },
+      "2022-2023": {
+        "payroll": 5395373.0,
+        "total": 5653397.0,
+        "contracted": 168511.0,
+        "supplies": 89338.0,
+        "other": 175.0
+      },
+      "2023-2024": {
+        "payroll": 6158204.0,
+        "total": 6428942.0,
+        "contracted": 167711.0,
+        "supplies": 85592.0,
+        "other": 17435.0
+      },
+      "2024-2025": {
+        "payroll": 5730927.0,
+        "total": 5988195.0,
+        "contracted": 167294.0,
+        "supplies": 71274.0,
+        "other": 18700.0
+      },
+      "2025-2026": {
+        "payroll": 6621951.0,
+        "total": 6892714.0,
+        "contracted": 176400.0,
+        "supplies": 86063.0,
+        "other": 8300.0
+      }
+    }
+  },
+  {
+    "org": "071",
+    "name": "COULSON TOUGH K-6 SCHOOL",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 6009649.0,
+        "total": 6298036.0,
+        "contracted": 223621.0,
+        "supplies": 60191.0,
+        "other": 4575.0
+      },
+      "2022-2023": {
+        "payroll": 5800047.0,
+        "total": 6068748.0,
+        "contracted": 194621.0,
+        "supplies": 70405.0,
+        "other": 3675.0
+      },
+      "2023-2024": {
+        "payroll": 6090064.0,
+        "total": 6362150.0,
+        "contracted": 193521.0,
+        "supplies": 76365.0,
+        "other": 2200.0
+      },
+      "2024-2025": {
+        "payroll": 6244862.0,
+        "total": 6516217.0,
+        "contracted": 193104.0,
+        "supplies": 75826.0,
+        "other": 2425.0
+      },
+      "2025-2026": {
+        "payroll": 6528218.0,
+        "total": 6825025.0,
+        "contracted": 220650.0,
+        "supplies": 74218.0,
+        "other": 1939.0
+      }
+    }
+  },
+  {
+    "org": "112",
+    "name": "FORD ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5235767.0,
+        "total": 5469764.0,
+        "contracted": 148571.0,
+        "supplies": 80573.0,
+        "other": 4853.0
+      },
+      "2022-2023": {
+        "payroll": 5639141.0,
+        "total": 5856369.0,
+        "contracted": 137325.0,
+        "supplies": 77818.0,
+        "other": 2085.0
+      },
+      "2023-2024": {
+        "payroll": 5691522.0,
+        "total": 5915572.0,
+        "contracted": 136625.0,
+        "supplies": 74955.0,
+        "other": 12470.0
+      },
+      "2024-2025": {
+        "payroll": 5992171.0,
+        "total": 6217771.0,
+        "contracted": 137880.0,
+        "supplies": 78750.0,
+        "other": 8970.0
+      },
+      "2025-2026": {
+        "payroll": 6565291.0,
+        "total": 6820060.0,
+        "contracted": 169600.0,
+        "supplies": 78369.0,
+        "other": 6800.0
+      }
+    }
+  },
+  {
+    "org": "138",
+    "name": "ROBERT EISSLER ELEMENTARY",
+    "by_fy": {
+      "2025-2026": {
+        "payroll": 6328936.0,
+        "total": 6638334.0,
+        "contracted": 235550.0,
+        "supplies": 73848.0
+      }
+    }
+  },
+  {
+    "org": "139",
+    "name": "MITTIE J. CAMPBELL ELEMENTARY",
+    "by_fy": {
+      "2025-2026": {
+        "payroll": 6258969.0,
+        "total": 6609007.0,
+        "contracted": 280550.0,
+        "supplies": 69038.0,
+        "other": 450.0
+      }
+    }
+  },
+  {
+    "org": "132",
+    "name": "LUCILLE BRADLEY ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5581592.0,
+        "total": 5786188.0,
+        "contracted": 124971.0,
+        "supplies": 76863.0,
+        "other": 2762.0
+      },
+      "2022-2023": {
+        "payroll": 6108795.0,
+        "total": 6312293.0,
+        "contracted": 118939.0,
+        "supplies": 82423.0,
+        "other": 2136.0
+      },
+      "2023-2024": {
+        "payroll": 6272810.0,
+        "total": 6476147.0,
+        "contracted": 118639.0,
+        "supplies": 79748.0,
+        "other": 4950.0
+      },
+      "2024-2025": {
+        "payroll": 6198084.0,
+        "total": 6396065.0,
+        "contracted": 118222.0,
+        "supplies": 76231.0,
+        "other": 3528.0
+      },
+      "2025-2026": {
+        "payroll": 6408726.0,
+        "total": 6602341.0,
+        "contracted": 116500.0,
+        "supplies": 74509.0,
+        "other": 2606.0
+      }
+    }
+  },
+  {
+    "org": "137",
+    "name": "JANET K. BARTLETT ELEMENTARY",
+    "by_fy": {
+      "2024-2025": {
+        "payroll": 5154479.0,
+        "total": 5382372.0,
+        "contracted": 145854.0,
+        "supplies": 81114.0,
+        "other": 925.0
+      },
+      "2025-2026": {
+        "payroll": 6436513.0,
+        "total": 6541173.0,
+        "contracted": 10200.0,
+        "supplies": 91935.0,
+        "other": 2525.0
+      }
+    }
+  },
+  {
+    "org": "080",
+    "name": "CLARK INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5108725.0,
+        "total": 5312911.0,
+        "contracted": 125821.0,
+        "supplies": 73690.0,
+        "other": 4675.0
+      },
+      "2022-2023": {
+        "payroll": 5746479.0,
+        "total": 5955691.0,
+        "contracted": 123554.0,
+        "supplies": 79983.0,
+        "other": 5675.0
+      },
+      "2023-2024": {
+        "payroll": 6166389.0,
+        "total": 6368769.0,
+        "contracted": 121854.0,
+        "supplies": 74251.0,
+        "other": 6275.0
+      },
+      "2024-2025": {
+        "payroll": 5913067.0,
+        "total": 6111290.0,
+        "contracted": 121437.0,
+        "supplies": 69586.0,
+        "other": 7200.0
+      },
+      "2025-2026": {
+        "payroll": 6197815.0,
+        "total": 6404123.0,
+        "contracted": 132050.0,
+        "supplies": 70258.0,
+        "other": 4000.0
+      }
+    }
+  },
+  {
+    "org": "056",
+    "name": "VETERAN'S MEMORIAL INTERMEDIATE",
+    "by_fy": {
+      "2023-2024": {
+        "payroll": 4252040.0,
+        "total": 4624334.0,
+        "contracted": 322648.0,
+        "supplies": 48721.0,
+        "other": 925.0
+      },
+      "2024-2025": {
+        "payroll": 5403960.0,
+        "total": 5798794.0,
+        "contracted": 322204.0,
+        "supplies": 71955.0,
+        "other": 675.0
+      },
+      "2025-2026": {
+        "payroll": 5815626.0,
+        "total": 6299788.0,
+        "contracted": 392350.0,
+        "supplies": 91537.0,
+        "other": 275.0
+      }
+    }
+  },
+  {
+    "org": "108",
+    "name": "LAMAR ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3784030.0,
+        "total": 3966498.0,
+        "contracted": 128471.0,
+        "supplies": 50472.0,
+        "other": 3525.0
+      },
+      "2022-2023": {
+        "payroll": 4399990.0,
+        "total": 4565559.0,
+        "contracted": 110571.0,
+        "supplies": 52823.0,
+        "other": 2175.0
+      },
+      "2023-2024": {
+        "payroll": 4955061.0,
+        "total": 5128320.0,
+        "contracted": 110671.0,
+        "supplies": 62113.0,
+        "other": 475.0
+      },
+      "2024-2025": {
+        "payroll": 5107504.0,
+        "total": 5282352.0,
+        "contracted": 110154.0,
+        "supplies": 62524.0,
+        "other": 2170.0
+      },
+      "2025-2026": {
+        "payroll": 6071849.0,
+        "total": 6297125.0,
+        "contracted": 167700.0,
+        "supplies": 55606.0,
+        "other": 1970.0
+      }
+    }
+  },
+  {
+    "org": "125",
+    "name": "KAUFMAN ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5282116.0,
+        "total": 5553672.0,
+        "contracted": 200371.0,
+        "supplies": 65910.0,
+        "other": 5275.0
+      },
+      "2022-2023": {
+        "payroll": 5358708.0,
+        "total": 5630003.0,
+        "contracted": 198384.0,
+        "supplies": 68036.0,
+        "other": 4875.0
+      },
+      "2023-2024": {
+        "payroll": 5438090.0,
+        "total": 5712319.0,
+        "contracted": 198084.0,
+        "supplies": 70770.0,
+        "other": 5375.0
+      },
+      "2024-2025": {
+        "payroll": 5841076.0,
+        "total": 6112521.0,
+        "contracted": 197667.0,
+        "supplies": 67878.0,
+        "other": 5900.0
+      },
+      "2025-2026": {
+        "payroll": 6034133.0,
+        "total": 6275334.0,
+        "contracted": 173500.0,
+        "supplies": 62001.0,
+        "other": 5700.0
+      }
+    }
+  },
+  {
+    "org": "106",
+    "name": "CREIGHTON ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4593764.0,
+        "total": 4793319.0,
+        "contracted": 118871.0,
+        "supplies": 70309.0,
+        "other": 10375.0
+      },
+      "2022-2023": {
+        "payroll": 5828457.0,
+        "total": 6045798.0,
+        "contracted": 123532.0,
+        "supplies": 82034.0,
+        "other": 11775.0
+      },
+      "2023-2024": {
+        "payroll": 5952989.0,
+        "total": 6167188.0,
+        "contracted": 122332.0,
+        "supplies": 77342.0,
+        "other": 14525.0
+      },
+      "2024-2025": {
+        "payroll": 5808835.0,
+        "total": 6025303.0,
+        "contracted": 124037.0,
+        "supplies": 75931.0,
+        "other": 16500.0
+      },
+      "2025-2026": {
+        "payroll": 5519858.0,
+        "total": 5725311.0,
+        "contracted": 125500.0,
+        "supplies": 70153.0,
+        "other": 9800.0
+      }
+    }
+  },
+  {
+    "org": "104",
+    "name": "SAM HOUSTON ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4202976.0,
+        "total": 4390684.0,
+        "contracted": 103571.0,
+        "supplies": 75212.0,
+        "other": 8925.0
+      },
+      "2022-2023": {
+        "payroll": 4172475.0,
+        "total": 4465147.0,
+        "contracted": 208193.0,
+        "supplies": 84104.0,
+        "other": 375.0
+      },
+      "2023-2024": {
+        "payroll": 4219821.0,
+        "total": 4509216.0,
+        "contracted": 209043.0,
+        "supplies": 70477.0,
+        "other": 9875.0
+      },
+      "2024-2025": {
+        "payroll": 5840493.0,
+        "total": 6139869.0,
+        "contracted": 206876.0,
+        "supplies": 76100.0,
+        "other": 16400.0
+      },
+      "2025-2026": {
+        "payroll": 5650266.0,
+        "total": 5945996.0,
+        "contracted": 208500.0,
+        "supplies": 71030.0,
+        "other": 16200.0
+      }
+    }
+  },
+  {
+    "org": "073",
+    "name": "CRYAR INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4970534.0,
+        "total": 5201987.0,
+        "contracted": 162321.0,
+        "supplies": 68857.0,
+        "other": 275.0
+      },
+      "2022-2023": {
+        "payroll": 5314396.0,
+        "total": 5590839.0,
+        "contracted": 209436.0,
+        "supplies": 66732.0,
+        "other": 275.0
+      },
+      "2023-2024": {
+        "payroll": 5352204.0,
+        "total": 5637619.0,
+        "contracted": 208736.0,
+        "supplies": 75404.0,
+        "other": 1275.0
+      },
+      "2024-2025": {
+        "payroll": 5828215.0,
+        "total": 6117443.0,
+        "contracted": 208319.0,
+        "supplies": 80509.0,
+        "other": 400.0
+      },
+      "2025-2026": {
+        "payroll": 5607041.0,
+        "total": 5913727.0,
+        "contracted": 230450.0,
+        "supplies": 75236.0,
+        "other": 1000.0
+      }
+    }
+  },
+  {
+    "org": "101",
+    "name": "ANDERSON ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4757119.0,
+        "total": 4961657.0,
+        "contracted": 122271.0,
+        "supplies": 79892.0,
+        "other": 2375.0
+      },
+      "2022-2023": {
+        "payroll": 4878987.0,
+        "total": 5098066.0,
+        "contracted": 133561.0,
+        "supplies": 84343.0,
+        "other": 1175.0
+      },
+      "2023-2024": {
+        "payroll": 5869721.0,
+        "total": 6088532.0,
+        "contracted": 133361.0,
+        "supplies": 85275.0,
+        "other": 175.0
+      },
+      "2024-2025": {
+        "payroll": 4910341.0,
+        "total": 5122921.0,
+        "contracted": 132944.0,
+        "supplies": 79236.0,
+        "other": 400.0
+      },
+      "2025-2026": {
+        "payroll": 5047340.0,
+        "total": 5266730.0,
+        "contracted": 142900.0,
+        "supplies": 76490.0
+      }
+    }
+  },
+  {
+    "org": "126",
+    "name": "WILKINSON ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4001785.0,
+        "total": 4218783.0,
+        "contracted": 149171.0,
+        "supplies": 64252.0,
+        "other": 3575.0
+      },
+      "2022-2023": {
+        "payroll": 4792299.0,
+        "total": 5023462.0,
+        "contracted": 160985.0,
+        "supplies": 67203.0,
+        "other": 2975.0
+      },
+      "2023-2024": {
+        "payroll": 5823083.0,
+        "total": 6072437.0,
+        "contracted": 163285.0,
+        "supplies": 82394.0,
+        "other": 3675.0
+      },
+      "2024-2025": {
+        "payroll": 5574942.0,
+        "total": 5808235.0,
+        "contracted": 162868.0,
+        "supplies": 68725.0,
+        "other": 1700.0
+      },
+      "2025-2026": {
+        "payroll": 5621054.0,
+        "total": 5873987.0,
+        "contracted": 184300.0,
+        "supplies": 67333.0,
+        "other": 1300.0
+      }
+    }
+  },
+  {
+    "org": "134",
+    "name": "HOPE ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 2888126.0,
+        "total": 3121469.0,
+        "contracted": 184471.0,
+        "supplies": 48697.0,
+        "other": 175.0
+      },
+      "2022-2023": {
+        "payroll": 3278103.0,
+        "total": 3603875.0,
+        "contracted": 260408.0,
+        "supplies": 59589.0,
+        "other": 5775.0
+      },
+      "2023-2024": {
+        "payroll": 4099998.0,
+        "total": 4427836.0,
+        "contracted": 249108.0,
+        "supplies": 74680.0,
+        "other": 4050.0
+      },
+      "2024-2025": {
+        "payroll": 5404356.0,
+        "total": 5739496.0,
+        "contracted": 248691.0,
+        "supplies": 81749.0,
+        "other": 4700.0
+      },
+      "2025-2026": {
+        "payroll": 5759757.0,
+        "total": 6066589.0,
+        "contracted": 224200.0,
+        "supplies": 81432.0,
+        "other": 1200.0
+      }
+    }
+  },
+  {
+    "org": "136",
+    "name": "CHRISTOPHER J. HINES ELEMENTARY",
+    "by_fy": {
+      "2023-2024": {
+        "payroll": 4117120.0,
+        "total": 4365365.0,
+        "contracted": 194181.0,
+        "supplies": 53164.0,
+        "other": 900.0
+      },
+      "2024-2025": {
+        "payroll": 5203145.0,
+        "total": 5420587.0,
+        "contracted": 141154.0,
+        "supplies": 75763.0,
+        "other": 525.0
+      },
+      "2025-2026": {
+        "payroll": 5720678.0,
+        "total": 6025024.0,
+        "contracted": 228200.0,
+        "supplies": 75546.0,
+        "other": 600.0
+      }
+    }
+  },
+  {
+    "org": "045",
+    "name": "WILKERSON INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5085049.0,
+        "total": 5302469.0,
+        "contracted": 152521.0,
+        "supplies": 64484.0,
+        "other": 415.0
+      },
+      "2022-2023": {
+        "payroll": 5157518.0,
+        "total": 5376785.0,
+        "contracted": 155409.0,
+        "supplies": 63443.0,
+        "other": 415.0
+      },
+      "2023-2024": {
+        "payroll": 5208563.0,
+        "total": 5433531.0,
+        "contracted": 155009.0,
+        "supplies": 64784.0,
+        "other": 5175.0
+      },
+      "2024-2025": {
+        "payroll": 5103098.0,
+        "total": 5328710.0,
+        "contracted": 154592.0,
+        "supplies": 70620.0,
+        "other": 400.0
+      },
+      "2025-2026": {
+        "payroll": 5675503.0,
+        "total": 5886874.0,
+        "contracted": 145750.0,
+        "supplies": 65621.0
+      }
+    }
+  },
+  {
+    "org": "129",
+    "name": "BIRNHAM WOODS ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 5175083.0,
+        "total": 5420122.0,
+        "contracted": 170671.0,
+        "supplies": 73443.0,
+        "other": 925.0
+      },
+      "2022-2023": {
+        "payroll": 5256957.0,
+        "total": 5495066.0,
+        "contracted": 161726.0,
+        "supplies": 75208.0,
+        "other": 1175.0
+      },
+      "2023-2024": {
+        "payroll": 5528613.0,
+        "total": 5768108.0,
+        "contracted": 161326.0,
+        "supplies": 76342.0,
+        "other": 1827.0
+      },
+      "2024-2025": {
+        "payroll": 5553222.0,
+        "total": 5788546.0,
+        "contracted": 160909.0,
+        "supplies": 73115.0,
+        "other": 1300.0
+      },
+      "2025-2026": {
+        "payroll": 5282956.0,
+        "total": 5486858.0,
+        "contracted": 137900.0,
+        "supplies": 66002.0
+      }
+    }
+  },
+  {
+    "org": "135",
+    "name": "GORDON-REED ELEMENTARY",
+    "by_fy": {
+      "2022-2023": {
+        "payroll": 3816040.0,
+        "total": 4076869.0,
+        "contracted": 199231.0,
+        "supplies": 58873.0,
+        "other": 2725.0
+      },
+      "2023-2024": {
+        "payroll": 4634054.0,
+        "total": 4878103.0,
+        "contracted": 185731.0,
+        "supplies": 56468.0,
+        "other": 1850.0
+      },
+      "2024-2025": {
+        "payroll": 4457818.0,
+        "total": 4707348.0,
+        "contracted": 185314.0,
+        "supplies": 63066.0,
+        "other": 1150.0
+      },
+      "2025-2026": {
+        "payroll": 5506159.0,
+        "total": 5742186.0,
+        "contracted": 170550.0,
+        "supplies": 64627.0,
+        "other": 850.0
+      }
+    }
+  },
+  {
+    "org": "124",
+    "name": "REAVES ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4915360.0,
+        "total": 5142335.0,
+        "contracted": 148771.0,
+        "supplies": 73729.0,
+        "other": 4475.0
+      },
+      "2022-2023": {
+        "payroll": 4882078.0,
+        "total": 5131539.0,
+        "contracted": 167958.0,
+        "supplies": 80528.0,
+        "other": 975.0
+      },
+      "2023-2024": {
+        "payroll": 5431980.0,
+        "total": 5682262.0,
+        "contracted": 167458.0,
+        "supplies": 76874.0,
+        "other": 5950.0
+      },
+      "2024-2025": {
+        "payroll": 5297598.0,
+        "total": 5541054.0,
+        "contracted": 167041.0,
+        "supplies": 71915.0,
+        "other": 4500.0
+      },
+      "2025-2026": {
+        "payroll": 5428941.0,
+        "total": 5682745.0,
+        "contracted": 177900.0,
+        "supplies": 71504.0,
+        "other": 4400.0
+      }
+    }
+  },
+  {
+    "org": "121",
+    "name": "BUSH ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4488909.0,
+        "total": 4661324.0,
+        "contracted": 105971.0,
+        "supplies": 63269.0,
+        "other": 3175.0
+      },
+      "2022-2023": {
+        "payroll": 4572863.0,
+        "total": 4768410.0,
+        "contracted": 121607.0,
+        "supplies": 73765.0,
+        "other": 175.0
+      },
+      "2023-2024": {
+        "payroll": 5079223.0,
+        "total": 5275404.0,
+        "contracted": 121307.0,
+        "supplies": 74699.0,
+        "other": 175.0
+      },
+      "2024-2025": {
+        "payroll": 5474362.0,
+        "total": 5670840.0,
+        "contracted": 120890.0,
+        "supplies": 75188.0,
+        "other": 400.0
+      },
+      "2025-2026": {
+        "payroll": 4819765.0,
+        "total": 5012918.0,
+        "contracted": 134500.0,
+        "supplies": 58653.0
+      }
+    }
+  },
+  {
+    "org": "122",
+    "name": "POWELL ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4440409.0,
+        "total": 4603991.0,
+        "contracted": 98871.0,
+        "supplies": 64036.0,
+        "other": 675.0
+      },
+      "2022-2023": {
+        "payroll": 4634848.0,
+        "total": 4811371.0,
+        "contracted": 108573.0,
+        "supplies": 67275.0,
+        "other": 675.0
+      },
+      "2023-2024": {
+        "payroll": 5094320.0,
+        "total": 5275478.0,
+        "contracted": 108423.0,
+        "supplies": 72060.0,
+        "other": 675.0
+      },
+      "2024-2025": {
+        "payroll": 5346101.0,
+        "total": 5524453.0,
+        "contracted": 107756.0,
+        "supplies": 70396.0,
+        "other": 200.0
+      },
+      "2025-2026": {
+        "payroll": 5136209.0,
+        "total": 5322099.0,
+        "contracted": 126600.0,
+        "supplies": 59290.0
+      }
+    }
+  },
+  {
+    "org": "115",
+    "name": "SAN JACINTO ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4032913.0,
+        "total": 4206104.0,
+        "contracted": 110404.0,
+        "supplies": 61212.0,
+        "other": 1575.0
+      },
+      "2022-2023": {
+        "payroll": 4339250.0,
+        "total": 4519752.0,
+        "contracted": 111360.0,
+        "supplies": 62067.0,
+        "other": 7075.0
+      },
+      "2023-2024": {
+        "payroll": 4311218.0,
+        "total": 4493395.0,
+        "contracted": 110960.0,
+        "supplies": 65242.0,
+        "other": 5975.0
+      },
+      "2024-2025": {
+        "payroll": 4837053.0,
+        "total": 5018147.0,
+        "contracted": 110543.0,
+        "supplies": 68351.0,
+        "other": 2200.0
+      },
+      "2025-2026": {
+        "payroll": 5232116.0,
+        "total": 5445195.0,
+        "contracted": 145800.0,
+        "supplies": 66279.0,
+        "other": 1000.0
+      }
+    }
+  },
+  {
+    "org": "728",
+    "name": "TECHNOLOGY - NETWORK SYSTEMS",
+    "by_fy": {
+      "2021-2022": {
+        "contracted": 1199391.0,
+        "total": 4249340.0,
+        "supplies": 331100.0,
+        "payroll": 2705649.0,
+        "other": 13200.0
+      },
+      "2022-2023": {
+        "contracted": 1491046.0,
+        "total": 4623006.0,
+        "supplies": 300600.0,
+        "payroll": 2805160.0,
+        "other": 26200.0
+      },
+      "2023-2024": {
+        "contracted": 2006479.0,
+        "total": 5327027.0,
+        "supplies": 228000.0,
+        "payroll": 3074848.0,
+        "other": 17700.0
+      },
+      "2024-2025": {
+        "contracted": 1982400.0,
+        "total": 5440804.0,
+        "supplies": 238000.0,
+        "payroll": 3208204.0,
+        "other": 12200.0
+      },
+      "2025-2026": {
+        "contracted": 515000.0,
+        "total": 576000.0,
+        "supplies": 10000.0,
+        "payroll": 51000.0
+      }
+    }
+  },
+  {
+    "org": "111",
+    "name": "HOUSER ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3804490.0,
+        "total": 3994375.0,
+        "contracted": 127671.0,
+        "supplies": 61239.0,
+        "other": 975.0
+      },
+      "2022-2023": {
+        "payroll": 4341734.0,
+        "total": 4533368.0,
+        "contracted": 127700.0,
+        "supplies": 62659.0,
+        "other": 1275.0
+      },
+      "2023-2024": {
+        "payroll": 4875543.0,
+        "total": 5072891.0,
+        "contracted": 127400.0,
+        "supplies": 68573.0,
+        "other": 1375.0
+      },
+      "2024-2025": {
+        "payroll": 5022973.0,
+        "total": 5220833.0,
+        "contracted": 128455.0,
+        "supplies": 67802.0,
+        "other": 1603.0
+      },
+      "2025-2026": {
+        "payroll": 4532488.0,
+        "total": 4735347.0,
+        "contracted": 141600.0,
+        "supplies": 59259.0,
+        "other": 2000.0
+      }
+    }
+  },
+  {
+    "org": "070",
+    "name": "TRAVIS INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4655607.0,
+        "total": 4961746.0,
+        "contracted": 223121.0,
+        "supplies": 82503.0,
+        "other": 515.0
+      },
+      "2022-2023": {
+        "payroll": 4427644.0,
+        "total": 4694711.0,
+        "contracted": 189021.0,
+        "supplies": 77372.0,
+        "other": 674.0
+      },
+      "2023-2024": {
+        "payroll": 4656072.0,
+        "total": 4922887.0,
+        "contracted": 188421.0,
+        "supplies": 77720.0,
+        "other": 674.0
+      },
+      "2024-2025": {
+        "payroll": 4936254.0,
+        "total": 5199734.0,
+        "contracted": 188004.0,
+        "supplies": 74676.0,
+        "other": 800.0
+      },
+      "2025-2026": {
+        "payroll": 4537370.0,
+        "total": 4806665.0,
+        "contracted": 194050.0,
+        "supplies": 74845.0,
+        "other": 400.0
+      }
+    }
+  },
+  {
+    "org": "114",
+    "name": "RICE ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3929897.0,
+        "total": 4115670.0,
+        "contracted": 124471.0,
+        "supplies": 59252.0,
+        "other": 2050.0
+      },
+      "2022-2023": {
+        "payroll": 4172185.0,
+        "total": 4359660.0,
+        "contracted": 127656.0,
+        "supplies": 58744.0,
+        "other": 1075.0
+      },
+      "2023-2024": {
+        "payroll": 4284268.0,
+        "total": 4474013.0,
+        "contracted": 126506.0,
+        "supplies": 62064.0,
+        "other": 1175.0
+      },
+      "2024-2025": {
+        "payroll": 4989821.0,
+        "total": 5181763.0,
+        "contracted": 126089.0,
+        "supplies": 64153.0,
+        "other": 1700.0
+      },
+      "2025-2026": {
+        "payroll": 4473392.0,
+        "total": 4674822.0,
+        "contracted": 139400.0,
+        "supplies": 56530.0,
+        "other": 5500.0
+      }
+    }
+  },
+  {
+    "org": "119",
+    "name": "GIESINGER ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4061906.0,
+        "total": 4248276.0,
+        "contracted": 123971.0,
+        "supplies": 62224.0,
+        "other": 175.0
+      },
+      "2022-2023": {
+        "payroll": 4490959.0,
+        "total": 4684322.0,
+        "contracted": 127650.0,
+        "supplies": 65298.0,
+        "other": 415.0
+      },
+      "2023-2024": {
+        "payroll": 4505092.0,
+        "total": 4696648.0,
+        "contracted": 126850.0,
+        "supplies": 63131.0,
+        "other": 1575.0
+      },
+      "2024-2025": {
+        "payroll": 4939095.0,
+        "total": 5131278.0,
+        "contracted": 126433.0,
+        "supplies": 64150.0,
+        "other": 1600.0
+      },
+      "2025-2026": {
+        "payroll": 5004989.0,
+        "total": 5180510.0,
+        "contracted": 114200.0,
+        "supplies": 59846.0,
+        "other": 1475.0
+      }
+    }
+  },
+  {
+    "org": "703",
+    "name": "TAX COSTS",
+    "by_fy": {
+      "2021-2022": {
+        "contracted": 3900000.0,
+        "total": 3900000.0
+      },
+      "2022-2023": {
+        "contracted": 4100000.0,
+        "total": 4100000.0
+      },
+      "2023-2024": {
+        "contracted": 4150000.0,
+        "total": 4150000.0
+      },
+      "2024-2025": {
+        "contracted": 5150000.0,
+        "total": 5150000.0
+      },
+      "2025-2026": {
+        "contracted": 5150000.0,
+        "total": 5150000.0
+      }
+    }
+  },
+  {
+    "org": "730",
+    "name": "TECHNOLOGY-INFORMATION SYSTEMS",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 2303006.0,
+        "total": 4027579.0,
+        "contracted": 1522523.0,
+        "supplies": 121950.0,
+        "capital": 45000.0,
+        "other": 35100.0
+      },
+      "2022-2023": {
+        "payroll": 2447051.0,
+        "total": 4172624.0,
+        "contracted": 1534023.0,
+        "supplies": 115950.0,
+        "capital": 40000.0,
+        "other": 35600.0
+      },
+      "2023-2024": {
+        "payroll": 2700873.0,
+        "total": 4664393.0,
+        "contracted": 1771970.0,
+        "supplies": 115950.0,
+        "capital": 40000.0,
+        "other": 35600.0
+      },
+      "2024-2025": {
+        "payroll": 2815217.0,
+        "total": 5130737.0,
+        "contracted": 1511220.0,
+        "supplies": 718300.0,
+        "capital": 40000.0,
+        "other": 46000.0
+      },
+      "2025-2026": {
+        "contracted": 5000.0,
+        "total": 5000.0
+      }
+    }
+  },
+  {
+    "org": "103",
+    "name": "RUNYAN ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3962210.0,
+        "total": 4142535.0,
+        "contracted": 108771.0,
+        "supplies": 65529.0,
+        "other": 6025.0
+      },
+      "2022-2023": {
+        "payroll": 4295993.0,
+        "total": 4496793.0,
+        "contracted": 125283.0,
+        "supplies": 68492.0,
+        "other": 7025.0
+      },
+      "2023-2024": {
+        "payroll": 4569607.0,
+        "total": 4772847.0,
+        "contracted": 123683.0,
+        "supplies": 79382.0,
+        "other": 175.0
+      },
+      "2024-2025": {
+        "payroll": 4078119.0,
+        "total": 4265770.0,
+        "contracted": 123266.0,
+        "supplies": 63785.0,
+        "other": 600.0
+      },
+      "2025-2026": {
+        "payroll": 4914324.0,
+        "total": 5099319.0,
+        "contracted": 114100.0,
+        "supplies": 70495.0,
+        "other": 400.0
+      }
+    }
+  },
+  {
+    "org": "109",
+    "name": "OAK RIDGE ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4405291.0,
+        "total": 4624469.0,
+        "contracted": 153949.0,
+        "supplies": 63554.0,
+        "other": 1675.0
+      },
+      "2022-2023": {
+        "payroll": 4430828.0,
+        "total": 4664532.0,
+        "contracted": 163829.0,
+        "supplies": 67200.0,
+        "other": 2675.0
+      },
+      "2023-2024": {
+        "payroll": 4253321.0,
+        "total": 4482864.0,
+        "contracted": 163857.0,
+        "supplies": 63011.0,
+        "other": 2675.0
+      },
+      "2024-2025": {
+        "payroll": 4746164.0,
+        "total": 4977208.0,
+        "contracted": 163767.0,
+        "supplies": 65077.0,
+        "other": 2200.0
+      },
+      "2025-2026": {
+        "payroll": 4780799.0,
+        "total": 5038241.0,
+        "contracted": 194100.0,
+        "supplies": 59092.0,
+        "other": 4250.0
+      }
+    }
+  },
+  {
+    "org": "123",
+    "name": "BUCKALEW ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4036623.0,
+        "total": 4216383.0,
+        "contracted": 125771.0,
+        "supplies": 52114.0,
+        "other": 1875.0
+      },
+      "2022-2023": {
+        "payroll": 4258569.0,
+        "total": 4438915.0,
+        "contracted": 122649.0,
+        "supplies": 55797.0,
+        "other": 1900.0
+      },
+      "2023-2024": {
+        "payroll": 4505774.0,
+        "total": 4689612.0,
+        "contracted": 122649.0,
+        "supplies": 59910.0,
+        "other": 1279.0
+      },
+      "2024-2025": {
+        "payroll": 4809272.0,
+        "total": 4992744.0,
+        "contracted": 122232.0,
+        "supplies": 59912.0,
+        "other": 1328.0
+      },
+      "2025-2026": {
+        "payroll": 4794956.0,
+        "total": 4990510.0,
+        "contracted": 140300.0,
+        "supplies": 53907.0,
+        "other": 1347.0
+      }
+    }
+  },
+  {
+    "org": "107",
+    "name": "ARMSTRONG ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3906124.0,
+        "total": 4130173.0,
+        "contracted": 146381.0,
+        "supplies": 69599.0,
+        "other": 8069.0
+      },
+      "2022-2023": {
+        "payroll": 4467771.0,
+        "total": 4706302.0,
+        "contracted": 166490.0,
+        "supplies": 65466.0,
+        "other": 6575.0
+      },
+      "2023-2024": {
+        "payroll": 4585291.0,
+        "total": 4823122.0,
+        "contracted": 160880.0,
+        "supplies": 70376.0,
+        "other": 6575.0
+      },
+      "2024-2025": {
+        "payroll": 4434959.0,
+        "total": 4670244.0,
+        "contracted": 166173.0,
+        "supplies": 65035.0,
+        "other": 4077.0
+      },
+      "2025-2026": {
+        "payroll": 4742560.0,
+        "total": 4976331.0,
+        "contracted": 161400.0,
+        "supplies": 63673.0,
+        "other": 8698.0
+      }
+    }
+  },
+  {
+    "org": "050",
+    "name": "COLLINS INTERMEDIATE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4116602.0,
+        "total": 4310511.0,
+        "contracted": 132121.0,
+        "supplies": 61613.0,
+        "other": 175.0
+      },
+      "2022-2023": {
+        "payroll": 4583073.0,
+        "total": 4774856.0,
+        "contracted": 128783.0,
+        "supplies": 62825.0,
+        "other": 175.0
+      },
+      "2023-2024": {
+        "payroll": 4681603.0,
+        "total": 4876756.0,
+        "contracted": 128583.0,
+        "supplies": 66395.0,
+        "other": 175.0
+      },
+      "2024-2025": {
+        "payroll": 4765558.0,
+        "total": 4959604.0,
+        "contracted": 128166.0,
+        "supplies": 65480.0,
+        "other": 400.0
+      },
+      "2025-2026": {
+        "payroll": 4738632.0,
+        "total": 4943511.0,
+        "contracted": 139150.0,
+        "supplies": 65729.0
+      }
+    }
+  },
+  {
+    "org": "105",
+    "name": "MILAM ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3634986.0,
+        "total": 3863563.0,
+        "contracted": 160371.0,
+        "supplies": 68031.0,
+        "other": 175.0
+      },
+      "2022-2023": {
+        "payroll": 3803171.0,
+        "total": 4049350.0,
+        "contracted": 178780.0,
+        "supplies": 66924.0,
+        "other": 475.0
+      },
+      "2023-2024": {
+        "payroll": 4060618.0,
+        "total": 4304346.0,
+        "contracted": 173880.0,
+        "supplies": 65936.0,
+        "other": 3912.0
+      },
+      "2024-2025": {
+        "payroll": 4037667.0,
+        "total": 4277135.0,
+        "contracted": 173463.0,
+        "supplies": 64705.0,
+        "other": 1300.0
+      },
+      "2025-2026": {
+        "payroll": 4678408.0,
+        "total": 4950887.0,
+        "contracted": 198400.0,
+        "supplies": 72579.0,
+        "other": 1500.0
+      }
+    }
+  },
+  {
+    "org": "120",
+    "name": "GALATAS ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 4054014.0,
+        "total": 4213831.0,
+        "contracted": 100871.0,
+        "supplies": 57338.0,
+        "other": 1608.0
+      },
+      "2022-2023": {
+        "payroll": 4516860.0,
+        "total": 4690455.0,
+        "contracted": 112428.0,
+        "supplies": 59494.0,
+        "other": 1673.0
+      },
+      "2023-2024": {
+        "payroll": 4668726.0,
+        "total": 4846831.0,
+        "contracted": 111028.0,
+        "supplies": 65246.0,
+        "other": 1831.0
+      },
+      "2024-2025": {
+        "payroll": 4634840.0,
+        "total": 4810768.0,
+        "contracted": 110611.0,
+        "supplies": 63455.0,
+        "other": 1862.0
+      },
+      "2025-2026": {
+        "payroll": 4755186.0,
+        "total": 4931914.0,
+        "contracted": 115700.0,
+        "supplies": 59517.0,
+        "other": 1511.0
+      }
+    }
+  },
+  {
+    "org": "116",
+    "name": "GLEN LOCH ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3410837.0,
+        "total": 3584953.0,
+        "contracted": 129471.0,
+        "supplies": 44120.0,
+        "other": 525.0
+      },
+      "2022-2023": {
+        "payroll": 3359931.0,
+        "total": 3566140.0,
+        "contracted": 71471.0,
+        "supplies": 134563.0,
+        "other": 175.0
+      },
+      "2023-2024": {
+        "payroll": 3597331.0,
+        "total": 3717069.0,
+        "contracted": 70971.0,
+        "supplies": 48592.0,
+        "other": 175.0
+      },
+      "2024-2025": {
+        "payroll": 4118879.0,
+        "total": 4241482.0,
+        "contracted": 70554.0,
+        "supplies": 50249.0,
+        "other": 1800.0
+      },
+      "2025-2026": {
+        "payroll": 4689807.0,
+        "total": 4819109.0,
+        "contracted": 81600.0,
+        "supplies": 45602.0,
+        "other": 2100.0
+      }
+    }
+  },
+  {
+    "org": "113",
+    "name": "HAILEY ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3643968.0,
+        "total": 3821479.0,
+        "contracted": 122871.0,
+        "supplies": 54225.0,
+        "other": 415.0
+      },
+      "2022-2023": {
+        "payroll": 3984314.0,
+        "total": 4152837.0,
+        "contracted": 109260.0,
+        "supplies": 58848.0,
+        "other": 415.0
+      },
+      "2023-2024": {
+        "payroll": 4174481.0,
+        "total": 4344388.0,
+        "contracted": 109260.0,
+        "supplies": 60197.0,
+        "other": 450.0
+      },
+      "2024-2025": {
+        "payroll": 4330543.0,
+        "total": 4494591.0,
+        "contracted": 108843.0,
+        "supplies": 54730.0,
+        "other": 475.0
+      },
+      "2025-2026": {
+        "payroll": 4332505.0,
+        "total": 4500141.0,
+        "contracted": 114100.0,
+        "supplies": 53261.0,
+        "other": 275.0
+      }
+    }
+  },
+  {
+    "org": "117",
+    "name": "RIDE ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3810298.0,
+        "total": 3970513.0,
+        "contracted": 107971.0,
+        "supplies": 51281.0,
+        "other": 963.0
+      },
+      "2022-2023": {
+        "payroll": 3930831.0,
+        "total": 4079119.0,
+        "contracted": 94071.0,
+        "supplies": 53242.0,
+        "other": 975.0
+      },
+      "2023-2024": {
+        "payroll": 4139837.0,
+        "total": 4284776.0,
+        "contracted": 93671.0,
+        "supplies": 50257.0,
+        "other": 1011.0
+      },
+      "2024-2025": {
+        "payroll": 4210628.0,
+        "total": 4354385.0,
+        "contracted": 93254.0,
+        "supplies": 49451.0,
+        "other": 1052.0
+      },
+      "2025-2026": {
+        "payroll": 4171102.0,
+        "total": 4300476.0,
+        "contracted": 83100.0,
+        "supplies": 40396.0,
+        "other": 5878.0
+      }
+    }
+  },
+  {
+    "org": "118",
+    "name": "DAVID ELEMENTARY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 3444674.0,
+        "total": 3608147.0,
+        "contracted": 115571.0,
+        "supplies": 47377.0,
+        "other": 525.0
+      },
+      "2022-2023": {
+        "payroll": 3448869.0,
+        "total": 3601823.0,
+        "contracted": 103771.0,
+        "supplies": 48632.0,
+        "other": 551.0
+      },
+      "2023-2024": {
+        "payroll": 3730801.0,
+        "total": 3884651.0,
+        "contracted": 102671.0,
+        "supplies": 50624.0,
+        "other": 555.0
+      },
+      "2024-2025": {
+        "payroll": 3966298.0,
+        "total": 4123871.0,
+        "contracted": 102254.0,
+        "supplies": 54739.0,
+        "other": 580.0
+      },
+      "2025-2026": {
+        "payroll": 3585050.0,
+        "total": 3737466.0,
+        "contracted": 103700.0,
+        "supplies": 48326.0,
+        "other": 390.0
+      }
+    }
+  },
+  {
+    "org": "002",
+    "name": "WASHINGTON HIGH SCHOOL",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 2370216.0,
+        "total": 2616380.0,
+        "contracted": 183509.0,
+        "supplies": 54005.0,
+        "other": 8650.0
+      },
+      "2022-2023": {
+        "payroll": 2313685.0,
+        "total": 2631211.0,
+        "contracted": 246467.0,
+        "supplies": 65459.0,
+        "other": 5600.0
+      },
+      "2023-2024": {
+        "payroll": 2338270.0,
+        "total": 2666103.0,
+        "contracted": 246367.0,
+        "supplies": 77616.0,
+        "other": 3850.0
+      },
+      "2024-2025": {
+        "payroll": 2673261.0,
+        "total": 2966516.0,
+        "contracted": 217779.0,
+        "supplies": 71776.0,
+        "other": 3700.0
+      },
+      "2025-2026": {
+        "payroll": 2770189.0,
+        "total": 3084231.0,
+        "contracted": 241550.0,
+        "supplies": 70492.0,
+        "other": 2000.0
+      }
+    }
+  },
+  {
+    "org": "950",
+    "name": "GROUNDS MAINTENANCE",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 1906385.0,
+        "total": 2130195.0,
+        "contracted": 104310.0,
+        "supplies": 119500.0
+      },
+      "2022-2023": {
+        "payroll": 1840896.0,
+        "total": 2064206.0,
+        "contracted": 103310.0,
+        "supplies": 120000.0
+      },
+      "2023-2024": {
+        "payroll": 2074487.0,
+        "total": 2347797.0,
+        "contracted": 128310.0,
+        "supplies": 145000.0
+      },
+      "2024-2025": {
+        "payroll": 2247987.0,
+        "total": 2521297.0,
+        "contracted": 120810.0,
+        "supplies": 152500.0
+      },
+      "2025-2026": {
+        "payroll": 2435444.0,
+        "total": 2708754.0,
+        "contracted": 120810.0,
+        "supplies": 152500.0
+      }
+    }
+  },
+  {
+    "org": "726",
+    "name": "HUMAN RESOURCES",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 1686972.0,
+        "total": 1770576.0,
+        "contracted": 20829.0,
+        "supplies": 43575.0,
+        "other": 19200.0
+      },
+      "2022-2023": {
+        "payroll": 1812428.0,
+        "total": 1984107.0,
+        "contracted": 112579.0,
+        "supplies": 40200.0,
+        "other": 18900.0
+      },
+      "2023-2024": {
+        "payroll": 2199925.0,
+        "total": 2532129.0,
+        "contracted": 143894.0,
+        "supplies": 55910.0,
+        "other": 132400.0
+      },
+      "2024-2025": {
+        "payroll": 2157213.0,
+        "total": 2489440.0,
+        "contracted": 161502.0,
+        "supplies": 32575.0,
+        "other": 138150.0
+      },
+      "2025-2026": {
+        "payroll": 2250941.0,
+        "total": 2603616.0,
+        "contracted": 177450.0,
+        "supplies": 37575.0,
+        "other": 137650.0
+      }
+    }
+  },
+  {
+    "org": "010",
+    "name": "DAEP/JJAEP",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 1838434.0,
+        "total": 1893997.0,
+        "contracted": 19293.0,
+        "supplies": 29095.0,
+        "other": 7175.0
+      },
+      "2022-2023": {
+        "payroll": 1947209.0,
+        "total": 1997432.0,
+        "contracted": 13918.0,
+        "supplies": 26130.0,
+        "other": 10175.0
+      },
+      "2023-2024": {
+        "payroll": 2101188.0,
+        "total": 2155749.0,
+        "contracted": 14618.0,
+        "supplies": 29568.0,
+        "other": 10375.0
+      },
+      "2024-2025": {
+        "payroll": 2269206.0,
+        "total": 2323526.0,
+        "contracted": 14695.0,
+        "supplies": 29425.0,
+        "other": 10200.0
+      },
+      "2025-2026": {
+        "payroll": 2390233.0,
+        "total": 2444958.0,
+        "contracted": 15050.0,
+        "supplies": 32825.0,
+        "other": 6850.0
+      }
+    }
+  },
+  {
+    "org": "021",
+    "name": "TRAILS PROGRAM",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 958547.0,
+        "total": 966437.0,
+        "contracted": 1890.0,
+        "supplies": 6000.0
+      },
+      "2022-2023": {
+        "payroll": 1020692.0,
+        "total": 1022587.0,
+        "contracted": 1895.0
+      },
+      "2023-2024": {
+        "payroll": 1333963.0,
+        "total": 1335733.0,
+        "contracted": 1770.0
+      },
+      "2024-2025": {
+        "payroll": 1859224.0,
+        "total": 1862079.0,
+        "contracted": 2855.0
+      },
+      "2025-2026": {
+        "contracted": 1800.0,
+        "total": 1800.0
+      }
+    }
+  },
+  {
+    "org": "699",
+    "name": "SUMMER SCHOOL",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 995360.0,
+        "total": 1057360.0,
+        "supplies": 58000.0,
+        "other": 4000.0
+      },
+      "2022-2023": {
+        "payroll": 995360.0,
+        "total": 1057360.0,
+        "supplies": 58000.0,
+        "other": 4000.0
+      },
+      "2023-2024": {
+        "payroll": 1521360.0,
+        "total": 1557360.0,
+        "supplies": 36000.0
+      },
+      "2024-2025": {
+        "payroll": 1557350.0,
+        "total": 1557350.0
+      },
+      "2025-2026": {
+        "payroll": 1057350.0,
+        "total": 1122350.0,
+        "supplies": 59500.0,
+        "other": 5500.0
+      }
+    }
+  },
+  {
+    "org": "880",
+    "name": "STUDENT SUPPORT SERVICES",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 401701.0,
+        "total": 437701.0,
+        "supplies": 29000.0,
+        "other": 7000.0
+      },
+      "2022-2023": {
+        "payroll": 515696.0,
+        "total": 553505.0,
+        "contracted": 1809.0,
+        "supplies": 24000.0,
+        "other": 12000.0
+      },
+      "2023-2024": {
+        "payroll": 803347.0,
+        "total": 845031.0,
+        "contracted": 2084.0,
+        "supplies": 21600.0,
+        "other": 18000.0
+      },
+      "2024-2025": {
+        "payroll": 1108641.0,
+        "total": 1175364.0,
+        "contracted": 12123.0,
+        "supplies": 29600.0,
+        "other": 25000.0
+      },
+      "2025-2026": {
+        "payroll": 1451992.0,
+        "total": 1512792.0,
+        "contracted": 12000.0,
+        "supplies": 34000.0,
+        "other": 14800.0
+      }
+    }
+  },
+  {
+    "org": "872",
+    "name": "HEALTH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 814377.0,
+        "total": 848327.0,
+        "contracted": 4500.0,
+        "supplies": 20950.0,
+        "other": 8500.0
+      },
+      "2022-2023": {
+        "payroll": 869486.0,
+        "total": 911536.0,
+        "contracted": 6000.0,
+        "supplies": 27550.0,
+        "other": 8500.0
+      },
+      "2023-2024": {
+        "payroll": 1058387.0,
+        "total": 1103237.0,
+        "contracted": 6000.0,
+        "supplies": 30350.0,
+        "other": 8500.0
+      },
+      "2024-2025": {
+        "payroll": 1179917.0,
+        "total": 1224767.0,
+        "contracted": 6000.0,
+        "supplies": 30350.0,
+        "other": 8500.0
+      },
+      "2025-2026": {
+        "payroll": 1452249.0,
+        "total": 1497899.0,
+        "contracted": 8000.0,
+        "supplies": 30350.0,
+        "other": 7300.0
+      }
+    }
+  },
+  {
+    "org": "220",
+    "name": "VIRTUAL SCHOOL",
+    "by_fy": {
+      "2023-2024": {
+        "payroll": 1000.0,
+        "total": 11989.0,
+        "supplies": 6799.0,
+        "other": 4190.0
+      },
+      "2024-2025": {
+        "payroll": 1151625.0,
+        "total": 1168182.0,
+        "supplies": 12537.0,
+        "other": 4020.0
+      },
+      "2025-2026": {
+        "payroll": 1452830.0,
+        "total": 1476298.0,
+        "supplies": 20448.0,
+        "other": 3020.0
+      }
+    }
+  },
+  {
+    "org": "902",
+    "name": "PLANNING & CONSTRUCTION",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 711676.0,
+        "total": 987474.0,
+        "contracted": 186378.0,
+        "supplies": 47320.0,
+        "other": 42100.0
+      },
+      "2022-2023": {
+        "payroll": 758926.0,
+        "total": 1027109.0,
+        "contracted": 173763.0,
+        "supplies": 43320.0,
+        "other": 51100.0
+      },
+      "2023-2024": {
+        "payroll": 856513.0,
+        "total": 1157783.0,
+        "contracted": 168808.0,
+        "supplies": 48412.0,
+        "other": 84050.0
+      },
+      "2024-2025": {
+        "payroll": 989192.0,
+        "total": 1320524.0,
+        "contracted": 171870.0,
+        "supplies": 48412.0,
+        "other": 111050.0
+      },
+      "2025-2026": {
+        "payroll": 1066549.0,
+        "total": 1433111.0,
+        "contracted": 208300.0,
+        "supplies": 77112.0,
+        "other": 81150.0
+      }
+    }
+  },
+  {
+    "org": "701",
+    "name": "SUPERINTENDENT",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 761361.0,
+        "total": 1104861.0,
+        "contracted": 145650.0,
+        "supplies": 135150.0,
+        "other": 62700.0
+      },
+      "2022-2023": {
+        "payroll": 767246.0,
+        "total": 1176746.0,
+        "contracted": 211650.0,
+        "supplies": 134150.0,
+        "other": 63700.0
+      },
+      "2023-2024": {
+        "payroll": 796078.0,
+        "total": 1246428.0,
+        "contracted": 226510.0,
+        "supplies": 150300.0,
+        "other": 73540.0
+      },
+      "2024-2025": {
+        "payroll": 837771.0,
+        "total": 1300044.0,
+        "contracted": 237473.0,
+        "supplies": 145650.0,
+        "other": 79150.0
+      },
+      "2025-2026": {
+        "payroll": 672622.0,
+        "total": 1133672.0,
+        "contracted": 192700.0,
+        "supplies": 201900.0,
+        "other": 66450.0
+      }
+    }
+  },
+  {
+    "org": "888",
+    "name": "SOUTH COUNTY SPORTS COMPLEX",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 717227.0,
+        "total": 1166340.0,
+        "contracted": 372513.0,
+        "supplies": 73100.0,
+        "other": 3500.0
+      },
+      "2022-2023": {
+        "payroll": 537952.0,
+        "total": 1079383.0,
+        "contracted": 470831.0,
+        "supplies": 67100.0,
+        "other": 3500.0
+      },
+      "2023-2024": {
+        "payroll": 601157.0,
+        "total": 1125573.0,
+        "contracted": 443306.0,
+        "supplies": 77610.0,
+        "other": 3500.0
+      },
+      "2024-2025": {
+        "payroll": 589793.0,
+        "total": 1131248.0,
+        "contracted": 457345.0,
+        "supplies": 80610.0,
+        "other": 3500.0
+      },
+      "2025-2026": {
+        "payroll": 479486.0,
+        "total": 940410.0,
+        "contracted": 367800.0,
+        "supplies": 89624.0,
+        "other": 3500.0
+      }
+    }
+  },
+  {
+    "org": "709",
+    "name": "ASST SUPERINTENDENT OF OPERATIONS",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 234788.0,
+        "total": 254788.0,
+        "supplies": 16500.0,
+        "other": 3500.0
+      },
+      "2022-2023": {
+        "payroll": 252578.0,
+        "total": 322578.0,
+        "supplies": 66500.0,
+        "other": 3500.0
+      },
+      "2023-2024": {
+        "payroll": 255892.0,
+        "total": 332892.0,
+        "contracted": 3500.0,
+        "supplies": 68500.0,
+        "other": 5000.0
+      },
+      "2024-2025": {
+        "payroll": 449625.0,
+        "total": 598175.0,
+        "contracted": 37750.0,
+        "supplies": 81200.0,
+        "other": 29600.0
+      },
+      "2025-2026": {
+        "payroll": 912423.0,
+        "total": 1117588.0,
+        "contracted": 100350.0,
+        "supplies": 91815.0,
+        "other": 13000.0
+      }
+    }
+  },
+  {
+    "org": "884",
+    "name": "COMMUNITY OUTREACH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 578696.0,
+        "total": 595696.0,
+        "supplies": 6000.0,
+        "other": 11000.0
+      },
+      "2022-2023": {
+        "payroll": 542669.0,
+        "total": 559669.0,
+        "supplies": 6000.0,
+        "other": 11000.0
+      },
+      "2023-2024": {
+        "payroll": 774877.0,
+        "total": 789677.0,
+        "supplies": 3550.0,
+        "other": 11250.0
+      },
+      "2024-2025": {
+        "other": 13710.0,
+        "total": 1004798.0,
+        "payroll": 969088.0,
+        "supplies": 10000.0,
+        "contracted": 12000.0
+      },
+      "2025-2026": {
+        "other": 11210.0,
+        "total": 978956.0,
+        "payroll": 932246.0,
+        "supplies": 13500.0,
+        "contracted": 22000.0
+      }
+    }
+  },
+  {
+    "org": "879",
+    "name": "ASSESSMENT & EVALUATION",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 501128.0,
+        "total": 630741.0,
+        "contracted": 29217.0,
+        "supplies": 90683.0,
+        "other": 9713.0
+      },
+      "2022-2023": {
+        "payroll": 534338.0,
+        "total": 663856.0,
+        "contracted": 33008.0,
+        "supplies": 79545.0,
+        "other": 16965.0
+      },
+      "2023-2024": {
+        "payroll": 697624.0,
+        "total": 839269.0,
+        "contracted": 21593.0,
+        "supplies": 95150.0,
+        "other": 24902.0
+      },
+      "2024-2025": {
+        "payroll": 743546.0,
+        "total": 893592.0,
+        "contracted": 33894.0,
+        "supplies": 94650.0,
+        "other": 21502.0
+      },
+      "2025-2026": {
+        "payroll": 788928.0,
+        "total": 927378.0,
+        "contracted": 18896.0,
+        "supplies": 99354.0,
+        "other": 20200.0
+      }
+    }
+  },
+  {
+    "org": "875",
+    "name": "GUIDANCE & COUNSELING",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 599313.0,
+        "total": 653338.0,
+        "contracted": 30000.0,
+        "supplies": 11050.0,
+        "other": 12975.0
+      },
+      "2022-2023": {
+        "payroll": 594647.0,
+        "total": 648672.0,
+        "contracted": 30000.0,
+        "supplies": 11050.0,
+        "other": 12975.0
+      },
+      "2023-2024": {
+        "payroll": 849750.0,
+        "total": 909178.0,
+        "contracted": 30000.0,
+        "supplies": 14050.0,
+        "other": 15378.0
+      },
+      "2024-2025": {
+        "payroll": 620722.0,
+        "total": 680172.0,
+        "contracted": 26850.0,
+        "supplies": 14100.0,
+        "other": 18500.0
+      },
+      "2025-2026": {
+        "payroll": 839573.0,
+        "total": 897223.0,
+        "contracted": 39650.0,
+        "supplies": 3000.0,
+        "other": 15000.0
+      }
+    }
+  },
+  {
+    "org": "013",
+    "name": "ACADEMY OF SCIENCE - CHS",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 643062.0,
+        "total": 706312.0,
+        "contracted": 4150.0,
+        "supplies": 38850.0,
+        "other": 20250.0
+      },
+      "2022-2023": {
+        "payroll": 660410.0,
+        "total": 722660.0,
+        "contracted": 3250.0,
+        "supplies": 40200.0,
+        "other": 18800.0
+      },
+      "2023-2024": {
+        "payroll": 613431.0,
+        "total": 689181.0,
+        "contracted": 3500.0,
+        "supplies": 44800.0,
+        "other": 27450.0
+      },
+      "2024-2025": {
+        "payroll": 743652.0,
+        "total": 818402.0,
+        "contracted": 3250.0,
+        "supplies": 42200.0,
+        "other": 29300.0
+      },
+      "2025-2026": {
+        "payroll": 800207.0,
+        "total": 872957.0,
+        "contracted": 750.0,
+        "supplies": 37700.0,
+        "other": 34300.0
+      }
+    }
+  },
+  {
+    "org": "006",
+    "name": "ACADEMY OF SCIENCE - TWCPH",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 755766.0,
+        "total": 793870.0,
+        "contracted": 8104.0,
+        "supplies": 26900.0,
+        "other": 3100.0
+      },
+      "2022-2023": {
+        "payroll": 764788.0,
+        "total": 800372.0,
+        "contracted": 8884.0,
+        "supplies": 26100.0,
+        "other": 600.0
+      },
+      "2023-2024": {
+        "payroll": 686501.0,
+        "total": 738835.0,
+        "contracted": 4684.0,
+        "supplies": 46850.0,
+        "other": 800.0
+      },
+      "2024-2025": {
+        "payroll": 769874.0,
+        "total": 822247.0,
+        "contracted": 4723.0,
+        "supplies": 46850.0,
+        "other": 800.0
+      },
+      "2025-2026": {
+        "payroll": 818761.0,
+        "total": 870811.0,
+        "contracted": 4400.0,
+        "supplies": 46850.0,
+        "other": 800.0
+      }
+    }
+  },
+  {
+    "org": "008",
+    "name": "ACADEMY FOR CAREERS IN ENGINEERING - ORHS",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 741937.0,
+        "total": 802137.0,
+        "contracted": 4700.0,
+        "supplies": 44400.0,
+        "other": 11100.0
+      },
+      "2022-2023": {
+        "payroll": 736283.0,
+        "total": 795053.0,
+        "contracted": 3770.0,
+        "supplies": 45200.0,
+        "other": 9800.0
+      },
+      "2023-2024": {
+        "payroll": 751620.0,
+        "total": 816415.0,
+        "contracted": 5295.0,
+        "supplies": 51500.0,
+        "other": 8000.0
+      },
+      "2024-2025": {
+        "payroll": 762363.0,
+        "total": 827143.0,
+        "contracted": 1780.0,
+        "supplies": 50750.0,
+        "other": 12250.0
+      },
+      "2025-2026": {
+        "payroll": 773405.0,
+        "total": 847355.0,
+        "contracted": 1950.0,
+        "supplies": 48765.0,
+        "other": 23235.0
+      }
+    }
+  },
+  {
+    "org": "885",
+    "name": "SCHOOL IMPROVEMENT & LEADERSHIP",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 430932.0,
+        "total": 480932.0,
+        "supplies": 27000.0,
+        "other": 23000.0
+      },
+      "2022-2023": {
+        "payroll": 327086.0,
+        "total": 427086.0,
+        "contracted": 50000.0,
+        "supplies": 27000.0,
+        "other": 23000.0
+      },
+      "2023-2024": {
+        "payroll": 336768.0,
+        "total": 446768.0,
+        "contracted": 60000.0,
+        "supplies": 27000.0,
+        "other": 23000.0
+      },
+      "2024-2025": {
+        "payroll": 411896.0,
+        "total": 656896.0,
+        "contracted": 150000.0,
+        "supplies": 68000.0,
+        "other": 27000.0
+      },
+      "2025-2026": {
+        "payroll": 462835.0,
+        "total": 702835.0,
+        "contracted": 77000.0,
+        "supplies": 108500.0,
+        "other": 54500.0
+      }
+    }
+  },
+  {
+    "org": "710",
+    "name": "LEGAL DEPARTMENT",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 357624.0,
+        "total": 469624.0,
+        "contracted": 83500.0,
+        "supplies": 2000.0,
+        "other": 26500.0
+      },
+      "2022-2023": {
+        "payroll": 370498.0,
+        "total": 482498.0,
+        "contracted": 83500.0,
+        "supplies": 2000.0,
+        "other": 26500.0
+      },
+      "2023-2024": {
+        "payroll": 444864.0,
+        "total": 568064.0,
+        "contracted": 96200.0,
+        "supplies": 3500.0,
+        "other": 23500.0
+      },
+      "2024-2025": {
+        "payroll": 485394.0,
+        "total": 608594.0,
+        "contracted": 105075.0,
+        "supplies": 1600.0,
+        "other": 15525.0,
+        "capital": 1000.0
+      },
+      "2025-2026": {
+        "payroll": 468077.0,
+        "total": 593077.0,
+        "contracted": 120000.0,
+        "supplies": 500.0,
+        "other": 4500.0
+      }
+    }
+  },
+  {
+    "org": "201",
+    "name": "JUVENILE DETENTION CENTER",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 455375.0,
+        "total": 475155.0,
+        "supplies": 8780.0,
+        "other": 1000.0,
+        "contracted": 10000.0
+      },
+      "2022-2023": {
+        "payroll": 464058.0,
+        "total": 479938.0,
+        "supplies": 8880.0,
+        "other": 1000.0,
+        "contracted": 6000.0
+      },
+      "2023-2024": {
+        "payroll": 471389.0,
+        "total": 490039.0,
+        "supplies": 9150.0,
+        "other": 2000.0,
+        "contracted": 7500.0
+      },
+      "2024-2025": {
+        "payroll": 473616.0,
+        "total": 492766.0,
+        "supplies": 9200.0,
+        "other": 2450.0,
+        "contracted": 7500.0
+      },
+      "2025-2026": {
+        "payroll": 527570.0,
+        "total": 549220.0,
+        "supplies": 9650.0,
+        "other": 2000.0,
+        "contracted": 10000.0
+      }
+    }
+  },
+  {
+    "org": "871",
+    "name": "DIRECTOR OF ATHLETICS",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 254529.0,
+        "total": 338109.0,
+        "contracted": 21400.0,
+        "supplies": 36180.0,
+        "other": 26000.0
+      },
+      "2022-2023": {
+        "payroll": 404449.0,
+        "total": 534888.0,
+        "contracted": 68259.0,
+        "supplies": 36180.0,
+        "other": 26000.0
+      },
+      "2023-2024": {
+        "payroll": 306821.0,
+        "total": 482315.0,
+        "contracted": 100994.0,
+        "supplies": 44000.0,
+        "other": 30500.0
+      },
+      "2024-2025": {
+        "payroll": 312067.0,
+        "total": 496290.0,
+        "contracted": 105723.0,
+        "supplies": 43500.0,
+        "other": 35000.0
+      },
+      "2025-2026": {
+        "payroll": 367184.0,
+        "total": 543684.0,
+        "contracted": 94700.0,
+        "supplies": 37000.0,
+        "other": 44800.0
+      }
+    }
+  },
+  {
+    "org": "711",
+    "name": "DEPUTY SUPERINTENDENT OF SCHOOLS",
+    "by_fy": {
+      "2021-2022": {
+        "supplies": 35000.0,
+        "total": 380769.0,
+        "payroll": 310769.0,
+        "contracted": 3000.0,
+        "other": 32000.0
+      },
+      "2022-2023": {
+        "supplies": 35000.0,
+        "total": 391639.0,
+        "payroll": 321639.0,
+        "contracted": 3000.0,
+        "other": 32000.0
+      },
+      "2023-2024": {
+        "supplies": 37000.0,
+        "total": 363629.0,
+        "payroll": 286629.0,
+        "contracted": 8000.0,
+        "other": 32000.0
+      },
+      "2024-2025": {
+        "supplies": 38000.0,
+        "total": 343099.0,
+        "payroll": 293099.0,
+        "contracted": 5500.0,
+        "other": 6500.0
+      },
+      "2025-2026": {
+        "supplies": 37300.0,
+        "total": 419009.0,
+        "payroll": 370209.0,
+        "contracted": 6000.0,
+        "other": 5500.0
+      }
+    }
+  },
+  {
+    "org": "876",
+    "name": "PROFESSIONAL LEARNING",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 142583.0,
+        "total": 316367.0,
+        "contracted": 121784.0,
+        "supplies": 37500.0,
+        "other": 14500.0
+      },
+      "2022-2023": {
+        "payroll": 143307.0,
+        "total": 372037.0,
+        "contracted": 185230.0,
+        "supplies": 41500.0,
+        "other": 2000.0
+      },
+      "2023-2024": {
+        "payroll": 144736.0,
+        "total": 382241.0,
+        "contracted": 185505.0,
+        "supplies": 45500.0,
+        "other": 6500.0
+      },
+      "2024-2025": {
+        "payroll": 147607.0,
+        "total": 260704.0,
+        "contracted": 65097.0,
+        "supplies": 41500.0,
+        "other": 6500.0
+      },
+      "2025-2026": {
+        "payroll": 150785.0,
+        "total": 246685.0,
+        "contracted": 52100.0,
+        "supplies": 37300.0,
+        "other": 6500.0
+      }
+    }
+  },
+  {
+    "org": "886",
+    "name": "JETT TEACHER TRAINING FACILITY",
+    "by_fy": {
+      "2021-2022": {
+        "payroll": 104912.0,
+        "total": 104912.0
+      },
+      "2022-2023": {
+        "contracted": 11873.0,
+        "total": 11873.0
+      },
+      "2023-2024": {
+        "payroll": 16000.0,
+        "total": 75373.0,
+        "contracted": 56873.0,
+        "supplies": 2500.0
+      },
+      "2024-2025": {
+        "supplies": 12300.0,
+        "total": 208482.0,
+        "other": 200.0,
+        "payroll": 139109.0,
+        "contracted": 56873.0
+      },
+      "2025-2026": {
+        "supplies": 16500.0,
+        "total": 233461.0,
+        "payroll": 142961.0,
+        "contracted": 74000.0
+      }
+    }
+  },
+  {
+    "org": "004",
+    "name": "CONROE AREA VOCATIONAL",
+    "by_fy": {
+      "2021-2022": {
+        "contracted": 4200.0,
+        "total": 128030.0,
+        "supplies": 84000.0,
+        "other": 39830.0
+      },
+      "2022-2023": {
+        "contracted": 4200.0,
+        "total": 134850.0,
+        "supplies": 85350.0,
+        "other": 45300.0
+      },
+      "2023-2024": {
+        "contracted": 4285.0,
+        "total": 26285.0,
+        "supplies": 12000.0,
+        "other": 10000.0
+      },
+      "2024-2025": {
+        "contracted": 4900.0,
+        "total": 28400.0,
+        "supplies": 13000.0,
+        "other": 10500.0
+      },
+      "2025-2026": {
+        "contracted": 1500.0,
+        "total": 25500.0,
+        "supplies": 13500.0,
+        "other": 10500.0
+      }
+    }
+  },
+  {
+    "org": "887",
+    "name": "HAUKE ADMIN COMPLEX",
+    "by_fy": {
+      "2021-2022": {
+        "contracted": 80000.0,
+        "total": 80000.0
+      },
+      "2022-2023": {
+        "contracted": 104822.0,
+        "total": 104822.0
+      },
+      "2023-2024": {
+        "contracted": 104822.0,
+        "total": 104822.0
+      },
+      "2024-2025": {
+        "contracted": 104822.0,
+        "total": 104822.0
+      },
+      "2025-2026": {
+        "contracted": 100000.0,
+        "total": 100000.0
+      }
+    }
+  },
+  {
+    "org": "702",
+    "name": "BOARD OF EDUCATION",
+    "by_fy": {
+      "2021-2022": {
+        "contracted": 625.0,
+        "total": 77625.0,
+        "supplies": 4500.0,
+        "other": 72500.0
+      },
+      "2022-2023": {
+        "contracted": 625.0,
+        "total": 77625.0,
+        "supplies": 4500.0,
+        "other": 72500.0
+      },
+      "2023-2024": {
+        "contracted": 625.0,
+        "total": 85400.0,
+        "supplies": 4500.0,
+        "other": 80275.0
+      },
+      "2024-2025": {
+        "contracted": 625.0,
+        "total": 85400.0,
+        "supplies": 3775.0,
+        "other": 81000.0
+      },
+      "2025-2026": {
+        "contracted": 2000.0,
+        "total": 85400.0,
+        "supplies": 1900.0,
+        "other": 81500.0
+      }
+    }
+  },
+  {
+    "org": "889",
+    "name": "MOORHEAD STADIUM",
+    "by_fy": {
+      "2021-2022": {
+        "contracted": 15000.0,
+        "total": 15000.0
+      },
+      "2022-2023": {
+        "contracted": 10849.0,
+        "total": 10849.0
+      },
+      "2023-2024": {
+        "contracted": 10849.0,
+        "total": 10849.0
+      },
+      "2024-2025": {
+        "contracted": 10849.0,
+        "total": 10849.0
+      },
+      "2025-2026": {
+        "contracted": 20500.0,
+        "total": 20500.0
+      }
+    }
+  },
+  {
+    "org": "890",
+    "name": "AG BARN - THE WOODLANDS",
+    "by_fy": {
+      "2024-2025": {
+        "contracted": 5000.0,
+        "total": 5000.0
+      },
+      "2025-2026": {
+        "contracted": 10000.0,
+        "total": 10000.0
+      }
+    }
+  }
+]

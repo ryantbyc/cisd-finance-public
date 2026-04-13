@@ -197,6 +197,17 @@
     .status-construction { background: #fef3c7; color: #92400e; }
     .status-opened       { background: #dbeafe; color: #1e40af; }
 
+    /* ── Function drill-down ─────────────────────────────────────── */
+    .func-detail-row td { background: var(--bg-card-alt); padding: 0 !important; }
+    .func-detail-inner { padding: 0.5rem 0.9rem 0.75rem 2.5rem; }
+    .func-obj-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .func-obj-table th { color: var(--text-secondary); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.3rem 0.5rem; text-align: left; border-bottom: 1px solid var(--border-subtle); }
+    .func-obj-table td { padding: 0.3rem 0.5rem; border-bottom: 1px solid var(--border-subtle); }
+    .func-obj-table tr:last-child td { border-bottom: none; }
+    .func-obj-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .func-expand-btn { background: none; border: none; cursor: pointer; color: var(--text-secondary); font-size: 0.78rem; padding: 0 0.3rem; }
+    .func-expand-btn:hover { color: var(--text-primary); }
+
     /* ── Campus search ───────────────────────────────────────────── */
     .campus-obj-bar { display: flex; height: 10px; border-radius: 4px; overflow: hidden; min-width: 80px; }
     .campus-obj-payroll    { background: #1d7a40; }
@@ -327,7 +338,7 @@
     <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="func-count-label"></div>
     <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.75rem">Budget and "Budget vs Actual" use general fund figures only. Functions used primarily in bond construction, child nutrition, or federal grant funds show no budget comparison.</p>
     <table class="data-table" id="functions-table">
-      <thead><tr><th>Code</th><th>Function</th><th class="num">All-Funds Actual</th><th class="num">Gen. Fund Budget</th><th class="num">Gen. Fund Actual</th><th class="num">Budget vs Actual</th></tr></thead>
+      <thead><tr><th></th><th>Code</th><th>Function</th><th class="num">All-Funds Actual</th><th class="num">Gen. Fund Budget</th><th class="num">Gen. Fund Actual</th><th class="num">Budget vs Actual</th></tr></thead>
       <tbody id="functions-body"></tbody>
     </table>
   </div>
@@ -439,6 +450,7 @@
 let META            = null;
 let VENDORS         = null;
 let FUNCTIONS       = null;
+let FUNC_DETAIL     = null;
 let MONTHLY         = null;
 let FUND_CATS       = null;
 let WATCHDOG        = null;
@@ -480,11 +492,12 @@ async function loadJSON(path) {
 
 async function init() {
   try {
-    [META, VENDORS, FUNCTIONS, MONTHLY, FUND_CATS, WATCHDOG, BUDGET_FUNC, ENROLLMENT,
+    [META, VENDORS, FUNCTIONS, FUNC_DETAIL, MONTHLY, FUND_CATS, WATCHDOG, BUDGET_FUNC, ENROLLMENT,
      BUDGET_CAMPUS, TAX_RATES, DEBT_SERVICE, CAPITAL] = await Promise.all([
       loadJSON('data/meta.json'),
       loadJSON('data/vendors.json'),
       loadJSON('data/functions.json'),
+      loadJSON('data/functions_detail.json'),
       loadJSON('data/monthly.json'),
       loadJSON('data/fund_categories.json'),
       loadJSON('data/watchdog.json'),
@@ -750,9 +763,12 @@ function renderFunctions() {
     const variance = rawVar != null ? rawVar.toFixed(1) : null;
     const varClass = variance == null ? '' : parseFloat(variance) > 10 ? 'change-up' : parseFloat(variance) < -10 ? 'change-down' : '';
     const codeDisplay = f.function ? `<code>${f.function}</code>` : '<span style="color:var(--text-secondary);font-size:0.8rem">—</span>';
-    // Show general-fund actual in budget col when budget exists, so the comparison is clear
-    const budgetActualStr = f.budget > 0 && f.actualGen > 0 ? fmt(f.actualGen) : '—';
-    return `<tr>
+    const hasDetail = FUNC_DETAIL && FUNC_DETAIL[f.function] && FUNC_DETAIL[f.function].objects.length > 0;
+    const expandBtn = hasDetail
+      ? `<button class="func-expand-btn" data-func="${f.function}" title="Show object-code breakdown">▶</button>`
+      : '';
+    return `<tr data-func-row="${f.function}">
+      <td style="width:1.5rem;text-align:center">${expandBtn}</td>
       <td>${codeDisplay}</td>
       <td>${f.label}</td>
       <td class="num">${fmt(f.actual)}</td>
@@ -761,6 +777,29 @@ function renderFunctions() {
       <td class="num ${varClass}">${variance != null ? variance + '%' : '—'}</td>
     </tr>`;
   }).join('');
+}
+
+function buildFuncDetailHTML(funcCode, fy) {
+  const detail = FUNC_DETAIL && FUNC_DETAIL[funcCode];
+  if (!detail || !detail.objects.length) return '';
+  const rows = detail.objects.map(obj => {
+    const fyAmt     = (obj.by_fy      || {})[fy] || 0;
+    const fyGenAmt  = (obj.by_fy_general || {})[fy] || 0;
+    if (fyAmt === 0) return '';
+    return `<tr>
+      <td><code style="font-size:0.78rem">${obj.object}</code></td>
+      <td>${obj.label}</td>
+      <td class="num">${fmt(fyAmt)}</td>
+      <td class="num" style="color:var(--text-secondary)">${fyGenAmt > 0 ? fmt(fyGenAmt) : '—'}</td>
+    </tr>`;
+  }).join('');
+  if (!rows.trim()) return '';
+  return `<div class="func-detail-inner">
+    <table class="func-obj-table">
+      <thead><tr><th>Object</th><th>Description</th><th class="num">All-Funds</th><th class="num">Gen. Fund</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>`;
 }
 
 // ── Trends ───────────────────────────────────────────────────────────────────
@@ -1226,6 +1265,29 @@ document.getElementById('vendor-search')?.addEventListener('input', () => {
 
 document.getElementById('func-search')?.addEventListener('input', () => {
   renderFunctions();
+});
+
+// Expand/collapse object-code detail rows in By Function tab
+document.getElementById('functions-body')?.addEventListener('click', e => {
+  const btn = e.target.closest('.func-expand-btn');
+  if (!btn) return;
+  const funcCode = btn.dataset.func;
+  const tbody = document.getElementById('functions-body');
+  const existingDetail = tbody.querySelector(`.func-detail-row[data-func-detail="${funcCode}"]`);
+  if (existingDetail) {
+    existingDetail.remove();
+    btn.textContent = '▶';
+    return;
+  }
+  const html = buildFuncDetailHTML(funcCode, activeFuncFY);
+  if (!html) return;
+  const parentRow = tbody.querySelector(`tr[data-func-row="${funcCode}"]`);
+  const detailRow = document.createElement('tr');
+  detailRow.className = 'func-detail-row';
+  detailRow.dataset.funcDetail = funcCode;
+  detailRow.innerHTML = `<td colspan="7">${html}</td>`;
+  parentRow.after(detailRow);
+  btn.textContent = '▼';
 });
 
 document.getElementById('campus-search')?.addEventListener('input', () => {

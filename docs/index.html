@@ -69,6 +69,20 @@
     /* ── Disclaimer ──────────────────────────────────────────────── */
     .disclaimer { background: var(--bg-disclaimer); padding: 0.55rem 1.5rem; font-size: 0.82rem; color: var(--text-disclaimer); }
     .disclaimer-inner { max-width: 1100px; margin: 0 auto; }
+    .disclaimer-prelaunch { background: #fef3c7; color: #92400e; border-top: 2px solid #d97706; border-bottom: 2px solid #d97706; font-weight: 600; }
+    [data-theme="dark"] .disclaimer-prelaunch { background: #2a1f05; color: #fbbf24; }
+
+    /* ── Pre-launch modal ────────────────────────────────────────── */
+    .prelaunch-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.72); z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+    .prelaunch-modal { background: var(--bg-card); color: var(--text-primary); max-width: 560px; width: 100%; border-radius: 10px; border-top: 6px solid #d97706; box-shadow: 0 20px 60px rgba(0,0,0,0.4); padding: 1.75rem 1.75rem 1.5rem; }
+    .prelaunch-modal h2 { font-size: 1.25rem; margin-bottom: 0.75rem; color: #92400e; }
+    [data-theme="dark"] .prelaunch-modal h2 { color: #fbbf24; }
+    .prelaunch-modal p { font-size: 0.95rem; line-height: 1.5; margin-bottom: 0.75rem; }
+    .prelaunch-modal ul { margin: 0.5rem 0 1rem 1.25rem; font-size: 0.92rem; line-height: 1.55; }
+    .prelaunch-modal li { margin-bottom: 0.35rem; }
+    .prelaunch-actions { display: flex; justify-content: flex-end; margin-top: 1rem; }
+    .prelaunch-btn { background: #1a4a32; color: #fff; border: none; border-radius: 6px; padding: 0.6rem 1.25rem; font-size: 0.92rem; font-weight: 600; cursor: pointer; }
+    .prelaunch-btn:hover { background: #0f3521; }
 
     /* ── Nav tabs ────────────────────────────────────────────────── */
     .site-nav { background: var(--bg-card); border-bottom: 1px solid var(--border-subtle); padding: 0 1.5rem; }
@@ -246,8 +260,28 @@
   </div>
 </div>
 
+<div class="disclaimer disclaimer-prelaunch">
+  <div class="disclaimer-inner">⚠ PRE-LAUNCH PREVIEW — Site under construction. Data has not yet been validated and should not be used for any decision-making.</div>
+</div>
+
 <div class="disclaimer">
   <div class="disclaimer-inner">Unofficial analysis based on public financial records. Not affiliated with or endorsed by Conroe Independent School District.</div>
+</div>
+
+<div class="prelaunch-overlay" id="prelaunch-overlay" role="dialog" aria-modal="true" aria-labelledby="prelaunch-title" hidden>
+  <div class="prelaunch-modal">
+    <h2 id="prelaunch-title">⚠ Pre-Launch Preview</h2>
+    <p>This site is <strong>under active construction</strong>. The figures, charts, and watchdog flags you are about to see have <strong>not yet been independently validated</strong> against primary source documents.</p>
+    <ul>
+      <li>Numbers may be incomplete, incorrect, or out of date.</li>
+      <li>Watchdog flags are preliminary and not yet reviewed.</li>
+      <li>Nothing here should be used for financial, investment, voting, or reporting decisions.</li>
+    </ul>
+    <p>A validation pipeline is being built to cross-check every published figure against official Conroe ISD and TEA source documents before launch.</p>
+    <div class="prelaunch-actions">
+      <button class="prelaunch-btn" id="prelaunch-ack">I understand — continue</button>
+    </div>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -1337,6 +1371,20 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 });
 
 init();
+
+(function initPrelaunchModal() {
+  const overlay = document.getElementById('prelaunch-overlay');
+  const ackBtn = document.getElementById('prelaunch-ack');
+  if (!overlay || !ackBtn) return;
+  if (sessionStorage.getItem('cisd-prelaunch-ack') === '1') return;
+  overlay.hidden = false;
+  document.body.style.overflow = 'hidden';
+  ackBtn.addEventListener('click', () => {
+    sessionStorage.setItem('cisd-prelaunch-ack', '1');
+    overlay.hidden = true;
+    document.body.style.overflow = '';
+  });
+})();
 </script>
 </body>
 </html>

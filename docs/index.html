@@ -74,6 +74,7 @@
 
     /* ── Pre-launch modal ────────────────────────────────────────── */
     .prelaunch-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.72); z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+    .prelaunch-overlay[hidden] { display: none; }
     .prelaunch-modal { background: var(--bg-card); color: var(--text-primary); max-width: 560px; width: 100%; border-radius: 10px; border-top: 6px solid #d97706; box-shadow: 0 20px 60px rgba(0,0,0,0.4); padding: 1.75rem 1.75rem 1.5rem; }
     .prelaunch-modal h2 { font-size: 1.25rem; margin-bottom: 0.75rem; color: #92400e; }
     [data-theme="dark"] .prelaunch-modal h2 { color: #fbbf24; }
@@ -277,7 +278,6 @@
       <li>Watchdog flags are preliminary and not yet reviewed.</li>
       <li>Nothing here should be used for financial, investment, voting, or reporting decisions.</li>
     </ul>
-    <p>A validation pipeline is being built to cross-check every published figure against official Conroe ISD and TEA source documents before launch.</p>
     <div class="prelaunch-actions">
       <button class="prelaunch-btn" id="prelaunch-ack">I understand — continue</button>
     </div>

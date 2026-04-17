@@ -1376,11 +1376,9 @@ init();
   const overlay = document.getElementById('prelaunch-overlay');
   const ackBtn = document.getElementById('prelaunch-ack');
   if (!overlay || !ackBtn) return;
-  if (sessionStorage.getItem('cisd-prelaunch-ack') === '1') return;
   overlay.hidden = false;
   document.body.style.overflow = 'hidden';
   ackBtn.addEventListener('click', () => {
-    sessionStorage.setItem('cisd-prelaunch-ack', '1');
     overlay.hidden = true;
     document.body.style.overflow = '';
   });

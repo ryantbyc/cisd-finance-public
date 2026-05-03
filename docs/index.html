@@ -58,6 +58,16 @@
     .header-brand h1 { font-size: 1.6rem; font-weight: 700; }
     .header-brand p  { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
 
+    /* ── Hamburger nav ── */
+    .header-nav { position: relative; }
+    .hamburger-btn { background: none; border: none; cursor: pointer; padding: 0.5rem; display: flex; flex-direction: column; gap: 5px; border-radius: 4px; }
+    .hamburger-btn:hover { background: rgba(255,255,255,0.12); }
+    .hamburger-btn span { display: block; width: 22px; height: 2px; background: var(--text-header); border-radius: 2px; }
+    .nav-dropdown { position: absolute; top: calc(100% + 0.5rem); right: 0; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.18); min-width: 190px; z-index: 200; overflow: hidden; }
+    .nav-dropdown a { display: block; padding: 0.75rem 1.1rem; color: var(--text-primary); text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid var(--border-subtle); }
+    .nav-dropdown a:last-child { border-bottom: none; }
+    .nav-dropdown a:hover { background: rgba(0,0,0,0.05); }
+
     /* ── Controls bar ────────────────────────────────────────────── */
     .controls-bar { background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 1.5rem; }
     .controls-bar-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 0.4rem; }
@@ -243,9 +253,21 @@
 
 <header>
   <div class="header-inner">
-    <div class="header-brand">
-      <h1>CISD Finance Tracker</h1>
-      <p>Constituent spending transparency for Conroe ISD</p>
+    <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+      <div class="header-brand">
+        <h1>CISD Finance Tracker</h1>
+        <p>Constituent spending transparency for Conroe ISD</p>
+      </div>
+      <div class="header-nav">
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-dropdown" id="nav-dropdown" hidden>
+          <a href="https://cisd.boardmonitor.app" target="_blank" rel="noopener">Meeting Monitor</a>
+          <a href="https://cisd-policy.boardmonitor.app" target="_blank" rel="noopener">Policy Tracker</a>
+          <a href="https://cisd-books.boardmonitor.app" target="_blank" rel="noopener">Book Tracker</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -1341,6 +1363,19 @@ document.addEventListener('click', e => {
 });
 
 // ── Theme & font controls ──────────────────────────────────────────────────
+// Hamburger nav
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navDropdown  = document.getElementById('nav-dropdown');
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = !navDropdown.hidden;
+    navDropdown.hidden = open;
+    hamburgerBtn.setAttribute('aria-expanded', String(!open));
+  });
+  document.addEventListener('click', () => { navDropdown.hidden = true; hamburgerBtn.setAttribute('aria-expanded','false'); });
+}
+
 const FONT_MIN = 13, FONT_MAX = 22, FONT_DEFAULT = 17;
 
 function applyFont(size) {

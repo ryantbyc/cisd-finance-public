@@ -1,0 +1,16 @@
+# CISD Finance Tracker
+
+> Unofficial constituent resource providing financial transparency data for Conroe Independent School District (CISD), Montgomery County, Texas. Not affiliated with or endorsed by CISD.
+
+This site is a client-side single-page application. Financial data is available as JSON below.
+
+## Data
+
+Budget and financial data files are available at:
+`https://cisd-finance.boardmonitor.app/data/`
+
+## Related Sites
+
+- [Meeting Monitor](https://cisd.boardmonitor.app) — Board meeting notes and agendas
+- [Policy Tracker](https://cisd-policy.boardmonitor.app) — CISD board policy change history
+- [Book Tracker](https://cisd-books.boardmonitor.app) — Library book challenges and removals

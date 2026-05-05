@@ -246,7 +246,33 @@
       .summary-cards { grid-template-columns: 1fr 1fr; }
       .fund-bar-row { grid-template-columns: 90px 1fr 90px; }
       .site-nav-inner { overflow-x: auto; }
+      .nav-tab { padding: 0.7rem 0.65rem; font-size: 0.8rem; }
+      .col-mobile-hide { display: none; }
+      .fund-cat-desc { padding-left: 96px; }
     }
+
+    /* ── Plain-language intro block ──────────────────────────────── */
+    .plain-intro { background: var(--bg-card); border: 1px solid var(--border-subtle); border-left: 4px solid var(--border-accent); border-radius: 0 8px 8px 0; padding: 0.85rem 1.1rem; margin-bottom: 1.25rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); }
+    .plain-intro strong { color: var(--text-primary); }
+
+    /* ── Watchdog alert on dashboard ─────────────────────────────── */
+    .dash-alert { border-left: 4px solid var(--color-watchdog-high); background: #fef2f2; border-radius: 0 6px 6px 0; padding: 0.65rem 1rem; margin-bottom: 1rem; font-size: 0.88rem; display: flex; align-items: center; gap: 0.5rem; color: #7f1d1d; }
+    [data-theme="dark"] .dash-alert { background: #200a0a; color: #fca5a5; }
+    .dash-alert-link { color: #dc2626; font-weight: 600; text-decoration: underline; cursor: pointer; background: none; border: none; font-size: inherit; font-family: inherit; padding: 0; }
+    [data-theme="dark"] .dash-alert-link { color: #f87171; }
+
+    /* ── Section subtitle ────────────────────────────────────────── */
+    .section-subtitle { display: block; font-weight: 400; font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.1rem; text-transform: none; letter-spacing: 0; }
+
+    /* ── Fund category description rows ──────────────────────────── */
+    .fund-cat-desc { font-size: 0.74rem; color: var(--text-secondary); padding-left: 148px; margin-top: -0.35rem; margin-bottom: 0.35rem; font-style: italic; }
+
+    /* ── Explore-more link panel ─────────────────────────────────── */
+    .explore-more { border: 1px solid var(--border-subtle); border-radius: 8px; padding: 0.85rem 1.1rem; margin-top: 1.75rem; background: var(--bg-card-alt); }
+    .explore-more p { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.6rem; }
+    .explore-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .explore-link { display: inline-block; padding: 0.35rem 0.9rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 20px; font-size: 0.83rem; cursor: pointer; color: var(--text-secondary); text-decoration: none; transition: border-color 0.12s, color 0.12s; }
+    .explore-link:hover { border-color: var(--bg-header); color: var(--text-primary); }
   </style>
 
   <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt">
@@ -326,37 +352,70 @@
 
   <!-- ── DASHBOARD ── -->
   <div class="page" id="page-dashboard">
-    <div class="section-title">Overview</div>
+
+    <p class="plain-intro">
+      This site tracks how <strong>Conroe ISD</strong> spends public money — vendor payments, supply purchases, construction contracts, and more.
+      Data comes from the district's official check registers and budget books. Select a fiscal year to explore, or use the tabs above to dive deeper.
+    </p>
 
     <div class="fy-selector">
       <label>Fiscal Year:</label>
       <div id="fy-buttons"></div>
     </div>
 
+    <div id="dash-alert"></div>
+
+    <div class="section-title">At a Glance
+      <span class="section-subtitle">Key numbers for the selected fiscal year</span>
+    </div>
     <div class="summary-cards" id="summary-cards"></div>
 
-    <div class="section-title">Spending by Fund Category</div>
+    <div class="section-title">Where Does the Money Go?
+      <span class="section-subtitle">Total spending by fund type — click Trends tab for year-over-year charts</span>
+    </div>
     <div class="fund-bars" id="fund-bars"></div>
 
-    <div class="section-title">Top 20 Vendors <span id="top-vendor-fy-label" style="font-weight:400;font-size:0.9rem"></span></div>
-    <table class="data-table" id="top-vendors-table">
-      <thead><tr><th>#</th><th>Vendor</th><th class="num">Amount</th><th class="num">Prior Year</th><th class="num">Change</th></tr></thead>
-      <tbody id="top-vendors-body"></tbody>
-    </table>
+    <div class="section-title">Top Vendors <span id="top-vendor-fy-label" style="font-weight:400;font-size:0.9rem"></span>
+      <span class="section-subtitle">Largest payment recipients this fiscal year</span>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="data-table" id="top-vendors-table">
+        <thead><tr>
+          <th>#</th>
+          <th>Vendor</th>
+          <th class="num">Amount Paid</th>
+          <th class="num col-mobile-hide">Prior Year</th>
+          <th class="num col-mobile-hide">Change</th>
+        </tr></thead>
+        <tbody id="top-vendors-body"></tbody>
+      </table>
+    </div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-top:0.5rem">
+      See all 12,000+ vendors on the <a href="#" data-page="vendors" style="color:inherit;font-weight:600;text-decoration:underline">Vendors tab ›</a>
+    </p>
 
-    <div class="section-title" style="margin-top:1.5rem">Monthly Spending Trend</div>
-    <table class="data-table" id="monthly-table">
-      <thead><tr><th>Month</th><th class="num">AP Checks</th></tr></thead>
-      <tbody id="monthly-body"></tbody>
-    </table>
-
-    <div class="section-title" style="margin-top:1.5rem">Debt Service (Bond Obligations)</div>
-    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem">Annual principal &amp; interest payments on outstanding bonds. Source: CISD Budget Books.</p>
+    <div class="section-title" style="margin-top:1.5rem">Bond Debt Payments
+      <span class="section-subtitle">Annual principal &amp; interest owed on voter-approved bonds</span>
+    </div>
+    <p style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:0.75rem">
+      CISD carries long-term debt from bond elections. Taxpayers repay this through the I&amp;S (Interest &amp; Sinking) portion of the property tax rate.
+    </p>
     <div class="ds-grid" id="ds-cards"></div>
-    <table class="data-table" id="ds-table">
-      <thead><tr><th>Fiscal Year</th><th class="num">Revenue</th><th class="num">Principal</th><th class="num">Interest &amp; Fees</th><th class="num">Total Payments</th><th class="num">Coverage</th></tr></thead>
-      <tbody id="ds-body"></tbody>
-    </table>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-top:0.6rem">
+      Year-by-year payment history and tax rate trends are on the <a href="#" data-page="trends" style="color:inherit;font-weight:600;text-decoration:underline">Trends tab ›</a>
+    </p>
+
+    <div class="explore-more">
+      <p>Want to dig deeper? Explore the tabs above or jump directly to:</p>
+      <div class="explore-links">
+        <a class="explore-link" data-page="trends">Year-over-Year Trends</a>
+        <a class="explore-link" data-page="vendors">All Vendors</a>
+        <a class="explore-link" data-page="campus">Schools &amp; Departments</a>
+        <a class="explore-link" data-page="capital">Bond &amp; Capital Projects</a>
+        <a class="explore-link" data-page="functions">Spending by Function</a>
+        <a class="explore-link" data-page="watchdog">⚑ Watchdog Flags</a>
+      </div>
+    </div>
   </div>
 
   <!-- ── CATEGORY ── -->
@@ -429,6 +488,26 @@
       <thead><tr><th>Fiscal Year</th><th class="num">M&amp;O Rate</th><th class="num">I&amp;S Rate</th><th class="num">Combined Rate</th><th class="num">YoY Change</th></tr></thead>
       <tbody id="tax-rate-body"></tbody>
     </table>
+
+    <div class="section-title" style="margin-top:2rem">Bond Debt Payment History</div>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem">
+      Annual principal &amp; interest payments on outstanding bonds. The I&amp;S tax rate funds this.
+      Coverage ratio shows tax revenue collected vs. total payment required — above 100% means the district collected more than it owed.
+      Source: CISD Budget Books.
+    </p>
+    <div style="overflow-x:auto">
+      <table class="data-table" id="ds-table">
+        <thead><tr>
+          <th>Fiscal Year</th>
+          <th class="num">Tax Revenue</th>
+          <th class="num">Principal</th>
+          <th class="num">Interest &amp; Fees</th>
+          <th class="num">Total Payment</th>
+          <th class="num">Coverage</th>
+        </tr></thead>
+        <tbody id="ds-body"></tbody>
+      </table>
+    </div>
   </div>
 
   <!-- ── BY SCHOOL ── -->
@@ -621,59 +700,83 @@ function renderDashboard() {
   const fy   = activeFY;
   const prev = prevFY(fy);
 
-  // Summary cards
+  // Totals
   const totalFY   = VENDORS.reduce((s, v) => s + (v.by_fy[fy] || 0), 0);
   const totalPrev = prev ? VENDORS.reduce((s, v) => s + (v.by_fy[prev] || 0), 0) : 0;
-  const vendorCount = VENDORS.filter(v => v.by_fy[fy]).length;
-  const monthlyData = MONTHLY.filter(m => m.month.startsWith(fy.slice(0,4)));
 
-  // Near-threshold payments this FY (within 15% of $100k bid threshold)
-  const nearThresholdCount = WATCHDOG.filter(f =>
-    f.type === 'threshold_proximity' && f.fy === fy
-  ).length;
+  // Watchdog counts for this FY
+  const highFlags         = WATCHDOG.filter(f => f.severity === 'high' && f.fy === fy);
+  const nearThresholdCount = WATCHDOG.filter(f => f.type === 'threshold_proximity' && f.fy === fy).length;
+  const newVendorFlags     = WATCHDOG.filter(f => f.type === 'new_vendor' && f.fy === fy).length;
 
-  // New vendors this FY with >= $50k in payments
-  const newVendorFlags = WATCHDOG.filter(f => f.type === 'new_vendor' && f.fy === fy).length;
-
-  // Top vendor concentration: what % of total FY spend goes to top vendor
+  // Top vendor concentration
   const topVendorAmt = VENDORS.filter(v => v.by_fy[fy]).sort((a,b) => (b.by_fy[fy]||0)-(a.by_fy[fy]||0))[0];
   const topPct = topVendorAmt && totalFY > 0 ? ((topVendorAmt.by_fy[fy] / totalFY) * 100).toFixed(1) : null;
 
   const isCurrentFY = fy === META.fiscal_years[META.fiscal_years.length - 1];
+  const fyChange = prev && totalPrev > 0 ? ((totalFY - totalPrev) / totalPrev * 100) : null;
+  const changeArrow = fyChange == null ? '' : fyChange > 0 ? ' ▲' : ' ▼';
+  const changeClass = fyChange == null ? '' : fyChange > 0 ? 'change-up' : 'change-down';
 
+  // ── Watchdog alert banner ──────────────────────────────────────────────────
+  const alertEl = document.getElementById('dash-alert');
+  if (highFlags.length > 0) {
+    alertEl.innerHTML = `<div class="dash-alert">
+      ⚑ <strong>${highFlags.length} high-priority issue${highFlags.length !== 1 ? 's' : ''}</strong> flagged in ${fy} — payments that may warrant closer review.
+      <button class="dash-alert-link" data-page="watchdog">View Watchdog Flags →</button>
+    </div>`;
+  } else {
+    alertEl.innerHTML = '';
+  }
+
+  // ── Summary cards ──────────────────────────────────────────────────────────
   document.getElementById('summary-cards').innerHTML = `
     <div class="summary-card">
-      <div class="card-label">Total AP Spend — ${fy}</div>
+      <div class="card-label">Total District Spending — ${fy}${isCurrentFY ? ' (YTD)' : ''}</div>
       <div class="card-value">${fmt(totalFY)}</div>
-      ${prev ? `<div class="card-sub">${pct(totalFY, totalPrev)} vs ${prev}${isCurrentFY ? ' (YTD)' : ''}</div>` : ''}
+      ${fyChange != null ? `<div class="card-sub ${changeClass}">${changeArrow} ${Math.abs(fyChange).toFixed(1)}% vs ${prev}</div>` : ''}
+      <div class="card-sub" style="margin-top:0.2rem">All funds: operations, construction, grants</div>
     </div>
     <div class="summary-card">
-      <div class="card-label">Near Bid Threshold</div>
+      <div class="card-label">Near-Limit Purchases</div>
       <div class="card-value">${nearThresholdCount}</div>
-      <div class="card-sub">payments within 15% of $100k limit — <a href="#" data-page="watchdog">review →</a></div>
+      <div class="card-sub">Payments within 15% of the $100k competitive bid requirement — <a href="#" data-page="watchdog">review →</a></div>
     </div>
     <div class="summary-card">
-      <div class="card-label">New Vendors ≥ $50k</div>
+      <div class="card-label">New Large Vendors</div>
       <div class="card-value">${newVendorFlags}</div>
-      <div class="card-sub">first-time vendors receiving large payments in ${fy}</div>
+      <div class="card-sub">First-time vendors paid $50k or more in ${fy}</div>
     </div>
     <div class="summary-card">
-      <div class="card-label">Top Vendor Share</div>
+      <div class="card-label">Top Vendor Concentration</div>
       <div class="card-value">${topPct != null ? topPct + '%' : '—'}</div>
-      <div class="card-sub">${topVendorAmt ? topVendorAmt.vendor.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()).slice(0,28) : ''}</div>
+      <div class="card-sub">${topVendorAmt ? topVendorAmt.vendor.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()).slice(0,28) : ''} received the largest share</div>
     </div>
   `;
 
-  // Fund category bars
+  // ── Fund category bars ─────────────────────────────────────────────────────
   const fyFundCats = FUND_CATS.map(fc => ({
     ...fc, fyTotal: fc.by_fy[fy] || 0
   })).sort((a, b) => b.fyTotal - a.fyTotal);
   const maxCat = Math.max(...fyFundCats.map(f => f.fyTotal));
+
   const CAT_LABELS = {
-    general: 'General Operating', federal: 'Federal Grants',
-    construction: 'Bond Construction', debt_service: 'Debt Service',
-    student_activity: 'Student Activity', other: 'Other'
+    general:          'General Operating',
+    federal:          'Federal Grants',
+    construction:     'Bond Construction',
+    debt_service:     'Debt Service',
+    student_activity: 'Student Activity',
+    other:            'Other'
   };
+  const CAT_DESC = {
+    general:          'Day-to-day school operations: staff, supplies, utilities, services',
+    federal:          'Title I, special education, COVID relief, and other federal programs',
+    construction:     'New school buildings funded by voter-approved bond elections',
+    debt_service:     'Repaying bond loans — principal and interest payments',
+    student_activity: 'Clubs, athletics, extracurricular activities',
+    other:            'Other governmental and special revenue funds'
+  };
+
   document.getElementById('fund-bars').innerHTML = fyFundCats.map(fc => `
     <div class="fund-bar-row">
       <div class="fund-bar-label">${CAT_LABELS[fc.category] || fc.category}</div>
@@ -682,16 +785,17 @@ function renderDashboard() {
       </div>
       <div class="fund-bar-amount">${fmt(fc.fyTotal)}</div>
     </div>
+    <div class="fund-cat-desc">${CAT_DESC[fc.category] || ''}</div>
   `).join('');
 
-  // Top vendors
+  // ── Top vendors (10 rows) ──────────────────────────────────────────────────
   document.getElementById('top-vendor-fy-label').textContent = `— ${fy}`;
   const topVendors = [...VENDORS]
     .filter(v => v.by_fy[fy])
     .sort((a, b) => (b.by_fy[fy] || 0) - (a.by_fy[fy] || 0))
-    .slice(0, 20);
+    .slice(0, 10);
   document.getElementById('top-vendors-body').innerHTML = topVendors.map((v, i) => {
-    const curr = v.by_fy[fy] || 0;
+    const curr  = v.by_fy[fy] || 0;
     const prior = prev ? (v.by_fy[prev] || 0) : null;
     const delta = prior != null ? curr - prior : null;
     const deltaClass = delta == null ? '' : delta > 0 ? 'change-up' : 'change-down';
@@ -700,54 +804,36 @@ function renderDashboard() {
       <td>${i+1}</td>
       <td>${v.vendor}</td>
       <td class="num">${fmt(curr)}</td>
-      <td class="num">${prior != null ? fmt(prior) : '—'}</td>
-      <td class="num ${deltaClass}">${deltaStr}</td>
+      <td class="num col-mobile-hide">${prior != null ? fmt(prior) : '—'}</td>
+      <td class="num col-mobile-hide ${deltaClass}">${deltaStr}</td>
     </tr>`;
   }).join('');
 
-  // Monthly trend
-  document.getElementById('monthly-body').innerHTML = MONTHLY
-    .slice().reverse()
-    .slice(0, 24)
-    .map(m => `<tr><td>${m.month}</td><td class="num">${fmt(m.total)}</td></tr>`)
-    .join('');
-
-  // Debt service summary
+  // ── Debt service summary cards only ───────────────────────────────────────
   const dsLatest = DEBT_SERVICE[DEBT_SERVICE.length - 1];
   const dsPrev   = DEBT_SERVICE[DEBT_SERVICE.length - 2];
   document.getElementById('ds-cards').innerHTML = `
     <div class="ds-stat">
-      <div class="ds-label">Total Payments — ${dsLatest.fy}${dsLatest.is_budget ? ' (Budget)' : ''}</div>
+      <div class="ds-label">Annual Debt Payment — ${dsLatest.fy}${dsLatest.is_budget ? ' (Budget)' : ''}</div>
       <div class="ds-value">${fmt(dsLatest.expenditure_total)}</div>
       <div class="ds-sub">${dsPrev ? pct(dsLatest.expenditure_total, dsPrev.expenditure_total) + ' vs ' + dsPrev.fy : ''}</div>
     </div>
     <div class="ds-stat">
-      <div class="ds-label">Principal</div>
+      <div class="ds-label">Principal Repaid</div>
       <div class="ds-value">${fmt(dsLatest.principal)}</div>
-      <div class="ds-sub">${fmt(dsLatest.interest)} interest &amp; fees</div>
+      <div class="ds-sub">${fmt(dsLatest.interest)} in interest &amp; fees</div>
     </div>
     <div class="ds-stat">
-      <div class="ds-label">Revenue (Tax + State)</div>
+      <div class="ds-label">Tax Revenue Collected</div>
       <div class="ds-value">${fmt(dsLatest.revenue_total)}</div>
-      <div class="ds-sub">${dsLatest.revenue_total > 0 ? (dsLatest.revenue_total / dsLatest.expenditure_total * 100).toFixed(1) + '% coverage ratio' : ''}</div>
+      <div class="ds-sub">${dsLatest.revenue_total > 0 ? (dsLatest.revenue_total / dsLatest.expenditure_total * 100).toFixed(1) + '% of payment covered by tax revenue' : ''}</div>
     </div>
     <div class="ds-stat">
-      <div class="ds-label">Outstanding Bond Series</div>
+      <div class="ds-label">Active Bond Series</div>
       <div class="ds-value">2019 &amp; 2023</div>
-      <div class="ds-sub">$1.82B Prop A approved Nov 2023</div>
+      <div class="ds-sub">$1.82B Prop A approved by voters Nov 2023</div>
     </div>
   `;
-  document.getElementById('ds-body').innerHTML = DEBT_SERVICE.map(d => {
-    const coverage = d.revenue_total > 0 ? (d.revenue_total / d.expenditure_total * 100).toFixed(1) + '%' : '—';
-    return `<tr>
-      <td>${d.fy}${d.is_budget ? ' <span style="font-size:0.72rem;color:var(--text-secondary)">(budget)</span>' : ''}</td>
-      <td class="num">${fmt(d.revenue_total)}</td>
-      <td class="num">${fmt(d.principal)}</td>
-      <td class="num">${fmt(d.interest)}</td>
-      <td class="num">${fmt(d.expenditure_total)}</td>
-      <td class="num">${coverage}</td>
-    </tr>`;
-  }).join('');
 }
 
 // ── Vendors ──────────────────────────────────────────────────────────────────
@@ -1108,6 +1194,19 @@ function renderTrends() {
       <td class="num">$${r.is_.toFixed(4)}</td>
       <td class="num">$${r.combined.toFixed(4)}</td>
       <td class="num ${deltaClass}">${deltaStr}</td>
+    </tr>`;
+  }).join('');
+
+  // ── Debt service detail table (moved from dashboard) ──────────────────────
+  document.getElementById('ds-body').innerHTML = DEBT_SERVICE.map(d => {
+    const coverage = d.revenue_total > 0 ? (d.revenue_total / d.expenditure_total * 100).toFixed(1) + '%' : '—';
+    return `<tr>
+      <td>${d.fy}${d.is_budget ? ' <span style="font-size:0.72rem;color:var(--text-secondary)">(budget)</span>' : ''}</td>
+      <td class="num">${fmt(d.revenue_total)}</td>
+      <td class="num">${fmt(d.principal)}</td>
+      <td class="num">${fmt(d.interest)}</td>
+      <td class="num">${fmt(d.expenditure_total)}</td>
+      <td class="num">${coverage}</td>
     </tr>`;
   }).join('');
 }

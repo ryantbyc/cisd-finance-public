@@ -570,7 +570,14 @@
   <!-- ── WATCHDOG ── -->
   <div class="page" id="page-watchdog">
     <div class="section-title">⚑ Watchdog Flags</div>
-    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:1rem">Automatically identified patterns that merit constituent attention. All flags are based solely on public financial records.</p>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0.75rem">Automatically identified patterns that merit constituent attention. All flags are based solely on public financial records.</p>
+    <div style="background:var(--bg-card-alt);border:1px solid var(--border-subtle);border-left:4px solid #d97706;border-radius:0 6px 6px 0;padding:0.65rem 1rem;margin-bottom:1rem;font-size:0.82rem;color:var(--text-secondary)">
+      <strong style="color:var(--text-primary)">Competitive Bid Threshold:</strong>
+      Texas law (TEC §44.031) required competitive bidding for purchases over <strong>$50,000</strong> through August 31, 2025.
+      Texas SB 1173 raised this to <strong>$100,000</strong> effective September 1, 2025.
+      Flags for FY 2020-2021 through 2024-2025 use the $50,000 threshold.
+      FY 2025-2026 flags use the updated $100,000 threshold.
+    </div>
 
     <div class="fy-selector" id="watchdog-filter-row">
       <label>Filter:</label>
@@ -627,6 +634,9 @@ const fmtCard = v => {
   if (v >= 1e3) return '$' + Math.round(v / 1e3) + 'K';
   return '$' + Math.round(v).toLocaleString();
 };
+// Competitive bid threshold by fiscal year (Texas Education Code §44.031)
+// SB 1173 raised threshold from $50k to $100k effective September 1, 2025
+const bidThreshold = fy => fy >= '2025-2026' ? 100000 : 50000;
 
 function prevFY(fy) {
   if (!fy || !META) return null;
@@ -753,9 +763,9 @@ function renderDashboard() {
       <div class="card-sub" style="margin-top:0.2rem">All funds: operations, construction, grants</div>
     </div>
     <div class="summary-card">
-      <div class="card-label">Near-Limit Purchases</div>
+      <div class="card-label">Near Bid Limit</div>
       <div class="card-value">${nearThresholdCount}</div>
-      <div class="card-sub">Payments within 15% of the $100k competitive bid requirement — <a href="#" data-page="watchdog">review →</a></div>
+      <div class="card-sub">Monthly vendor totals within 15% of the ${fmtCard(bidThreshold(fy))} competitive bid limit — <a href="#" data-page="watchdog">review →</a></div>
     </div>
     <div class="summary-card">
       <div class="card-label">New Large Vendors</div>

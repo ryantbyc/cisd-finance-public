@@ -244,6 +244,7 @@
     /* ── Responsive ──────────────────────────────────────────────── */
     @media (max-width: 600px) {
       .summary-cards { grid-template-columns: 1fr 1fr; }
+      .summary-card .card-value { font-size: 1.25rem; }
       .fund-bar-row { grid-template-columns: 90px 1fr 90px; }
       .site-nav-inner { overflow-x: auto; }
       .nav-tab { padding: 0.7rem 0.65rem; font-size: 0.8rem; }
@@ -435,10 +436,12 @@
       <input type="search" id="vendor-search" placeholder="Search vendor name…" autocomplete="off">
     </div>
     <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="vendor-count-label"></div>
-    <table class="data-table" id="vendors-table">
-      <thead><tr><th>#</th><th>Vendor</th><th class="num">Total (All Years)</th><th class="num" id="vendor-fy-col">Current FY</th><th class="num">Prior FY</th><th class="num">YoY Δ</th></tr></thead>
-      <tbody id="vendors-body"></tbody>
-    </table>
+    <div style="overflow-x:auto">
+      <table class="data-table" id="vendors-table">
+        <thead><tr><th class="col-mobile-hide">#</th><th>Vendor</th><th class="num col-mobile-hide">Total (All Years)</th><th class="num" id="vendor-fy-col">Current FY</th><th class="num col-mobile-hide">Prior FY</th><th class="num">YoY Δ</th></tr></thead>
+        <tbody id="vendors-body"></tbody>
+      </table>
+    </div>
     <div class="pagination" id="vendor-pagination"></div>
   </div>
 
@@ -454,10 +457,12 @@
     </div>
     <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="func-count-label"></div>
     <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.75rem">Budget and "Budget vs Actual" use general fund figures only. Functions used primarily in bond construction, child nutrition, or federal grant funds show no budget comparison.</p>
-    <table class="data-table" id="functions-table">
-      <thead><tr><th></th><th>Code</th><th>Function</th><th class="num">All-Funds Actual</th><th class="num">Gen. Fund Budget</th><th class="num">Gen. Fund Actual</th><th class="num">Budget vs Actual</th></tr></thead>
-      <tbody id="functions-body"></tbody>
-    </table>
+    <div style="overflow-x:auto">
+      <table class="data-table" id="functions-table">
+        <thead><tr><th></th><th class="col-mobile-hide">Code</th><th>Function</th><th class="num">Actual Spend</th><th class="num col-mobile-hide">Gen. Fund Budget</th><th class="num col-mobile-hide">Gen. Fund Actual</th><th class="num col-mobile-hide">Budget vs Actual</th></tr></thead>
+        <tbody id="functions-body"></tbody>
+      </table>
+    </div>
   </div>
 
   <!-- ── TRENDS ── -->
@@ -530,10 +535,12 @@
       <input type="search" id="campus-search" placeholder="Search school or department…" autocomplete="off">
     </div>
     <div style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.5rem" id="campus-count-label"></div>
-    <table class="data-table" id="campus-table">
-      <thead><tr><th>#</th><th>School / Department</th><th class="num">Total Budget</th><th class="num">Payroll</th><th class="num">Contracted</th><th class="num">Supplies</th><th class="num">Other</th><th>Mix</th></tr></thead>
-      <tbody id="campus-body"></tbody>
-    </table>
+    <div style="overflow-x:auto">
+      <table class="data-table" id="campus-table">
+        <thead><tr><th class="col-mobile-hide">#</th><th>School / Department</th><th class="num">Total Budget</th><th class="num col-mobile-hide">Payroll</th><th class="num col-mobile-hide">Contracted</th><th class="num col-mobile-hide">Supplies</th><th class="num col-mobile-hide">Other</th><th>Mix</th></tr></thead>
+        <tbody id="campus-body"></tbody>
+      </table>
+    </div>
     <div class="pagination" id="campus-pagination"></div>
   </div>
 
@@ -612,6 +619,14 @@ const CAMPUS_PAGE_SIZE   = 60;
 // ── Utilities ──────────────────────────────────────────────────────────────
 const fmt  = v => v == null ? '—' : '$' + Math.round(v).toLocaleString();
 const pct  = (a, b) => b ? ((a - b) / b * 100).toFixed(1) + '%' : '—';
+// Abbreviated format for summary card values (fits small screens)
+const fmtCard = v => {
+  if (v == null) return '—';
+  if (v >= 1e9) return '$' + (v / 1e9).toFixed(2) + 'B';
+  if (v >= 1e6) return '$' + (v / 1e6).toFixed(1) + 'M';
+  if (v >= 1e3) return '$' + Math.round(v / 1e3) + 'K';
+  return '$' + Math.round(v).toLocaleString();
+};
 
 function prevFY(fy) {
   if (!fy || !META) return null;
@@ -733,7 +748,7 @@ function renderDashboard() {
   document.getElementById('summary-cards').innerHTML = `
     <div class="summary-card">
       <div class="card-label">Total District Spending — ${fy}${isCurrentFY ? ' (YTD)' : ''}</div>
-      <div class="card-value">${fmt(totalFY)}</div>
+      <div class="card-value">${fmtCard(totalFY)}</div>
       ${fyChange != null ? `<div class="card-sub ${changeClass}">${changeArrow} ${Math.abs(fyChange).toFixed(1)}% vs ${prev}</div>` : ''}
       <div class="card-sub" style="margin-top:0.2rem">All funds: operations, construction, grants</div>
     </div>
@@ -815,17 +830,17 @@ function renderDashboard() {
   document.getElementById('ds-cards').innerHTML = `
     <div class="ds-stat">
       <div class="ds-label">Annual Debt Payment — ${dsLatest.fy}${dsLatest.is_budget ? ' (Budget)' : ''}</div>
-      <div class="ds-value">${fmt(dsLatest.expenditure_total)}</div>
+      <div class="ds-value">${fmtCard(dsLatest.expenditure_total)}</div>
       <div class="ds-sub">${dsPrev ? pct(dsLatest.expenditure_total, dsPrev.expenditure_total) + ' vs ' + dsPrev.fy : ''}</div>
     </div>
     <div class="ds-stat">
       <div class="ds-label">Principal Repaid</div>
-      <div class="ds-value">${fmt(dsLatest.principal)}</div>
-      <div class="ds-sub">${fmt(dsLatest.interest)} in interest &amp; fees</div>
+      <div class="ds-value">${fmtCard(dsLatest.principal)}</div>
+      <div class="ds-sub">${fmtCard(dsLatest.interest)} in interest &amp; fees</div>
     </div>
     <div class="ds-stat">
       <div class="ds-label">Tax Revenue Collected</div>
-      <div class="ds-value">${fmt(dsLatest.revenue_total)}</div>
+      <div class="ds-value">${fmtCard(dsLatest.revenue_total)}</div>
       <div class="ds-sub">${dsLatest.revenue_total > 0 ? (dsLatest.revenue_total / dsLatest.expenditure_total * 100).toFixed(1) + '% of payment covered by tax revenue' : ''}</div>
     </div>
     <div class="ds-stat">
@@ -862,11 +877,11 @@ function renderVendors() {
     const deltaClass = delta == null ? '' : delta > 0 ? 'change-up' : 'change-down';
     const deltaStr = delta == null ? '—' : (delta > 0 ? '+' : '') + fmt(delta);
     return `<tr>
-      <td>${(vendorPage-1)*VENDOR_PAGE_SIZE + i + 1}</td>
+      <td class="col-mobile-hide">${(vendorPage-1)*VENDOR_PAGE_SIZE + i + 1}</td>
       <td>${v.vendor}</td>
-      <td class="num">${fmt(v.total)}</td>
+      <td class="num col-mobile-hide">${fmt(v.total)}</td>
       <td class="num">${curr > 0 ? fmt(curr) : '—'}</td>
-      <td class="num">${prior != null && prior > 0 ? fmt(prior) : '—'}</td>
+      <td class="num col-mobile-hide">${prior != null && prior > 0 ? fmt(prior) : '—'}</td>
       <td class="num ${deltaClass}">${deltaStr}</td>
     </tr>`;
   }).join('');
@@ -913,12 +928,12 @@ function renderFunctions() {
       : '';
     return `<tr data-func-row="${f.function}">
       <td style="width:1.5rem;text-align:center">${expandBtn}</td>
-      <td>${codeDisplay}</td>
+      <td class="col-mobile-hide">${codeDisplay}</td>
       <td>${f.label}</td>
       <td class="num">${fmt(f.actual)}</td>
-      <td class="num">${f.budget > 0 ? fmt(f.budget) : '—'}</td>
-      <td class="num">${f.budget > 0 && f.actualGen > 0 ? fmt(f.actualGen) : '—'}</td>
-      <td class="num ${varClass}">${variance != null ? variance + '%' : '—'}</td>
+      <td class="num col-mobile-hide">${f.budget > 0 ? fmt(f.budget) : '—'}</td>
+      <td class="num col-mobile-hide">${f.budget > 0 && f.actualGen > 0 ? fmt(f.actualGen) : '—'}</td>
+      <td class="num col-mobile-hide ${varClass}">${variance != null ? variance + '%' : '—'}</td>
     </tr>`;
   }).join('');
 }
@@ -1052,7 +1067,25 @@ function renderCategory() {
     '#2980b9', '#d35400', '#7f8c8d', '#2c3e50',
   ];
 
-  const toTitle = s => s.toLowerCase().replace(/(?:^|\s)\S/g, c => c.toUpperCase());
+  const CAT_NAME_MAP = {
+    'INSTRUCTION':              'Instruction',
+    'MAINTENANCE & OPERATIONS': 'Maintenance & Operations',
+    'SCHOOL ADMINISTRATION':    'School Administration',
+    'STUDENT TRANSPORTATION':   'Student Transportation',
+    'GUIDANCE & COUNSELING':    'Guidance & Counseling',
+    'COCURR ACTIVITIES':        'Co-Curricular Activities',
+    'CURR & INST STAFF DEV':    'Curriculum & Staff Development',
+    'GENERAL ADMIN':            'General Administration',
+    'SECURITY':                 'Security',
+    'TECHNOLOGY':               'Technology',
+    'HEALTH':                   'Health Services',
+    'INSTRUCTIONAL ADMIN':      'Instructional Administration',
+    'MEDIA SERVICES':           'Media Services (Library)',
+    'OTHER INTERGOVERNMENTAL':  'Other Intergovernmental',
+    'SOCIAL WORK':              'Social Work Services',
+    'COMMUNITY SERVICES':       'Community Services',
+  };
+  const toTitle = s => CAT_NAME_MAP[s] || s.toLowerCase().replace(/(?:^|\s)\S/g, c => c.toUpperCase());
 
   const fys = META.fiscal_years.slice().sort();
   const sorted = [...BUDGET_FUNC].sort((a, b) => b.total - a.total);
@@ -1257,13 +1290,13 @@ function renderCampus() {
       <div class="campus-obj-other"      style="width:${otW}%"></div>
     </div>`;
     return `<tr>
-      <td>${(campusPage - 1) * CAMPUS_PAGE_SIZE + i + 1}</td>
+      <td class="col-mobile-hide">${(campusPage - 1) * CAMPUS_PAGE_SIZE + i + 1}</td>
       <td>${c.name}</td>
       <td class="num">${fmt(d.total)}</td>
-      <td class="num">${d.payroll    ? fmt(d.payroll)    : '—'}</td>
-      <td class="num">${d.contracted ? fmt(d.contracted) : '—'}</td>
-      <td class="num">${d.supplies   ? fmt(d.supplies)   : '—'}</td>
-      <td class="num">${(d.other || d.capital) ? fmt((d.other || 0) + (d.capital || 0)) : '—'}</td>
+      <td class="num col-mobile-hide">${d.payroll    ? fmt(d.payroll)    : '—'}</td>
+      <td class="num col-mobile-hide">${d.contracted ? fmt(d.contracted) : '—'}</td>
+      <td class="num col-mobile-hide">${d.supplies   ? fmt(d.supplies)   : '—'}</td>
+      <td class="num col-mobile-hide">${(d.other || d.capital) ? fmt((d.other || 0) + (d.capital || 0)) : '—'}</td>
       <td>${bar}</td>
     </tr>`;
   }).join('');
@@ -1343,13 +1376,55 @@ function renderCapital() {
 }
 
 // ── Watchdog ─────────────────────────────────────────────────────────────────
+const WTYPE_DISPLAY = {
+  all:                 'flags',
+  split_purchase:      'possible split purchases',
+  threshold_proximity: 'near-limit purchases',
+  yoy_increase:        'year-over-year spending increases',
+  new_vendor:          'new large vendors',
+  spending_spike:      'spending spikes',
+};
+
+function consolidateSplitPurchases(list) {
+  const splitMap = {};
+  const other = [];
+  for (const f of list) {
+    if (f.type !== 'split_purchase') { other.push(f); continue; }
+    if (!splitMap[f.vendor]) splitMap[f.vendor] = [];
+    splitMap[f.vendor].push(f);
+  }
+  const consolidated = Object.values(splitMap).map(group => {
+    if (group.length === 1) return group[0];
+    group.sort((a, b) => a.fy < b.fy ? -1 : 1);
+    const fys = [...new Set(group.map(g => g.fy))].sort();
+    const totalAmt = group.reduce((s, g) => s + (g.amount || 0), 0);
+    const minAmt = Math.min(...group.map(g => g.amount || 0));
+    const maxAmt = Math.max(...group.map(g => g.amount || 0));
+    const fyRange = fys.length > 1 ? `${fys[0]} – ${fys[fys.length-1]}` : fys[0];
+    const latest = group[group.length - 1];
+    return {
+      ...latest,
+      fy: fyRange,
+      amount: totalAmt,
+      month: null,
+      note: `Recurring pattern across ${fys.length} fiscal years (${fmtCard(minAmt)}–${fmtCard(maxAmt)}/yr). Most recent (${latest.fy}): ${latest.note}`,
+    };
+  });
+  const result = [...consolidated, ...other];
+  result.sort((a, b) => ({ high: 0, medium: 1, low: 2 }[a.severity||'low'] - { high: 0, medium: 1, low: 2 }[b.severity||'low']));
+  return result;
+}
+
 function renderWatchdog() {
-  const list = watchdogFilter === 'all'
+  const raw = watchdogFilter === 'all'
     ? WATCHDOG
     : WATCHDOG.filter(f => f.type === watchdogFilter);
 
+  const list = consolidateSplitPurchases(raw);
+  const displayName = WTYPE_DISPLAY[watchdogFilter] || 'flags';
+
   document.getElementById('watchdog-count-label').textContent =
-    `${list.length} flag${list.length !== 1 ? 's' : ''}${watchdogFilter !== 'all' ? ` of type "${watchdogFilter}"` : ''}`;
+    `${list.length} ${displayName}`;
 
   const pages = Math.ceil(list.length / WATCHDOG_PAGE_SIZE);
   watchdogPage = Math.min(watchdogPage, pages || 1);
@@ -1360,7 +1435,7 @@ function renderWatchdog() {
       <div class="flag-label">${f.label}</div>
       <div class="flag-vendor">${f.vendor || f.month || ''}</div>
       <div class="flag-note">${f.note}</div>
-      <div class="flag-meta">${[f.fy, f.month, f.amount ? fmt(f.amount) : null].filter(Boolean).join(' · ')}</div>
+      <div class="flag-meta">${[f.fy, f.amount ? fmt(f.amount) : null].filter(Boolean).join(' · ')}</div>
     </div>
   `).join('');
 
